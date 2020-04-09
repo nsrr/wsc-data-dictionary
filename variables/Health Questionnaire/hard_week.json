@@ -1,0 +1,7 @@
+{
+  "id": "hard_week",
+  "display_name": "number of hard alcohol drinks per week",
+  "description": "Please estimate your usual consumption of alcoholic beverages,How many mixed drinks or shots might you have per week? ",
+  "type": "numeric",
+  "units": "mixed drinks/shots"
+}

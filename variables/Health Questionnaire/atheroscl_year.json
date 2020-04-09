@@ -1,0 +1,7 @@
+{
+  "id": "atheroscl_year",
+  "display_name": "Year of Atherosclerosis",
+  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if Atherosclerosis (hardening of the arteries)? =\"Y\")",
+  "type": "numeric",
+  "units": "year"
+}

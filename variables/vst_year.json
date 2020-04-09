@@ -1,0 +1,7 @@
+{
+  "id": "vst_year",
+  "display_name": "Year of PSG",
+  "description": "",
+  "type": "numeric",
+  "units": "year"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "zung13_scored",
+  "display_name": " Zung Item:I am restless and cant keep still.",
+  "description": "Thirteenth Item in Zung Depression Scale",
+  "type": "choices",
+  "domain": "1: none or a little of the time, 2: some of the time, 3: a good part of the time, 4: all of the time"
+}

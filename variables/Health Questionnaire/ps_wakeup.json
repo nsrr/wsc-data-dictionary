@@ -1,0 +1,7 @@
+{
+  "id": "ps_wakeup",
+  "display_name": "Problems with morning awakening",
+  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you find it very difficult to wake up in the morning?",
+  "type": "choices",
+  "domain": "0=never, 1=rarely (once a month), 2=sometimes (2-4 times a month), 3=often (5-15 times a month), 4=almost always (16-30 times a month)"
+}

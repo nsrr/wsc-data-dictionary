@@ -1,0 +1,7 @@
+{
+  "id": "apnea_treated",
+  "display_name": "Received Treatment: Apnea",
+  "description": "Did you have the treatment? (when told \"Y\" needed treatment for sleep apnea)",
+  "type": "choices",
+  "domain": "y: yes, n: no"
+}

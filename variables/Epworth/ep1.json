@@ -1,0 +1,7 @@
+{
+  "id": "ep1",
+  "display_name": " Epworth Sleepiness Scale: Sitting and Reading",
+  "description": "How likely are you to doze off or fall asleep in the following situations, in contrast to feeling just tired? This refers to your usual way of life in recent times. Even if you have not done some of these things recently, try to work out how they would have affected you. Use the following scale to choose the most appropriate number for each situation: Sitting and reading",
+  "type": "choices",
+  "domain": "0 = would never doze,1 = slight chance of dozing, 2 = moderate chance of dozing,3 = high chance of dozing,4 = not applicable/situation never applies"
+}

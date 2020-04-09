@@ -1,0 +1,7 @@
+{
+  "id": "nasal_cong_tonight",
+  "display_name": "Nasal Congestion tonight",
+  "description": "Have you had any nasal congestion or stuffiness tonight?",
+  "type": "choices",
+  "domain": "y: yes, n: no"
+}

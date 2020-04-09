@@ -1,0 +1,7 @@
+{
+  "id": "pcttststage34",
+  "display_name": "Percent of Stage 3 and 4 sleep",
+  "description": "",
+  "type": "numeric",
+  "units": "percentage"
+}

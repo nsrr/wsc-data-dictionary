@@ -1,0 +1,7 @@
+{
+  "id": "time_since_last_period",
+  "display_name": "Time since last period",
+  "description": "",
+  "type": "numeric",
+  "units": "years"
+}

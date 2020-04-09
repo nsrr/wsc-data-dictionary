@@ -1,0 +1,6 @@
+{
+  "id": "comp_nights_wk",
+  "display_name": "Nights of Compliance",
+  "description": "If the treatment was CPAP or BiPAP please answer the following questions:: If you are using the recommended CPAP/BiPAP, please indicate: b. How many nights per week do you use it?",
+  "type": "numeric"
+}

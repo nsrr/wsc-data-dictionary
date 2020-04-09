@@ -1,0 +1,7 @@
+{
+  "id": " arm_left_repeat",
+  "display_name": "First repeat of Blood Pressure from Left Arm, if needed",
+  "description": "Brachial blood pressure by Dopler at the overnight PSG",
+  "type": "numeric",
+  "units": "mm Hg"
+}

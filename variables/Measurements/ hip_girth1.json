@@ -1,0 +1,7 @@
+{
+  "id": " hip_girth1",
+  "display_name": "First measurement of hip girth",
+  "description": "Measure at largest circumference over the buttocks with participant standing erect with arms at side",
+  "type": "numeric",
+  "units": "cm"
+}

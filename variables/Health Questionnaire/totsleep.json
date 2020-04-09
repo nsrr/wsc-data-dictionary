@@ -1,0 +1,7 @@
+{
+  "id": "totsleep",
+  "display_name": "Average Weekly Sleep  per day",
+  "description": "",
+  "type": "numeric",
+  "units": "hours/day"
+}

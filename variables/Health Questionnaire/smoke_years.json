@@ -1,0 +1,6 @@
+{
+  "id": "smoke_years",
+  "display_name": "Number of years smoked",
+  "description": "Overall, how many years total, have you been OR were you a regular smoker? ",
+  "type": "numeric"
+}

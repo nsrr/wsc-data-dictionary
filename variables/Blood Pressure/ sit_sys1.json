@@ -1,0 +1,7 @@
+{
+  "id": " sit_sys1",
+  "display_name": "First  systolic Blood Pressure",
+  "description": "Standard seated blood pressure on the night of the PSG",
+  "type": "numeric",
+  "units": "mm Hg"
+}

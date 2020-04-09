@@ -1,0 +1,7 @@
+{
+  "id": " uric_acid",
+  "display_name": "Uric Acid",
+  "description": "Measure of Uric Acid level in Blood",
+  "type": "numeric",
+  "units": "mg/dL"
+}

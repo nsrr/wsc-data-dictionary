@@ -1,0 +1,7 @@
+{
+  "id": " hdl",
+  "display_name": "High-density Lipoprotein (HDL) Cholesterol ",
+  "description": "Measure of HDL level in Blood",
+  "type": "numeric",
+  "units": "mg/dL"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "zung_index",
+  "display_name": "Standardized Zung Score",
+  "description": "Scaled Zung Score used with clinical cutpoints",
+  "type": "numeric"
+}

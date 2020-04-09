@@ -1,0 +1,7 @@
+{
+  "id": "congestivehf_year",
+  "display_name": "Congestive Heart Failure",
+  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if Congestive heart failure? =\"Y\")",
+  "type": "numeric",
+  "units": "year"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "num_pregnancies",
+  "display_name": "Number of Pregnancies",
+  "description": "Combination of initial report of number of pregnancies and then report of additional pregnancies between study visits",
+  "type": "numeric",
+  "units": "count"
+}

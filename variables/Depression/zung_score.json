@@ -1,0 +1,6 @@
+{
+  "id": "zung_score",
+  "display_name": "Zung Score",
+  "description": "Sum of 20 items from Zung Questionnaire",
+  "type": "numeric"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "ps_notrested",
+  "display_name": "Problems with Not rested, regardless of sleep amount",
+  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you not feel rested during the day no matter how many hours of sleep you had?",
+  "type": "choices",
+  "domain": "0=never, 1=rarely (once a month), 2=sometimes (2-4 times a month), 3=often (5-15 times a month), 4=almost always (16-30 times a month)"
+}

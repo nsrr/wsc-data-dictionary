@@ -1,0 +1,7 @@
+{
+  "id": "alcohol_wk",
+  "display_name": "# Alcoholic Beverages/ Week",
+  "description": "",
+  "type": "numeric",
+  "units": "beverages/week"
+}

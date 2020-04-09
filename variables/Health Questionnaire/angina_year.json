@@ -1,0 +1,7 @@
+{
+  "id": "angina_year",
+  "display_name": "Year of ANGINA",
+  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if ANGINA? =\"Y\")",
+  "type": "numeric",
+  "units": "year"
+}

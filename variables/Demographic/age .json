@@ -1,0 +1,6 @@
+{
+  "id": "age ",
+  "display_name": "Age in years",
+  "description": "Age at time of study visit",
+  "type": "years (truncated)"
+}

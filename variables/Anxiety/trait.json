@@ -1,0 +1,6 @@
+{
+  "id": "trait",
+  "display_name": "Trait Anxiety Score ",
+  "description": "Sum of 20 items from Trait Anxiety Questionnaire. When there are 2 or less missing, the average of all of the other scores are used to create the sum variable",
+  "type": "numeric"
+}

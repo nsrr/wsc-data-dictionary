@@ -1,0 +1,7 @@
+{
+  "id": "tst_nrem",
+  "display_name": "Total NREM Sleep Time",
+  "description": "Total time spent in NREM sleep",
+  "type": "numeric",
+  "units": "minutes"
+}

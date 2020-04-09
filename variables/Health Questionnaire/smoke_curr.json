@@ -1,0 +1,7 @@
+{
+  "id": "smoke_curr",
+  "display_name": "Current smoker",
+  "description": "Do you currently smoke? ",
+  "type": "choices",
+  "domain": "y: yes, n: no"
+}

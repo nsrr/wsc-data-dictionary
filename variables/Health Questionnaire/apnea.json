@@ -1,0 +1,7 @@
+{
+  "id": "apnea",
+  "display_name": "Doctor Diagnosed: Apnea",
+  "description": "Have you ever been told by a doctor that you have sleep apnea? ",
+  "type": "choices",
+  "domain": "y: yes, n: no"
+}

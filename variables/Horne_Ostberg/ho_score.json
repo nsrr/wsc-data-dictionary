@@ -1,0 +1,6 @@
+{
+  "id": "ho_score",
+  "display_name": "Horne Ostberg Score",
+  "description": "Sum of items from the Horne-Ostberg Questionnaire",
+  "type": "numeric"
+}

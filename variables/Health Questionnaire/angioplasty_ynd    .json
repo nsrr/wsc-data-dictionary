@@ -1,0 +1,7 @@
+{
+  "id": "angioplasty_ynd    ",
+  "display_name": "Angioplasty",
+  "description": "Have you ever had any of the following surgical procedures? Coronary or balloon angioplasty ",
+  "type": "choices ",
+  "domain": "y: yes, n: no"
+}

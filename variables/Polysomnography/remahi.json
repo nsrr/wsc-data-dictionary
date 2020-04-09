@@ -1,0 +1,7 @@
+{
+  "id": "remahi",
+  "display_name": "REM Apnea Hypopnea Index",
+  "description": "Number of Apneas and Hypopneas during REM sleep per the number of hours of REM sleep",
+  "type": "numeric",
+  "units": "events/hour"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "sex",
+  "display_name": "Sex of Participant",
+  "description": "Sex of pariticipant",
+  "type": "character",
+  "domain": "m: male, f: female"
+}

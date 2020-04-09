@@ -1,0 +1,7 @@
+{
+  "id": "eval_general",
+  "display_name": "Satisfaction with sleep",
+  "description": "Are you satisfied with your usual night's sleep (check one)?",
+  "type": "choices",
+  "domain": "1=most of the time, 2=some of the time, 3=not usually, 4=never"
+}

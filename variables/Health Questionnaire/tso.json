@@ -1,0 +1,7 @@
+{
+  "id": "tso",
+  "display_name": "Time to sleep onset",
+  "description": "About how many minutes does it usually take you to fall asleep at night? _____#minutes",
+  "type": "numeric",
+  "units": "minutes"
+}

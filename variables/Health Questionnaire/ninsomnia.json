@@ -1,0 +1,7 @@
+{
+  "id": "ninsomnia",
+  "display_name": "# Insomnia Symptoms",
+  "description": "",
+  "type": "numeric",
+  "domain": "0-4"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "caffeine",
+  "display_name": "# Caffeine Beverages/Day",
+  "description": "",
+  "type": "numeric",
+  "units": "beverages/day"
+}

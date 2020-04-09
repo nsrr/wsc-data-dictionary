@@ -1,0 +1,7 @@
+{
+  "id": "zung12_scored",
+  "display_name": "Zung Item: I find it easy to do the things I used to do.",
+  "description": "Twelfth Item in Zung Depression Scale",
+  "type": "choices",
+  "domain": "4: none or a little of the time, 3: some of the time, 2: a good part of the time, 1: all of the time"
+}

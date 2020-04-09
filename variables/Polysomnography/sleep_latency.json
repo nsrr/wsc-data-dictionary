@@ -1,0 +1,7 @@
+{
+  "id": "sleep_latency",
+  "display_name": "Sleep Latnecy",
+  "description": "Time to first epoch of sleep",
+  "type": "numeric",
+  "units": "minutes"
+}
