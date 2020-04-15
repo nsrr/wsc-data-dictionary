@@ -3,5 +3,5 @@
   "display_name": "Satisfaction with life",
   "description": "How satisfied are you with the way you are spending your life (check one)?",
   "type": "choices",
-  "domain": "1=completely satisfied, 2=mostly satisfied, 3=moderately satisfied, 4=not very satisfied"
+  "domain": "slpsatisfaction"
 }

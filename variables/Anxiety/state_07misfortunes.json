@@ -1,0 +1,7 @@
+{
+  "id": "state_07misfortunes",
+  "display_name": "State Anxiety: I am presently worrying over possible misfortunes",
+  "description": "",
+  "type": "choices",
+  "domain": "anxietydegree"
+}

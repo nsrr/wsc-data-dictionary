@@ -1,0 +1,22 @@
+[
+  {
+    "value": "1",
+    "display_name": "Would NOT go to bed until after the task was over",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Would take a nap before the task and sleep for several hours after",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Would sleep for several hours before the task and take a nap after",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Would get all your sleep before the task began and not have any sleep after the task",
+    "description": ""
+  }
+]

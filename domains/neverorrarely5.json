@@ -1,0 +1,32 @@
+[
+  {
+    "value": "1",
+    "display_name": "Never or rarely - only once or a few times ever",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Sometimes - a few night per month; under special circumstances",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "At least once a week, but pattern may be irregular",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Several (3 to 5) nights per week",
+    "description": ""
+  },
+  {
+    "value": "5",
+    "display_name": "Every night or almost every night",
+    "description": ""
+  },
+  {
+    "value": "9",
+    "display_name": "Do not know",
+    "description": ""
+  }
+]

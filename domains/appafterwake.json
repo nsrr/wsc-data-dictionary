@@ -1,0 +1,22 @@
+[
+  {
+    "value": "1",
+    "display_name": "Very poor",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Fairly poor",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Fairly good",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Very good",
+    "description": ""
+  }
+]

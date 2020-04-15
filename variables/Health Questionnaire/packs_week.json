@@ -2,6 +2,5 @@
   "id": "packs_week",
   "display_name": "Number of packs per week",
   "description": "How much do you smoke now, OR if you quit smoking, how much did you smoke in the past (answer all that apply)? packs per week",
-  "type": "numeric",
-  "domain": "number, 99=missing"
+  "type": "numeric"
 }

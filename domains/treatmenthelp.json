@@ -1,0 +1,22 @@
+[
+  {
+    "value": "1",
+    "display_name": "Not at all",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Helped a little",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Helped moderately",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Helped a lot",
+    "description": ""
+  }
+]

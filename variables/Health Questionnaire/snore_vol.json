@@ -3,5 +3,5 @@
   "display_name": "Snoring Volume",
   "description": "How loud do you think, or have others said, your snoring is?",
   "type": "choices",
-  "domain": "1=only slightly louder than heavy breathing, 2=about as loud as mumbling or talking, 3=louder than talking, 4=extremely loud, can be heard through a closed door, 9=do not know, 8=does not apply"
+  "domain": "snoring"
 }

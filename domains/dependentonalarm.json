@@ -1,0 +1,22 @@
+[
+  {
+    "value": "1",
+    "display_name": "Not at all dependent",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Slightly dependent",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Fairly dependent",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Very dependent",
+    "description": ""
+  }
+]

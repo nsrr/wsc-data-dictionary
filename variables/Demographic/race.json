@@ -2,6 +2,6 @@
   "id": "race",
   "display_name": "Race of Pariticipant",
   "description": "Race of participant",
-  "type": "character",
-  "domain": "w: white, b: black, h: hispanic, n: native american, a: asian"
+  "type": "choices",
+  "domain": "pptrace"
 }

@@ -3,5 +3,5 @@
   "display_name": "Zung Item: I get tired for no reason.",
   "description": "Tenth Item in Zung Depression Scale",
   "type": "choices",
-  "domain": "1: none or a little of the time, 2: some of the time, 3: a good part of the time, 4: all of the time"
+  "domain": "noneoralittle"
 }

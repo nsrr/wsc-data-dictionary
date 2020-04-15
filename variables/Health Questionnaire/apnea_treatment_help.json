@@ -3,5 +3,5 @@
   "display_name": "Treatement helped",
   "description": "Did the treatment help (check one)?",
   "type": "choices",
-  "domain": "1=not at all, 2=helped a little, 3= helped moderately, 4=helped a lot"
+  "domain": "treatmenthelp"
 }

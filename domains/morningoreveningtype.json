@@ -1,0 +1,22 @@
+[
+  {
+    "value": "1",
+    "display_name": "Definitely a "morning" type",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Rather more a "morning" than an "evening" type",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Rather more an "evening" type than a "morning" type",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Definitely an "evening" type",
+    "description": ""
+  }
+]

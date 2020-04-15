@@ -3,5 +3,5 @@
   "display_name": "Apnea Frequency",
   "description": "According to what others have told you, or to your own awareness, how often, if ever, do you have momentary periods during sleep when you stop breathing or you breathe abnormally?",
   "type": "choices",
-  "domain": "__1_never or rarely - only once or a few times ever.__2_sometimes - a few nights per month; under special circumstances.__3_at least once a week, but pattern may be irregular__4_several (3 to 7) nights per week.__9__do not know."
+  "domain": "neverorrarely7"
 }

@@ -2,6 +2,5 @@
   "id": "other_heart_surg2",
   "display_name": "Other heart surgery",
   "description": "Have you ever had any of the following surgical procedures?  If yes, check all that apply: Other heart surgery/please describe",
-  "type": "character",
-  "domain": "open text formatted to standard answers"
+  "type": "character"
 }

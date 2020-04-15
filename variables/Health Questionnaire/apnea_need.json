@@ -3,5 +3,5 @@
   "display_name": "Needed Treatment: Apnea",
   "description": "Were you told you needed treatment? ___Yes       ___No (reported Y told by a doctor that they had sleep apnea)",
   "type": "choices",
-  "domain": "y: yes, n: no"
+  "domain": "noyesny"
 }

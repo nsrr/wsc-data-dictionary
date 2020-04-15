@@ -2,6 +2,5 @@
   "id": "thyroid_problem",
   "display_name": "TYPE of thyroid problem",
   "description": "Also, describe the type of thyroid problem",
-  "type": "character",
-  "domain": "open text formatted to standard answers. is \"unknown\" for many, as this classification question was not added until 1995"
+  "type": "character"
 }

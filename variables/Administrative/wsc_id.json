@@ -1,0 +1,6 @@
+{
+  "id": "wsc_id",
+  "display_name": "Unique Identifier",
+  "description": "Randomly generated",
+  "type": "identifier"
+}

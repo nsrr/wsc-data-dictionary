@@ -3,5 +3,5 @@
   "display_name": "General Health Evaluation",
   "description": "In general, would you say your health is (check one):",
   "type": "choices",
-  "domain": "1=excellent, 2=very good, 3=good, 4=fair, 5=poor"
+  "domain": "healthrating"
 }

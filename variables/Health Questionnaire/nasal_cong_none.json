@@ -3,5 +3,5 @@
   "display_name": "No Nasal Congestion",
   "description": "No nasal congestion today or tonight",
   "type": "choices",
-  "domain": "y: yes, n: no"
+  "domain": "noyesny"
 }

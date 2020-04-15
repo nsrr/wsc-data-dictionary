@@ -3,5 +3,5 @@
   "display_name": "Non Drinkers",
   "description": "If you do not drink alcoholic beverages at all check here ____ ",
   "type": "choices",
-  "domain": "y: yes, n: no"
+  "domain": "noyesny"
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "value": "1",
+    "display_name": "Will wake up at usual time and will NOT fall asleep",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Will wake up at usual time and will doze thereafter",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Will wake up at usual time, but will fall asleep again",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Will not wake up until later than usual",
+    "description": ""
+  }
+]

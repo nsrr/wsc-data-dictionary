@@ -3,5 +3,5 @@
   "display_name": "Evaluation of last night's sleep",
   "description": "How well did you sleep last night? (Please check one)",
   "type": "choices",
-  "domain": "1: much worse than usual, 2: somewhat worse than usual, 3: as well as usual, 4: a little better than usual, 5 : much better than usual."
+  "domain": "slplastnight"
 }

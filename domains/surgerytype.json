@@ -1,0 +1,32 @@
+[
+  {
+    "value": "1",
+    "display_name": "Hysterectomy, uterus and both ovaries removed",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Hysterectomy, uterus and only one ovary removed",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Hysterectomy, uterus removed, no ovaries removed",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "One ovary removed, uterus and one ovary remain",
+    "description": ""
+  },
+  {
+    "value": "5",
+    "display_name": "Both ovaries removed, uterus remains",
+    "description": ""
+  },
+  {
+    "value": "6",
+    "display_name": "Unsure",
+    "description": ""
+  }
+]

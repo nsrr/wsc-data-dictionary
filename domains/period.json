@@ -1,0 +1,22 @@
+[
+  {
+    "value": "0",
+    "display_name": "Regular periods",
+    "description": ""
+  },
+  {
+    "value": "1",
+    "display_name": "Irregular periods",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Periods stopped due to menopause",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Surgery",
+    "description": ""
+  }
+]

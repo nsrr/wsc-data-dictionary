@@ -3,5 +3,5 @@
   "display_name": "type of reproductive surgery",
   "description": "If yes, please provide the kind of surgery (check one):  (only available after 1993 and before Aug 28, 2009)",
   "type": "choices",
-  "domain": "1=hysterectomy, uterus and both ovaries removed, 2=hysterectomy, uterus and only one ovary removed, 3=hysterectomy,uterus removed, no ovaries removed, 4=one ovary removed, uterus and one ovary remain,5= both ovaries removed, uterus remains.,  6=unsure: "
+  "domain": "surgerytype"
 }

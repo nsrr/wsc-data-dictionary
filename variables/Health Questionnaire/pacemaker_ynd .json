@@ -3,5 +3,5 @@
   "display_name": "Pacemaker",
   "description": "Have you ever had any of the following surgical procedures?  If yes, check all that apply: pacemaker",
   "type": "choices ",
-  "domain": "y: yes, n: no"
+  "domain": "noyesny"
 }

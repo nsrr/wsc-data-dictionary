@@ -1,7 +1,7 @@
 {
   "id": " p_eval_sleep",
   "display_name": "Stanford Sleepiness Scale; PM evaluation",
-  "description": "This question refers to how sleepy or alert you feel at a particular time. We would like you to read the scale below and then rate how sleepy you feel right now. The scale ranges from 1 to 7, with 7 being the most sleepy. Please read the entire scale, and then check the level that best describes your current state of  sleepiness.",
+  "description": "This question refers to how sleepy or alert you feel at a particular time. We would like you to read the scale below and then rate how sleepy you feel right now. The scale ranges from 1 to 7, with 7 being the most sleepy. Please read the entire scale, and then check the level that best describes your current state ofÂ  sleepiness.",
   "type": "choices",
-  "domain": "1: feeling active and vital; alert; wide awake, 2: could function at a high level; but not quite at peak, ablve to concentrate, 3: relaxed; awake; responsive; but not at full alertness, 4: a little foggy; not a peak; let down, 5: fogginess; beginning to lose interest in staying awake, slowed down, 6: sleepiness; prefer to be lyging down; fighting sleep; woozy, 7: almost in reverie; sleep onset soon; losing struggle to remain awake."
+  "domain": "currentsleepiness"
 }

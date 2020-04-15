@@ -1,0 +1,7 @@
+{
+  "id": "state_14indecisive",
+  "display_name": "State Anxiety: I feel indecisive",
+  "description": "",
+  "type": "choices",
+  "domain": "anxietydegree"
+}

@@ -3,5 +3,5 @@
   "display_name": "Awake with gasping Frequency",
   "description": "How often, if ever, have you awakened suddenly with the feeling of gasping or choking?",
   "type": "choices",
-  "domain": "__1_never or rarely - only once or a few times ever.__2_sometimes - a few nights per month; under special circumstances.__3_at least once a week, but pattern may be irregular__4_several (3 to 5) nights per week.__9__do not know."
+  "domain": "neverorrarely5"
 }

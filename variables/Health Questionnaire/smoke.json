@@ -3,5 +3,5 @@
   "display_name": "Ever smoked",
   "description": "Have you ever smoked tobacco regularly?",
   "type": "choices",
-  "domain": "y: yes, n: no"
+  "domain": "noyesny"
 }

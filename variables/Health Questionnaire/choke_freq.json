@@ -3,5 +3,5 @@
   "display_name": "Gasping/Choking Frequency",
   "description": "According to what others have told you, or to your own awareness, how often, if ever, do you gasp, choke, or make snorting sounds during sleep?",
   "type": "choices",
-  "domain": "1=never or rarely - only once or a few times ever, 2=sometimes - a few nights per month; under sspecial circumstances, 3=at least once a week, but pattern may be irregular, 4=several (3 to 7) nights per week, 9= do not know"
+  "domain": "neverorrarely7"
 }

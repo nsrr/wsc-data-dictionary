@@ -1,7 +1,7 @@
 {
   "id": " progesterone_med",
-  "display_name": " Progesterone",
+  "display_name": "Progesterone",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
-  "type": "numeric",
-  "domain": "0: not taking, 1: taking"
+  "type": "choices",
+  "domain": "takingornot"
 }

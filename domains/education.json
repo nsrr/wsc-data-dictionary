@@ -1,0 +1,32 @@
+[
+  {
+    "value": "1",
+    "display_name": "8th grade or less",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "9-11 grade",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "12th/high school graduate",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Some college",
+    "description": ""
+  },
+  {
+    "value": "5",
+    "display_name": "College bachelor's degree",
+    "description": ""
+  },
+  {
+    "value": "6",
+    "display_name": "Post graduate college work",
+    "description": ""
+  }
+]

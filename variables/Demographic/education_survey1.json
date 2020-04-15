@@ -2,6 +2,6 @@
   "id": "education_survey1",
   "display_name": "Highest Education Level Completed ",
   "description": "Question from Survey 1 about Education Level",
-  "type": null,
-  "domain": "1:8th grade or less, 2:9-11 grade, 3:12th/high school graduate, 4:some college, 5:college bachelor's degree, 6:post graduate college work"
+  "type": "choices",
+  "domain": "education"
 }

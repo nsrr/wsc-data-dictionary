@@ -1,7 +1,7 @@
 {
   "id": " stimulants_med",
-  "display_name": " Stimulants",
+  "display_name": "Stimulants",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
-  "type": "numeric",
-  "domain": "0: not taking, 1: taking"
+  "type": "choices",
+  "domain": "takingornot"
 }

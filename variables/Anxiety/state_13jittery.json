@@ -1,0 +1,7 @@
+{
+  "id": "state_13jittery",
+  "display_name": "State Anxiety: I am jittery",
+  "description": "",
+  "type": "choices",
+  "domain": "anxietydegree"
+}

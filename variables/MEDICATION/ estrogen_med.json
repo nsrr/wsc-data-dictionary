@@ -1,7 +1,7 @@
 {
   "id": " estrogen_med",
-  "display_name": " Estrogen",
+  "display_name": "Estrogen",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
-  "type": "numeric",
-  "domain": "0: not taking, 1: taking"
+  "type": "choices",
+  "domain": "takingornot"
 }
