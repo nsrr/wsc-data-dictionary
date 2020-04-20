@@ -1,6 +1,0 @@
-{
-  "id": "state",
-  "display_name": "State Anxiety Score ",
-  "description": "Sum of 20 items from State Anxiety Questionnaire. When there are 2 or less missing, the average of all of the other scores are used to create the sum variable",
-  "type": "numeric"
-}

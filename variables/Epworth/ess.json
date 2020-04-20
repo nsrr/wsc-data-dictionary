@@ -1,6 +1,0 @@
-{
-  "id": "ess",
-  "display_name": "Epworth Sleepiness Score",
-  "description": "Sum of 8 Epworth Items",
-  "type": "numeric"
-}

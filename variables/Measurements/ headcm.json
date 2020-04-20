@@ -1,7 +1,7 @@
 {
   "id": " headcm",
   "display_name": "Head circumference",
-  "description": "Position the tape slightly above the eyebrows in aÂ Â Â Â horizontal plane to the back of the head, measuring the maximum circumference.Â Â Make sure not to include large amounts of hair and hair accessories under the tape.Â Â Pull tape slightly to compress hair and record measurement to the nearest 0.5 cm",
+  "description": "Position the tape slightly above the eyebrows in aÃÂ ÃÂ ÃÂ ÃÂ horizontal plane to the back of the head, measuring the maximum circumference.ÃÂ ÃÂ Make sure not to include large amounts of hair and hair accessories under the tape.ÃÂ ÃÂ Pull tape slightly to compress hair and record measurement to the nearest 0.5 cm",
   "type": "numeric",
   "units": "cm"
 }

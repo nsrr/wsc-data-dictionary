@@ -1,0 +1,7 @@
+{
+  "id": "sedatives_med",
+  "display_name": "Sedatives",
+  "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
+  "type": "choices",
+  "domain": "takingornot"
+}
