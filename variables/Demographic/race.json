@@ -1,7 +1,7 @@
 {
   "id": "race",
-  "display_name": "Race of Pariticipant",
-  "description": "Race of participant",
+  "display_name": "Race of participant",
+  "description": "",
   "type": "choices",
   "domain": "pptrace"
 }
