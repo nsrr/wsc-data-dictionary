@@ -1,0 +1,6 @@
+{
+  "id": "psg_source",
+  "display_name": "Source of GRASS nPSG data",
+  "description": "",
+  "type": "text"
+}

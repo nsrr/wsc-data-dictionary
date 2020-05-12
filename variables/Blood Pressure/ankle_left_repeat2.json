@@ -1,0 +1,7 @@
+{
+  "id": "ankle_left_repeat2",
+  "display_name": "Second repeat of Blood Pressure from Left Ankle, if needed",
+  "description": "Brachial blood pressure by Dopler at the overnight PSG",
+  "type": "numeric",
+  "units": "mm Hg"
+}

@@ -1,7 +1,0 @@
-{
-  "id": "waso",
-  "display_name": "Wake After Sleep Onset",
-  "description": "Time Awake after first sleep onset until Time Awake",
-  "type": "numeric",
-  "units": "minutes"
-}

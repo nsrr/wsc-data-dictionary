@@ -2,6 +2,6 @@
   "id": "coronarybypass_ynd",
   "display_name": "Coronary Bypass Surgery",
   "description": "Have you ever had any of the following surgical procedures?  If yes, check all that apply: Coronary bypass surgery ",
-  "type": "choices ",
+  "type": "choices",
   "domain": "noyesny"
 }

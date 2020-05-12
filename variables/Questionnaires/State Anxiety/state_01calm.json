@@ -1,7 +1,0 @@
-{
-  "id": "state_01calm",
-  "display_name": "State Anxiety: I feel calm",
-  "description": "",
-  "type": "choices",
-  "domain": "anxietydegree"
-}

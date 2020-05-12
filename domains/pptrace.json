@@ -1,26 +1,26 @@
 [
   {
-    "value": "w",
+    "value": "W",
     "display_name": "White",
     "description": ""
   },
   {
-    "value": "b",
+    "value": "B",
     "display_name": "Black",
     "description": ""
   },
   {
-    "value": "h",
+    "value": "H",
     "display_name": "Hispanic",
     "description": ""
   },
   {
-    "value": "n",
+    "value": "N",
     "display_name": "Native American",
     "description": ""
   },
   {
-    "value": "a",
+    "value": "A",
     "display_name": "Asian",
     "description": ""
   }

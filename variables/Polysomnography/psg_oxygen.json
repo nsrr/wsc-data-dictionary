@@ -1,7 +1,0 @@
-{
-  "id": "psg_oxygen",
-  "display_name": "Reported use of Oxygen at time of nPSG",
-  "description": "",
-  "type": "numeric",
-  "domain": "1=used oxygen during npsg"
-}

@@ -2,5 +2,5 @@
   "id": "apnea_treatment1",
   "display_name": "Apnea Treatment",
   "description": "If yes, what treatment was recommended? (When told \"Y\" need treatment for sleep apnea)",
-  "type": "character"
+  "type": "text"
 }

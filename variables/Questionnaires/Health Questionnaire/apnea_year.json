@@ -2,6 +2,6 @@
   "id": "apnea_year",
   "display_name": "Year of Diagnosis",
   "description": "If yes, when was this? ______ Year",
-  "type": null,
+  "type": "integer",
   "units": "year"
 }

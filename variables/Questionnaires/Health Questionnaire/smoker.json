@@ -3,5 +3,5 @@
   "display_name": "Smoking History",
   "description": "Current, Past or Never Smoker",
   "type": "numeric",
-  "domain": "0=never, 1=past, 2=current"
+  "domain": "smokinghistory"
 }

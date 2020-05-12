@@ -1,7 +1,0 @@
-{
-  "id": "state_03tense",
-  "display_name": "State Anxiety: I am tense",
-  "description": "",
-  "type": "choices",
-  "domain": "anxietydegree"
-}

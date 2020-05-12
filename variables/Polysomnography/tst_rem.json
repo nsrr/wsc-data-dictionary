@@ -1,7 +1,0 @@
-{
-  "id": "tst_rem",
-  "display_name": "Total REM Sleep Time",
-  "description": "Total time spent in REM sleep",
-  "type": "numeric",
-  "units": "minutes"
-}

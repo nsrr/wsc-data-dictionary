@@ -1,0 +1,7 @@
+{
+  "id": "waisthip",
+  "display_name": "Waist to Hip ratio",
+  "description": "",
+  "type": "numeric",
+  "units": "ratio"
+}

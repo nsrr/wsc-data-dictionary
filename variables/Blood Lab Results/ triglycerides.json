@@ -1,7 +1,0 @@
-{
-  "id": " triglycerides",
-  "display_name": "Triglycerides",
-  "description": "Measure of Triglyceride level in Blood",
-  "type": "numeric",
-  "units": "mg/dL"
-}

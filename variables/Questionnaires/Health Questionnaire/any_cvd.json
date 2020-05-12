@@ -2,5 +2,6 @@
   "id": "any_cvd",
   "display_name": "Any Cardiovascular Disease Diagnosis",
   "description": "",
-  "type": "choices"
+  "type": "choices",
+  "domain": "noyes01"
 }

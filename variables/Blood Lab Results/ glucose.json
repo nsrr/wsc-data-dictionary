@@ -1,7 +1,0 @@
-{
-  "id": " glucose",
-  "display_name": "Glucose",
-  "description": "Measure of Glucose level in Blood",
-  "type": "numeric",
-  "units": "mg/dL"
-}

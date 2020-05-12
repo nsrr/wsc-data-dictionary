@@ -1,7 +1,0 @@
-{
-  "id": "pcttstrem",
-  "display_name": "Percent of REM sleep",
-  "description": "",
-  "type": "numeric",
-  "units": "percentage"
-}

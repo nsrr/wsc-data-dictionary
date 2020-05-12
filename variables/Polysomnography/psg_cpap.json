@@ -1,7 +1,0 @@
-{
-  "id": "psg_cpap",
-  "display_name": "Reported use of CPAP at at time of nPSG",
-  "description": "",
-  "type": "numeric",
-  "domain": " 1=used cpap, 2 = used oral appliance"
-}

@@ -18,5 +18,10 @@
     "value": "4",
     "display_name": "Not very satisfied",
     "description": ""
+  },
+  {
+    "value": "5",
+    "display_name": "UNKNOWN (CHECK WITH WSC)",
+    "description": ""
   }
 ]

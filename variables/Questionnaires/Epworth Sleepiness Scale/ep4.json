@@ -1,0 +1,10 @@
+{
+  "id": "ep4",
+  "display_name": "Epworth Sleepiness Scale: Chance of dozing as a passenger in a car for an hour without a break",
+  "description": "How likely are you to doze off or fall asleep in the following situations, in contrast to feeling just tired? This refers to your usual way of life in recent times. Even if you have not done some of these things recently, try to work out how they would have affected you. Use the following scale to choose the most appropriate number for each situation:  As a passenger in a car for an hour without a break",
+  "type": "choices",
+  "domain": "ess",
+  "labels": [
+    "ess_4passenger"
+  ]
+}

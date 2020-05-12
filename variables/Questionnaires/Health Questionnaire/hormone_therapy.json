@@ -3,5 +3,5 @@
   "display_name": "Hormone Replacement Therapy",
   "description": "Have you ever taken supplemental hormones for menopause?",
   "type": "choices",
-  "domain": "c: current use, p: past use, n: never use"
+  "domain": "hormoneuse"
 }

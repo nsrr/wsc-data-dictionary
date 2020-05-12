@@ -1,7 +1,0 @@
-{
-  "id": "state_15relaxed",
-  "display_name": "State Anxiety: I am relaxed",
-  "description": "",
-  "type": "choices",
-  "domain": "anxietydegree"
-}

@@ -1,7 +1,0 @@
-{
-  "id": " coronary_artery_stent_ynd",
-  "display_name": "Artery Stent",
-  "description": "Have you ever had any of the following surgical procedures? Coronary artery stent",
-  "type": "choices ",
-  "domain": "y: yes, n: no"
-}

@@ -1,0 +1,7 @@
+{
+  "id": "sit_dia_repeat",
+  "display_name": "First repeat of  Diastolic Blood Pressure",
+  "description": "Standard seated blood pressure on the night of the PSG",
+  "type": "numeric",
+  "units": "mm Hg"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "sitdiam",
+  "display_name": "Mean of Seated Diastolic Pressures",
+  "description": "",
+  "type": "numeric",
+  "units": "mm Hg"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "value": "N",
+    "display_name": "Never use",
+    "description": ""
+  },
+  {
+    "value": "P",
+    "display_name": "Past use",
+    "description": ""
+  },
+  {
+    "value": "C",
+    "display_name": "Current use",
+    "description": ""
+  }
+]

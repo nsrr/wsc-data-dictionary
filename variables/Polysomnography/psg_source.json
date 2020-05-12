@@ -1,7 +1,0 @@
-{
-  "id": "psg_source",
-  "display_name": "Source of GRASS nPSG data",
-  "description": "",
-  "type": "character",
-  "domain": "gamma (2000-2010), twin (2010 onward)"
-}

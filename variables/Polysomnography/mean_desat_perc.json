@@ -1,7 +1,0 @@
-{
-  "id": "mean_desat_perc",
-  "display_name": "Average Desaturation of Hypopnea and Apnea Events during the night ",
-  "description": "",
-  "type": "numeric",
-  "units": "percentage"
-}

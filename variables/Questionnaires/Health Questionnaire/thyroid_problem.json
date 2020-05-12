@@ -2,5 +2,5 @@
   "id": "thyroid_problem",
   "display_name": "TYPE of thyroid problem",
   "description": "Also, describe the type of thyroid problem",
-  "type": "character"
+  "type": "text"
 }

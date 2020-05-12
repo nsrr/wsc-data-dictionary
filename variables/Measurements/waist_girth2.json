@@ -1,0 +1,7 @@
+{
+  "id": "waist_girth2",
+  "display_name": "Second measurement of waist girth",
+  "description": "With participant standing erect with arms at side and abdomen relaxed, measure at the smallest circumference near the navel and above the pelvis at the natural waistline.ÃÂ ÃÂ If no obvious waist, measure at the navel",
+  "type": "numeric",
+  "units": "cm"
+}

@@ -1,7 +1,0 @@
-{
-  "id": "state_17worried",
-  "display_name": "State Anxiety: I am worried",
-  "description": "",
-  "type": "choices",
-  "domain": "anxietydegree"
-}

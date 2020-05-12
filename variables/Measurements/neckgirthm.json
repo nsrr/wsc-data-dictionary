@@ -1,0 +1,7 @@
+{
+  "id": "neckgirthm",
+  "display_name": "Mean of Neck Girth Measures",
+  "description": "",
+  "type": "numeric",
+  "units": "cm"
+}

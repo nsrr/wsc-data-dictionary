@@ -1,11 +1,11 @@
 [
   {
-    "value": "m",
+    "value": "M",
     "display_name": "Male",
     "description": ""
   },
   {
-    "value": "f",
+    "value": "F",
     "display_name": "Female",
     "description": ""
   }

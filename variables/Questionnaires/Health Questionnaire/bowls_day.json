@@ -2,6 +2,5 @@
   "id": "bowls_day",
   "display_name": "Number of bowls of pipe tobacco per day",
   "description": "How much do you smoke now, OR if you quit smoking, how much did you smoke in the past (answer all that apply)? Bowls of pipe tobacco per day",
-  "type": "numeric",
-  "domain": "number, 99=missing"
+  "type": "integer"
 }
