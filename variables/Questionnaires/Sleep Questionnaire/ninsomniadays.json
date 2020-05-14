@@ -1,0 +1,9 @@
+{
+  "id": "ninsomniadays",
+  "display_name": "National Health and Nutrition Examination Survey (NHANES): Total days per month having any insomnia symptoms",
+  "description": "Calculated: Sum of responses to insomnia symptoms (i.e. difficulty falling asleep, difficulty falling back to sleep, waking up frequently, waking up too early) where 0=0, 1=1, 2=3, 3=10, 4=25  ",
+  "type": "numeric",
+  "labels": [
+    "nhanes_sum"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "ninsomnia",
+  "display_name": "National Health and Nutrition Examination Survey (NHANES): Count of frequent insomnia symptoms",
+  "description": "Calculated: Count the number of insomnia symptoms (i.e. difficulty falling asleep, difficulty falling back to sleep, waking up frequently, waking up too early) with a frequency of more than 5-15 time a month.",
+  "type": "numeric",
+  "labels": [
+    "nhanes_count"
+  ]
+}

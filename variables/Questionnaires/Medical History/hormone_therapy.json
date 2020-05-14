@@ -1,0 +1,7 @@
+{
+  "id": "hormone_therapy",
+  "display_name": "Hormone Replacement Therapy: Self-reported use",
+  "description": "Have you ever taken supplemental hormones for menopause?",
+  "type": "choices",
+  "domain": "hormoneuse"
+}

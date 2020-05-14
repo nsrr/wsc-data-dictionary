@@ -1,6 +1,6 @@
 {
   "id": "diabetes_med",
-  "display_name": "Diabetes Meds + Insulin",
+  "display_name": "Diabetes Medication/Insulin: Self-reported use",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
   "type": "choices",
   "domain": "takingornot"

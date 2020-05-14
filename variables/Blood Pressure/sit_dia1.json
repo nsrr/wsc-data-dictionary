@@ -1,6 +1,6 @@
 {
   "id": "sit_dia1",
-  "display_name": "First  Diastolic Blood Pressure",
+  "display_name": "First diastolic blood pressure",
   "description": "Standard seated blood pressure on the night of the PSG",
   "type": "numeric",
   "units": "mm Hg"

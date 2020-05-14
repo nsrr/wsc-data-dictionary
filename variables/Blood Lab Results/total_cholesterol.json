@@ -1,7 +1,7 @@
 {
   "id": "total_cholesterol",
-  "display_name": "Total Cholesterol",
-  "description": "Measure of Total Cholesterol level in Blood",
+  "display_name": "Total cholesterol",
+  "description": "Measure of total cholesterol level in blood",
   "type": "numeric",
   "units": "mg/dL"
 }

@@ -1,0 +1,7 @@
+{
+  "id": "time_since_last_period",
+  "display_name": "Last Menstrual Period: Self-reported",
+  "description": "",
+  "type": "numeric",
+  "units": "years"
+}

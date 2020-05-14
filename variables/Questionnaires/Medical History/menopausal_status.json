@@ -1,0 +1,7 @@
+{
+  "id": "menopausal_status",
+  "display_name": "Menopausal Status: Self-reported ",
+  "description": "Combination of 1: I have fairly regular menstrual periods; My menstrual periods are irregular; I have no periods at all/menopause;  Have you had surgery that caused your menstrual periods to stop permanently?",
+  "type": "choices",
+  "domain": "period"
+}

@@ -1,7 +1,7 @@
 {
   "id": "smoker",
-  "display_name": "Smoking History",
+  "display_name": "Smoking status",
   "description": "Current, Past or Never Smoker",
-  "type": "numeric",
+  "type": "choices",
   "domain": "smokinghistory"
 }

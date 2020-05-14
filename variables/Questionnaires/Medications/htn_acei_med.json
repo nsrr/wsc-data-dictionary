@@ -1,6 +1,6 @@
 {
   "id": "htn_acei_med",
-  "display_name": "Ace Inhibitor",
+  "display_name": "ACE Inhibitor: Self-reported use",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
   "type": "choices",
   "domain": "takingornot"

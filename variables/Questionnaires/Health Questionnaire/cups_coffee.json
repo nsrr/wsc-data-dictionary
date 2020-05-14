@@ -1,6 +1,6 @@
 {
   "id": "cups_coffee",
-  "display_name": "Caffeinated coffee/tea per day",
+  "display_name": "Caffeine intake - number of cups of coffee or tea per day",
   "description": "How many cups of coffee or tea, with caffeine, do you usually drink in a typical day? ",
   "type": "numeric",
   "units": "cups"

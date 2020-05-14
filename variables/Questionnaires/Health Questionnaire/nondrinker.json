@@ -1,6 +1,6 @@
 {
   "id": "nondrinker",
-  "display_name": "Non Drinkers",
+  "display_name": "Alcohol consumption - none",
   "description": "If you do not drink alcoholic beverages at all check here ____ ",
   "type": "choices",
   "domain": "noyesny"

@@ -1,7 +1,7 @@
 {
   "id": "smoke_quit",
-  "display_name": "Year Quit Smoking",
+  "display_name": "Smoking status - prior - year quit",
   "description": "If no, when did you quit? ",
   "type": "numeric",
-  "units": "YEAR"
+  "units": "year"
 }

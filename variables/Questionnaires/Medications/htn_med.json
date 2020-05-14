@@ -1,6 +1,6 @@
 {
   "id": "htn_med",
-  "display_name": "Any Hypertension Meds",
+  "display_name": "Hypertension Medication - Any: Self-reported use",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
   "type": "choices",
   "domain": "takingornot"

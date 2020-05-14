@@ -1,0 +1,7 @@
+{
+  "id": "hypertension_year",
+  "display_name": "Year of Hypertension ",
+  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if High blood pressure or hypertension? =\"Y\")",
+  "type": "numeric",
+  "units": "year"
+}

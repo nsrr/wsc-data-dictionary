@@ -1,0 +1,7 @@
+{
+  "id": "apnea_need",
+  "display_name": "Apnea: Self-reported treatment need",
+  "description": "Were you told you needed treatment? ___Yes       ___No (reported Y told by a doctor that they had sleep apnea)",
+  "type": "choices",
+  "domain": "noyesny"
+}

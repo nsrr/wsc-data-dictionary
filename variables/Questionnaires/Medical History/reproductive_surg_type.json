@@ -1,0 +1,7 @@
+{
+  "id": "reproductive_surg_type",
+  "display_name": "Menopause - After Surgery: Self-reported procedure",
+  "description": "If yes, please provide the kind of surgery (check one):  (only available after 1993 and before Aug 28, 2009)",
+  "type": "choices",
+  "domain": "surgerytype"
+}

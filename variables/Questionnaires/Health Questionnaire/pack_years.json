@@ -1,6 +1,6 @@
 {
   "id": "pack_years",
-  "display_name": "Cigarette Packs Smoked per Week * Years Smoked ",
+  "display_name": "Cigarette smoking - number of pack-years",
   "description": "",
   "type": "numeric",
   "units": "pack years"

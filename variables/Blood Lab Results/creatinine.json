@@ -1,7 +1,7 @@
 {
   "id": "creatinine",
   "display_name": "Creatinine",
-  "description": "Measure of Creatinine level in Blood",
+  "description": "Measure of creatinine level in blood",
   "type": "numeric",
   "units": "mg/dL"
 }

@@ -1,6 +1,6 @@
 {
   "id": "htn_beta_med",
-  "display_name": "Beta Blockers",
+  "display_name": "Beta Blocker: Self-reported use",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
   "type": "choices",
   "domain": "takingornot"

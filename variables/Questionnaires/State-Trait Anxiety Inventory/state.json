@@ -1,6 +1,11 @@
 {
   "id": "state",
-  "display_name": "State Anxiety Score",
+  "display_name": "State-Trait Anxiety Inventory (State Anxiety Subscale) Score ",
   "description": "Sum of 20 items from State Anxiety Questionnaire. When there are 2 or less missing, the average of all of the other scores are used to create the sum variable",
-  "type": "numeric"
+  "type": "numeric",
+  "labels": [
+    "stais_score",
+    "stait",
+    "stai"
+  ]
 }

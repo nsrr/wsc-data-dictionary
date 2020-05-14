@@ -1,6 +1,6 @@
 {
   "id": "sit_dia_repeat2",
-  "display_name": "Second repeat Diastolic Blood Pressure",
+  "display_name": "Second repeat diastolic blood pressure",
   "description": "Standard seated blood pressure on the night of the PSG",
   "type": "numeric",
   "units": "mm Hg"

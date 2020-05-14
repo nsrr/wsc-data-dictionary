@@ -1,0 +1,7 @@
+{
+  "id": "reproductive_surg_year",
+  "display_name": "Menopause - After Surgery: Self-reported age when performed",
+  "description": "If yes, please provide the date of surgery: (only available after 1993 and before Aug 28, 2009)",
+  "type": "numeric",
+  "units": "year"
+}

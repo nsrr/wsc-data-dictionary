@@ -1,0 +1,7 @@
+{
+  "id": "any_cvd",
+  "display_name": "Cardiovascular disease: Self-reported diagnosis",
+  "description": "",
+  "type": "choices",
+  "domain": "noyes01"
+}

@@ -1,6 +1,6 @@
 {
   "id": "cholesterol_med",
-  "display_name": "Cholesterol Meds",
+  "display_name": "Cholesterol Medication: Self-reported use",
   "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
   "type": "choices",
   "domain": "takingornot"

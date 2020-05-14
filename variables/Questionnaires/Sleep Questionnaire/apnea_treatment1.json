@@ -1,0 +1,6 @@
+{
+  "id": "apnea_treatment1",
+  "display_name": "Apnea: Self-reported treatment recommendation 1",
+  "description": "If yes, what treatment was recommended? (When told \"Y\" need treatment for sleep apnea)",
+  "type": "character"
+}

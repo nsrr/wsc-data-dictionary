@@ -1,0 +1,6 @@
+{
+  "id": "other_heart_surg2",
+  "display_name": "Heart Surgery - Other: Self-reported procedure",
+  "description": "Have you ever had any of the following surgical procedures?  If yes, check all that apply: Other heart surgery/please describe",
+  "type": "character"
+}

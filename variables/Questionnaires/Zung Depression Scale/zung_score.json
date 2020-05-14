@@ -1,6 +1,9 @@
 {
   "id": "zung_score",
-  "display_name": "Zung Score",
-  "description": "Sum of 20 items from Zung Questionnaire",
-  "type": "numeric"
+  "display_name": "Zung Depression Scale Total Score",
+  "description": "Sum of 20 items from the Zung Depression Scale",
+  "type": "numeric",
+  "labels": [
+    "zung"
+  ]
 }

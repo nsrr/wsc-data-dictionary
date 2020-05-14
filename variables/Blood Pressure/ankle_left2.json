@@ -1,6 +1,6 @@
 {
   "id": "ankle_left2",
-  "display_name": "Second Blood Pressure from Left Ankle",
+  "display_name": "Second blood pressure from left ankle",
   "description": "Brachial blood pressure by Dopler at the overnight PSG",
   "type": "numeric",
   "units": "mm Hg"

@@ -1,0 +1,7 @@
+{
+  "id": "nasal_cong_tonight",
+  "display_name": "Nasal Congestion  Tonight: Self-reported symptom",
+  "description": "Have you had any nasal congestion or stuffiness tonight?",
+  "type": "choices",
+  "domain": "noyesny"
+}

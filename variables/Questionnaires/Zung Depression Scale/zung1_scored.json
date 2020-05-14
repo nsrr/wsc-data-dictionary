@@ -1,7 +1,11 @@
 {
   "id": "zung1_scored",
-  "display_name": "Zung Item: I feel down-hearted, blue and sad.",
-  "description": "First Item in Zung Depression Scale",
+  "display_name": "Zung Depression Scale Item: I feel down-hearted, blue and sad.",
+  "description": "Items from the Zung Depression Scale [Zung WW 1965 (PubMed ID: 14221692)](https://www.ncbi.nlm.nih.gov/pubmed/14221692)<br><br>[Search for all Zung Depression Scale variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=zung]",
   "type": "choices",
-  "domain": "noneoralittle"
+  "domain": "noneoralittle",
+  "labels": [
+    "zung_01sad",
+    "zung"
+  ]
 }

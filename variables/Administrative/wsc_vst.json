@@ -1,7 +1,6 @@
 {
   "id": "wsc_vst",
-  "display_name": "Study Visit Number",
-  "description": "Sequential Visit",
-  "type": "choices",
-  "domain": "studyvisit"
+  "display_name": "Study visit number",
+  "description": "Sequential visit",
+  "type": "identifier"
 }

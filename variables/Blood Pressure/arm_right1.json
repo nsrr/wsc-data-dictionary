@@ -1,6 +1,6 @@
 {
   "id": "arm_right1",
-  "display_name": "First Blood Pressure from Right Arm",
+  "display_name": "First blood pressure from right arm",
   "description": "Brachial blood pressure by Dopler at the overnight PSG",
   "type": "numeric",
   "units": "mm Hg"

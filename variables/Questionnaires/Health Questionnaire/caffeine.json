@@ -1,6 +1,6 @@
 {
   "id": "caffeine",
-  "display_name": "# Caffeine Beverages/Day",
+  "display_name": "Caffeine intake - beverages per day",
   "description": "",
   "type": "numeric",
   "units": "beverages/day"

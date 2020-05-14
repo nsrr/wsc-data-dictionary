@@ -1,7 +1,7 @@
 {
   "id": "ep1",
   "display_name": "Epworth Sleepiness Scale: Chance of dozing while sitting and reading",
-  "description": "How likely are you to doze off or fall asleep in the following situations, in contrast to feeling just tired? This refers to your usual way of life in recent times. Even if you have not done some of these things recently, try to work out how they would have affected you. Use the following scale to choose the most appropriate number for each situation: Sitting and reading",
+  "description": "Item from the Epworth Sleepiness Scale [Johns MW 1991 (PubMed ID: 1798888)](https://www.ncbi.nlm.nih.gov/pubmed/1798888)<br><br> [Search for all ESS variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=epworth)",
   "type": "choices",
   "domain": "ess",
   "labels": [

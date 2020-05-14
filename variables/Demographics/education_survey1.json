@@ -1,7 +1,7 @@
 {
   "id": "education_survey1",
-  "display_name": "Highest Education Level Completed ",
-  "description": "Question from Survey 1 about Education Level",
+  "display_name": "Highest education level completed by the participant",
+  "description": "",
   "type": "choices",
   "domain": "education"
 }

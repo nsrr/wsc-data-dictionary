@@ -1,6 +1,6 @@
 {
   "id": "waisthip",
-  "display_name": "Waist to Hip ratio",
+  "display_name": "Waist to hip ratio",
   "description": "",
   "type": "numeric",
   "units": "ratio"

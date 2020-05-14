@@ -1,6 +1,6 @@
 {
   "id": "sitsysm",
-  "display_name": "Mean of Seated Systolic Measures",
+  "display_name": "Mean of seated systolic measures",
   "description": "",
   "type": "numeric",
   "units": "mm Hg"

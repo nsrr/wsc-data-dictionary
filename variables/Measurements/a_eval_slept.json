@@ -1,6 +1,6 @@
 {
   "id": "a_eval_slept",
-  "display_name": "Evaluation of last night's sleep",
+  "display_name": "Morning Survey: Self-reported sleep quality",
   "description": "How well did you sleep last night? (Please check one)",
   "type": "choices",
   "domain": "slplastnight"

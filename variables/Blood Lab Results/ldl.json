@@ -1,7 +1,7 @@
 {
   "id": "ldl",
-  "display_name": "Low-density Lipoprotein (LDL) Cholesterol ",
-  "description": "Measure of LDL level in Blood",
+  "display_name": "LDL Cholesterol ",
+  "description": "Measure of LDL level in blood",
   "type": "numeric",
   "units": "mg/dL"
 }

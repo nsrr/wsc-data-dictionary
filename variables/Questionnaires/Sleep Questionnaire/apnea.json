@@ -1,0 +1,7 @@
+{
+  "id": "apnea",
+  "display_name": "Apnea: Self-reported diagnosis",
+  "description": "Have you ever been told by a doctor that you have sleep apnea? ",
+  "type": "choices",
+  "domain": "noyesny"
+}

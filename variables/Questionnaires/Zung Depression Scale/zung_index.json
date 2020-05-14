@@ -1,6 +1,9 @@
 {
   "id": "zung_index",
-  "display_name": "Standardized Zung Score",
-  "description": "Scaled Zung Score used with clinical cutpoints",
-  "type": "numeric"
+  "display_name": "Standardized Zung Depression Scale Total Score",
+  "description": "Scaled Zung Depression Scale score used with clinical cutpoints",
+  "type": "numeric",
+  "labels": [
+    "zung"
+  ]
 }

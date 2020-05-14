@@ -1,0 +1,9 @@
+{
+  "id": "ho_score",
+  "display_name": "Horne Ostberg Morningness-Eveningness Questionnaire Score",
+  "description": "Items from the Horne-Ostberg Morningness-Eveningness Questionnaire [Horne JA and Ostberg O, 1976 (PubMed ID: 1027738)](https://www.ncbi.nlm.nih.gov/pubmed/1027738)<br><br>[Search for all Horne-Ostberg questionnaire variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=homeq)",
+  "type": "numeric",
+  "labels": [
+    "homeq"
+  ]
+}

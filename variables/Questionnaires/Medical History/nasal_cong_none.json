@@ -1,0 +1,7 @@
+{
+  "id": "nasal_cong_none",
+  "display_name": "Nasal Congestion  absence of self-reported symptom",
+  "description": "No nasal congestion today or tonight",
+  "type": "choices",
+  "domain": "noyesny"
+}

@@ -1,6 +1,6 @@
 {
   "id": "race",
-  "display_name": "Race of participant",
+  "display_name": "Race of the participant",
   "description": "",
   "type": "choices",
   "domain": "pptrace"

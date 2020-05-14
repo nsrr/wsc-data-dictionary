@@ -1,0 +1,10 @@
+{
+  "id": "totsleep",
+  "display_name": "Self-reported daily sleep duration in main sleep",
+  "description": "Calculated  Weighted average of weekday and weekend self-reported sleep duration in main sleeps",
+  "type": "numeric",
+  "units": "hours/day",
+  "labels": [
+    "avgdursp_im_f3"
+  ]
+}

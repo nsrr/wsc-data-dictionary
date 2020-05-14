@@ -1,7 +1,7 @@
 {
   "id": "age",
-  "display_name": "Age in years",
+  "display_name": "Age of the participant",
   "description": "Age at time of study visit",
   "type": "integer",
-  "unit": "years (truncated)"
+  "units": "years (truncated)"
 }

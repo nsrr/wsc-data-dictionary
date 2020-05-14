@@ -1,6 +1,6 @@
 {
   "id": "smoke_curr",
-  "display_name": "Current smoker",
+  "display_name": "Smoking status - current",
   "description": "Do you currently smoke? ",
   "type": "choices",
   "domain": "noyesny"

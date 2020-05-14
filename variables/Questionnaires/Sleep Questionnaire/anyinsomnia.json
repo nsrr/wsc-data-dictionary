@@ -1,0 +1,7 @@
+{
+  "id": "anyinsomnia",
+  "display_name": "National Health and Nutrition Examination Survey (NHANES): Indicator for insomnia symptoms",
+  "description": "Calculated: If any of the four insomnia symptoms (i.e. difficulty falling asleep, difficulty falling back to sleep, waking up frequently, waking up too early) have a frequency of more than 5-15 time a month, then its a 1: yes.",
+  "type": "choices",
+  "domain": "noyes01"
+}
