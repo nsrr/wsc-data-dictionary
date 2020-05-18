@@ -1,7 +1,7 @@
 {
   "id": "time_since_last_period",
   "display_name": "Last Menstrual Period: Self-reported",
-  "description": "",
+  "description": "Difference between date of reported last menstrual period and sleep study date in years",
   "type": "numeric",
   "units": "years"
 }

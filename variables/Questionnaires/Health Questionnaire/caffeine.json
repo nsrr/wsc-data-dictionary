@@ -3,5 +3,6 @@
   "display_name": "Caffeine intake - beverages per day",
   "description": "",
   "type": "numeric",
-  "units": "beverages/day"
+  "units": "beverages/day",
+  "calculation": "sum(of cups_coffee, cans_cola)"
 }

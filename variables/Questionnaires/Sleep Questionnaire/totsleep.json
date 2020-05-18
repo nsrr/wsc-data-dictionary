@@ -4,6 +4,7 @@
   "description": "Calculated  Weighted average of weekday and weekend self-reported sleep duration in main sleeps",
   "type": "numeric",
   "units": "hours/day",
+  "calculation": "(workday*5+weekend*2)/7",
   "labels": [
     "avgdursp_im_f3"
   ]

@@ -3,5 +3,6 @@
   "display_name": "Smoking status",
   "description": "Current, Past or Never Smoker",
   "type": "choices",
-  "domain": "smokinghistory"
+  "domain": "smokinghistory",
+  "calculation": "if smoke=N then smoker=0, else if smoke_curr=N then smoker=1"
 }

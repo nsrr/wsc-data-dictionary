@@ -3,6 +3,7 @@
   "display_name": "Zung Depression Scale Total Score",
   "description": "Sum of 20 items from the Zung Depression Scale",
   "type": "numeric",
+  "calculation": "sum (zung_scored1-zung_scored20)",
   "labels": [
     "zung"
   ]

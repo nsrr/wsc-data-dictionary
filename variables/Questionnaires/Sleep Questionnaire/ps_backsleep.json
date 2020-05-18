@@ -3,5 +3,8 @@
   "display_name": "National Health and Nutrition Examination Survey (NHANES): Difficulty falling back to sleep after waking up during the night",
   "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you wake up during the night and have a hard time getting back to sleep?\n",
   "type": "choices",
-  "domain": "neverrarely"
+  "domain": "neverrarely",
+  "labels": [
+    "nhanes_02wokenight"
+  ]
 }

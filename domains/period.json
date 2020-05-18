@@ -11,12 +11,12 @@
   },
   {
     "value": "2",
-    "display_name": "Periods stopped due to menopause",
+    "display_name": "Periods stopped due to menopause ((c) & reproductive_surg=N)",
     "description": ""
   },
   {
     "value": "4",
-    "display_name": "Surgery",
+    "display_name": "Surgery ((c) and reproductive_surg=Y)",
     "description": ""
   }
 ]

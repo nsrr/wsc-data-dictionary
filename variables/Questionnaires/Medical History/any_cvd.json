@@ -3,5 +3,6 @@
   "display_name": "Cardiovascular disease: Self-reported diagnosis",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes01",
+  "calculation": "1=Yes if Y to any of the following: heartattack_ynd, congestive_hf_ynd, coronary_ynd, atheroscl_ynd, pacemaker_ynd, angioplasty_ynd, coronary_bypass_ynd, coronary_artery_stent, other_heart_surgery (including   cardiac conversion, heart catheter, cardiac ablation, abdominal aortic repair, open heart surgery, defibrillation)"
 }
