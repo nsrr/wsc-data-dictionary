@@ -1,6 +1,8 @@
 slug: wsc
 visit: wsc_vst
 charts:
+- chart: sex
+  title: Gender
 - chart: race
   title: Race
 webservers:

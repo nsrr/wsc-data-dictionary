@@ -7,5 +7,6 @@
   "labels": [
     "ess_total",
     "ess"
-  ]
+  ],
+  "commonly_used": true
 }

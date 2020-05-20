@@ -2,5 +2,7 @@
   "id": "wsc_vst",
   "display_name": "Study visit number",
   "description": "Sequential visit",
-  "type": "identifier"
+  "type": "choices",
+  "domain": "studyvisit",
+  "commonly_used": true
 }

@@ -3,5 +3,6 @@
   "display_name": "Race of the participant",
   "description": "",
   "type": "choices",
-  "domain": "pptrace"
+  "domain": "pptrace",
+  "commonly_used": true
 }

@@ -2,5 +2,6 @@
   "id": "wsc_id",
   "display_name": "Unique identifier",
   "description": "Randomly generated",
-  "type": "identifier"
+  "type": "identifier",
+  "commonly_used": true
 }

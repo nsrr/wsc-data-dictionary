@@ -6,5 +6,6 @@
   "calculation": "100*(zung_score / 80)",
   "labels": [
     "zung"
-  ]
+  ],
+  "commonly_used": true
 }
