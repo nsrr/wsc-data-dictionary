@@ -1,7 +1,10 @@
 {
   "id": "pcttststage34",
-  "display_name": "Percent of Stage 3 and 4 sleep",
-  "description": "",
+  "display_name": "Polysomnography: Percentage of stage 3 and 4 sleep among total sleep duration",
+  "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
   "type": "numeric",
-  "units": "percentage"
+  "units": "percentage",
+  "labels": [
+    "pctdursp_s3s4_f1"
+  ]
 }

@@ -1,8 +1,11 @@
 {
   "id": "tst",
-  "display_name": "Total Sleep Time",
-  "description": "Total time spent in Stage 1 or greater",
+  "display_name": "Polysomnography: Total Sleep Duration - the interval between sleep onset time and lights on/out-bed time while the participant is asleep.",
+  "description": "Conventionally, this would be called total sleep time (TST) (i.e. total time spent in stage 1 or greater).",
   "type": "numeric",
   "units": "minutes",
+  "labels": [
+    "ttldursp_f1"
+  ],
   "commonly_used": true
 }

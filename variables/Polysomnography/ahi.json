@@ -1,8 +1,11 @@
 {
   "id": "ahi",
-  "display_name": "Apnea Hypopnea Index",
-  "description": "Number of Apneas and Hypopneas per hour of sleep for the whole night",
+  "display_name": "Apnea-Hypopnea Index (AHI): (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with > 50% flow reduction and with >= 4% oxygen desaturation and with or without arousal)/ hours of sleep",
+  "description": "Calculated - Summary metric of sleep disordered breathing events",
   "type": "numeric",
   "units": "events/hour",
+  "labels": [
+    "ahi_ap0uhp5x4u"
+  ],
   "commonly_used": true
 }

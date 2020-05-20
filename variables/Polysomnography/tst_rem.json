@@ -1,7 +1,10 @@
 {
   "id": "tst_rem",
-  "display_name": "Total REM Sleep Time",
+  "display_name": "Polysomnography: Total Sleep Duration (REM) - the interval between sleep onset time and lights on/out-bed time while the participant is in REM sleep.",
   "description": "Total time spent in REM sleep",
   "type": "numeric",
-  "units": "minutes"
+  "units": "minutes",
+  "labels": [
+    "ttldursp_sr_f1"
+  ]
 }

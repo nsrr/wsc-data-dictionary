@@ -1,6 +1,9 @@
 {
   "id": "minsao2tst",
-  "display_name": "Minimum SaO2 during PSG",
-  "description": "",
-  "type": "numeric"
+  "display_name": "Minimum level of oxygen saturation in total sleep duration",
+  "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
+  "type": "numeric",
+  "labels": [
+    "minlvlsa"
+  ]
 }

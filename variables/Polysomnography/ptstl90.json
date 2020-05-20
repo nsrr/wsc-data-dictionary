@@ -1,8 +1,11 @@
 {
   "id": "ptstl90",
-  "display_name": "Percent of the Total Sleep Time spent below 90% Oxygen Saturation",
-  "description": "",
+  "display_name": "Percent of the total sleep duration with oxygen saturation below 90%",
+  "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
   "type": "numeric",
   "units": "percentage",
+  "labels": [
+    "pctdursp_o90"
+  ],
   "commonly_used": true
 }

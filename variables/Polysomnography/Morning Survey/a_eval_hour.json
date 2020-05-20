@@ -1,0 +1,7 @@
+{
+  "id": "a_eval_hour",
+  "display_name": "Morning Survey: Self report sleep duration",
+  "description": "About how many hours of restful sleep do you feel you got last night?",
+  "type": "numeric",
+  "units": "hours"
+}

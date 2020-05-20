@@ -1,7 +1,10 @@
 {
   "id": "mean_desat_dur",
-  "display_name": "Average Duration of Hypopnea and Apnea Events during night",
+  "display_name": "Average Duration of Apnea and Hypopnea Event: (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with > 50% flow reduction and with >= 4% oxygen desaturation and with or without arousal)",
   "description": "",
   "type": "numeric",
-  "units": "seconds"
+  "units": "seconds",
+  "labels": [
+    "avgdurah_ap0uhp5x4u"
+  ]
 }

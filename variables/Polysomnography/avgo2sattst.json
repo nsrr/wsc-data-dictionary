@@ -1,6 +1,9 @@
 {
   "id": "avgo2sattst",
-  "display_name": "Average Sao2 during PSG",
-  "description": "",
-  "type": "numeric"
+  "display_name": "Average oxygen saturation in total sleep duration",
+  "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
+  "type": "numeric",
+  "labels": [
+    "avglvlsa_d0"
+  ]
 }

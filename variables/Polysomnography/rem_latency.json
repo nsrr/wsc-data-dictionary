@@ -1,7 +1,10 @@
 {
   "id": "rem_latency",
-  "display_name": "REM Latency",
+  "display_name": "Polysomnography: Sleep Latency (REM) - the interval between lights-out/in-bed time and the first epoch of REM sleep.",
   "description": "Time to first epoch of REM sleep",
   "type": "numeric",
-  "units": "minutes"
+  "units": "minutes",
+  "labels": [
+    "ttllatsp_sr_f1"
+  ]
 }

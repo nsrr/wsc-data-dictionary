@@ -1,7 +1,10 @@
 {
   "id": "nremahi",
-  "display_name": "NREM Apnea Hypopnea Index",
-  "description": "Number of Apneas and Hypopneas during NREM sleep per the number of hours of NREM sleep",
+  "display_name": "Apnea-Hypopnea Index (AHI) (NREM): (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with > 50% flow reduction and with >= 3% oxygen desaturation and with or without arousal)/ hours of sleep",
+  "description": "Calculated - Summary metric of sleep disordered breathing events during NREM sleep",
   "type": "numeric",
-  "units": "events/hour"
+  "units": "events/hour",
+  "labels": [
+    "ahi_sn_ap0uhp5x3u"
+  ]
 }

@@ -1,7 +1,10 @@
 {
   "id": "tst_nrem",
-  "display_name": "Total NREM Sleep Time",
+  "display_name": "Polysomnography: Total Sleep Duration (NREM) - the interval between sleep onset time and lights on/out-bed time while the participant is in NREM sleep.",
   "description": "Total time spent in NREM sleep",
   "type": "numeric",
-  "units": "minutes"
+  "units": "minutes",
+  "labels": [
+    "ttldursp_sn_f1"
+  ]
 }

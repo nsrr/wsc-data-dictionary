@@ -1,7 +1,10 @@
 {
   "id": "pcttstrem",
-  "display_name": "Percent of REM sleep",
-  "description": "",
+  "display_name": "Polysomnography: Percentage of NREM sleep among total sleep duration",
+  "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
   "type": "numeric",
-  "units": "percentage"
+  "units": "percentage",
+  "labels": [
+    "pctdursp_sr_f1"
+  ]
 }
