@@ -1,7 +1,0 @@
-{
-  "id": "awake_freq",
-  "display_name": "Awake with gasping Frequency",
-  "description": "How often, if ever, have you awakened suddenly with the feeling of gasping or choking?",
-  "type": "choices",
-  "domain": "neverorrarely5"
-}

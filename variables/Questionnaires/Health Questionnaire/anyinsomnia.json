@@ -1,7 +1,0 @@
-{
-  "id": "anyinsomnia",
-  "display_name": "Any Insomnia Symptoms",
-  "description": "",
-  "type": "choices",
-  "domain": "noyes01"
-}

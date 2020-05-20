@@ -1,7 +1,0 @@
-{
-  "id": "heartattack_year",
-  "display_name": "Heart Attack",
-  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if Heart attack or infarct? =\"Y\")",
-  "type": "numeric",
-  "units": "year"
-}

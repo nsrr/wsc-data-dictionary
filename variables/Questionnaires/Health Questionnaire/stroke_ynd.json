@@ -1,7 +1,0 @@
-{
-  "id": "stroke_ynd",
-  "display_name": "Stroke",
-  "description": "The next section asks about specific medical problems. Please indicate if you have been told by a doctor that you have or have had any of these conditions.:  stroke? ___Yes       ___No",
-  "type": "choices",
-  "domain": "noyesny"
-}

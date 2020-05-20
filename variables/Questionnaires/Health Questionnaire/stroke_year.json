@@ -1,7 +1,0 @@
-{
-  "id": "stroke_year",
-  "display_name": "Year of Stroke",
-  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if stroke?=\"Y\")",
-  "type": "numeric",
-  "units": "year"
-}

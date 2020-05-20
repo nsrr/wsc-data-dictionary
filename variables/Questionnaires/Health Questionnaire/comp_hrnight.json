@@ -1,6 +1,0 @@
-{
-  "id": "comp_hrnight",
-  "display_name": "Hours of Compliance",
-  "description": "If the treatment was CPAP or BiPAP please answer the following questions:: If you are using the recommended CPAP/BiPAP, please indicate: b. How many hours per night do you use it?",
-  "type": "numeric"
-}

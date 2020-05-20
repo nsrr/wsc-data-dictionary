@@ -1,0 +1,7 @@
+{
+  "id": "ahi",
+  "display_name": "Apnea Hypopnea Index",
+  "description": "Number of Apneas and Hypopneas per hour of sleep for the whole night",
+  "type": "numeric",
+  "units": "events/hour"
+}

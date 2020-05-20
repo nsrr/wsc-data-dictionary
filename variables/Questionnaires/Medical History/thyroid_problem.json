@@ -2,5 +2,5 @@
   "id": "thyroid_problem",
   "display_name": "Thyroid Disorder: Self-reported type",
   "description": "Also, describe the type of thyroid problem",
-  "type": "character"
+  "type": "text"
 }

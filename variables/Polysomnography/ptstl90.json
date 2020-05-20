@@ -1,0 +1,7 @@
+{
+  "id": "ptstl90",
+  "display_name": "Percent of the Total Sleep Time spent below 90% Oxygen Saturation",
+  "description": "",
+  "type": "numeric",
+  "units": "percentage"
+}

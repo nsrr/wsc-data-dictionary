@@ -1,0 +1,7 @@
+{
+  "id": "nremahi",
+  "display_name": "NREM Apnea Hypopnea Index",
+  "description": "Number of Apneas and Hypopneas during NREM sleep per the number of hours of NREM sleep",
+  "type": "numeric",
+  "units": "events/hour"
+}

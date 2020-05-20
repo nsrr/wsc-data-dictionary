@@ -1,7 +1,0 @@
-{
-  "id": "workday",
-  "display_name": "Hours of sleep on a workday",
-  "description": "How many hours of sleep do you usually get during: workday night",
-  "type": "numeric",
-  "units": "hours"
-}

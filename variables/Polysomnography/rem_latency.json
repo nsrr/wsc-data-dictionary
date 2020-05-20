@@ -1,0 +1,7 @@
+{
+  "id": "rem_latency",
+  "display_name": "REM Latency",
+  "description": "Time to first epoch of REM sleep",
+  "type": "numeric",
+  "units": "minutes"
+}

@@ -1,7 +1,0 @@
-{
-  "id": "ps_wakerepeat",
-  "display_name": "Insomnia: Wake repeatedly",
-  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you wake up repeatedly during the night?",
-  "type": "choices",
-  "domain": "neverrarely"
-}

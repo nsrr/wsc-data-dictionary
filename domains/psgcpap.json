@@ -1,0 +1,12 @@
+[
+  {
+    "value": "1",
+    "display_name": "Used CPAP during PSG",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Used oral appliance during PSG",
+    "description": ""
+  }
+]

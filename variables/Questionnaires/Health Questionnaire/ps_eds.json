@@ -1,7 +1,0 @@
-{
-  "id": "ps_eds",
-  "display_name": "Problems with excessive daytime sleepiness",
-  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) . Do you have feeling of excessive daytime sleepiness?",
-  "type": "choices",
-  "domain": "neverrarely"
-}

@@ -1,7 +1,0 @@
-{
-  "id": "snore_freq",
-  "display_name": "Snoring Frequency",
-  "description": "According to what others have told you or to your own awareness, how often do you snore?",
-  "type": "choices",
-  "domain": "neverorrarely5"
-}

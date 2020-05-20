@@ -1,0 +1,7 @@
+{
+  "id": "mean_desat_dur",
+  "display_name": "Average Duration of Hypopnea and Apnea Events during night",
+  "description": "",
+  "type": "numeric",
+  "units": "seconds"
+}

@@ -1,7 +1,0 @@
-{
-  "id": "apnea_year",
-  "display_name": "Year of Diagnosis",
-  "description": "If yes, when was this? ______ Year",
-  "type": "integer",
-  "units": "year"
-}

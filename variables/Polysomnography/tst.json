@@ -1,0 +1,7 @@
+{
+  "id": "tst",
+  "display_name": "Total Sleep Time",
+  "description": "Total time spent in Stage 1 or greater",
+  "type": "numeric",
+  "units": "minutes"
+}

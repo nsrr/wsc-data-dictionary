@@ -1,7 +1,0 @@
-{
-  "id": "coronary_year",
-  "display_name": "Year of Coronary Artery Disease",
-  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if Coronary artery disease? =\"Y\")",
-  "type": "numeric",
-  "units": "year"
-}

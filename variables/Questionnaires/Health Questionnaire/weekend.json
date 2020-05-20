@@ -1,7 +1,0 @@
-{
-  "id": "weekend",
-  "display_name": "Hours of sleep on a weekend",
-  "description": "How many hours of sleep do you usually get during: a weekend or non worknight",
-  "type": "numeric",
-  "units": "hours"
-}

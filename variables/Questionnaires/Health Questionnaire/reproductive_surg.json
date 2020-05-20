@@ -1,7 +1,0 @@
-{
-  "id": "reproductive_surg",
-  "display_name": "Indicator for reproductive surgery",
-  "description": "Have you had surgery that caused your menstrual periods to stop permanently?",
-  "type": "choices",
-  "domain": "noyesny"
-}

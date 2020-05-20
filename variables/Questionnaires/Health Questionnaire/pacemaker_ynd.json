@@ -1,7 +1,0 @@
-{
-  "id": "pacemaker_ynd",
-  "display_name": "Pacemaker",
-  "description": "Have you ever had any of the following surgical procedures?  If yes, check all that apply: pacemaker",
-  "type": "choices",
-  "domain": "noyesny"
-}

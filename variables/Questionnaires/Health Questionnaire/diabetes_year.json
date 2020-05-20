@@ -1,7 +1,0 @@
-{
-  "id": "diabetes_year",
-  "display_name": "Year of Diabetes",
-  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if Diabetes?=\"Y\")",
-  "type": "numeric",
-  "units": "year"
-}

@@ -1,7 +1,0 @@
-{
-  "id": "ps_backsleep",
-  "display_name": "Insomnia: Can't fall back to sleep at night",
-  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you wake up during the night and have a hard time getting back to sleep?\n",
-  "type": "choices",
-  "domain": "neverrarely"
-}

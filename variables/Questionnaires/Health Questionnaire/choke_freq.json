@@ -1,7 +1,0 @@
-{
-  "id": "choke_freq",
-  "display_name": "Gasping/Choking Frequency",
-  "description": "According to what others have told you, or to your own awareness, how often, if ever, do you gasp, choke, or make snorting sounds during sleep?",
-  "type": "choices",
-  "domain": "neverorrarely7"
-}
