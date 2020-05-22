@@ -1,7 +1,0 @@
-{
-  "id": "psg_cpap",
-  "display_name": "Reported use of CPAP at at time of nPSG",
-  "description": "",
-  "type": "choices",
-  "domain": "psgcpap"
-}
