@@ -1,9 +1,9 @@
 {
   "id": "avgo2sattst",
-  "display_name": "Average oxygen saturation in total sleep duration",
+  "display_name": "Average oxygen saturation in total sleep duration from type I polysomnography",
   "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
   "type": "numeric",
   "labels": [
-    "avglvlsa_d0"
+    "avglvlsa_d0_f1t1"
   ]
 }

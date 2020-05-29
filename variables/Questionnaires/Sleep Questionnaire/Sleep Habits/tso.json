@@ -1,0 +1,11 @@
+{
+  "id": "tso",
+  "display_name": "Self-reported sleep latency",
+  "description": "About how many minutes does it usually take you to fall asleep at night? _____#minutes",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "sleep_latency",
+    "avglatsp_f3"
+  ]
+}

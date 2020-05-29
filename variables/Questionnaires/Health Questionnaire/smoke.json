@@ -1,6 +1,6 @@
 {
   "id": "smoke",
-  "display_name": "Smoking status - ever",
+  "display_name": "Smoking, ever",
   "description": "Have you ever smoked tobacco regularly?",
   "type": "choices",
   "domain": "noyesny"

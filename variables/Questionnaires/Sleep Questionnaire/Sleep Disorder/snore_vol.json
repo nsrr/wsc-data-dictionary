@@ -1,0 +1,10 @@
+{
+  "id": "snore_vol",
+  "display_name": "Snoring volume",
+  "description": "How loud do you think, or have others said, your snoring is?",
+  "type": "choices",
+  "domain": "snoring",
+  "labels": [
+    "sdb"
+  ]
+}

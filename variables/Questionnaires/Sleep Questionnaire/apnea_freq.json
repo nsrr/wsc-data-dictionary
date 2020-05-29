@@ -1,7 +1,0 @@
-{
-  "id": "apnea_freq",
-  "display_name": "Apnea: Self-reported frequency",
-  "description": "According to what others have told you, or to your own awareness, how often, if ever, do you have momentary periods during sleep when you stop breathing or you breathe abnormally?",
-  "type": "choices",
-  "domain": "neverorrarely7"
-}

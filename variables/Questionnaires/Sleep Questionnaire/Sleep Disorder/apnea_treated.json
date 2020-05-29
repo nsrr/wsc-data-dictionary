@@ -1,0 +1,10 @@
+{
+  "id": "apnea_treated",
+  "display_name": "Apnea: Self-reported treatment received",
+  "description": "Did you have the treatment? (when told \"Y\" needed treatment for sleep apnea)",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "sdb"
+  ]
+}

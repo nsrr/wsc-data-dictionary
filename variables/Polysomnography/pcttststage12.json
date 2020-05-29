@@ -1,10 +1,10 @@
 {
   "id": "pcttststage12",
-  "display_name": "Polysomnography: Percentage of stage 1 and 2 sleep among total sleep duration",
+  "display_name": "Percentage of stage 1 and 2 sleep among total sleep duration from type I polysomnography",
   "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
   "type": "numeric",
   "units": "percentage",
   "labels": [
-    "pctdursp_s1s2_f1"
+    "pctdursp_s1s2_f1t1"
   ]
 }

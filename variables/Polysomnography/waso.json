@@ -1,10 +1,10 @@
 {
   "id": "waso",
-  "display_name": "Polysomnography: Wake After Sleep Onset (WASO) - the total duration between sleep onset and lights-on/out-bed time while being awake.",
+  "display_name": "Wake After Sleep Onset: the total duration between sleep onset and lights-on/out-bed time while being awake. from type I polysomnography",
   "description": "",
   "type": "numeric",
   "units": "minutes",
   "labels": [
-    "ttldurws_f1"
+    "ttldurws_f1t1"
   ]
 }

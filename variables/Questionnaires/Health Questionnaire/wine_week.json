@@ -1,6 +1,6 @@
 {
   "id": "wine_week",
-  "display_name": "Alcohol consumption - number of glasses of wine per week",
+  "display_name": "Alcohol consumption, number of glasses of wine per week",
   "description": "Please estimate your usual consumption of alcoholic beverages,How many glasses of wine might you have per week? ",
   "type": "numeric",
   "units": "glasses"

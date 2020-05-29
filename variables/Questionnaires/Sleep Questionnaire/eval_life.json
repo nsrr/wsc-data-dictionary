@@ -1,7 +1,0 @@
-{
-  "id": "eval_life",
-  "display_name": "Self-reported satisfaction with life",
-  "description": "How satisfied are you with the way you are spending your life (check one)?",
-  "type": "choices",
-  "domain": "slpsatisfaction"
-}

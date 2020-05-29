@@ -1,9 +1,9 @@
 {
   "id": "minsao2tst",
-  "display_name": "Minimum level of oxygen saturation in total sleep duration",
+  "display_name": "Minimum level of oxygen saturation in total sleep duration from type I polysomnography",
   "description": "Conventionally, total sleep duration would be called total sleep time (TST).",
   "type": "numeric",
   "labels": [
-    "minlvlsa"
+    "minlvlsa_f1t1"
   ]
 }

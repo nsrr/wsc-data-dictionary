@@ -1,7 +1,0 @@
-{
-  "id": "eval_health",
-  "display_name": "Self-reported general health",
-  "description": "In general, would you say your health is (check one):",
-  "type": "choices",
-  "domain": "healthrating"
-}

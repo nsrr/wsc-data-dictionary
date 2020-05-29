@@ -1,6 +1,6 @@
 {
   "id": "angioplasty_ynd",
-  "display_name": "Angioplasty: Self-reported procedure",
+  "display_name": "Coronary Angioplasty: Self-reported",
   "description": "Have you ever had any of the following surgical procedures? Coronary or balloon angioplasty ",
   "type": "choices",
   "domain": "noyesny"
