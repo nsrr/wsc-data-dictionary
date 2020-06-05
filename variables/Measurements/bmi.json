@@ -3,5 +3,6 @@
   "display_name": "Body mass index (BMI)",
   "description": "",
   "type": "numeric",
-  "units": "kg/m squared"
+  "units": "kg/m squared",
+  "commonly_used": true
 }
