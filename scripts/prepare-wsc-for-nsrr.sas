@@ -3,7 +3,7 @@
 * Project           : National Sleep Research Resource (sleepdata.org)
 * Author            : Michael Rueschman (mnr)
 * Date Created      : 20200511
-* Purpose           : Prepare Wisconsin Sleep Cohort (WSC) data for posting on 
+* Purpose           : Prepare Wisconsin Sleep Cohort (WSC) data for posting on
 *                       NSRR.
 *******************************************************************************;
 
@@ -26,7 +26,7 @@
   libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
 
   *set data dictionary version;
-  %let version = 0.1.0.pre;
+  %let version = 0.1.0.rc;
 
   *set nsrr csv release path;
   %let releasepath = \\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases;
