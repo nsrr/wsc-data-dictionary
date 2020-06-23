@@ -1,6 +1,6 @@
 {
   "id": "mean_desat_perc",
-  "display_name": "Average Level of Oxygen Desaturation of Apnea and Hypopnea Event: (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with discernible flow reduction and with >= 4% oxygen desaturation and with or without arousal) from type I polysomnography",
+  "display_name": "Average Level of Oxygen Desaturation of Apnea and Hypopnea Events: (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with discernible flow reduction and with >= 4% oxygen desaturation and with or without arousal) from type I polysomnography",
   "description": "",
   "type": "numeric",
   "units": "percentage",
