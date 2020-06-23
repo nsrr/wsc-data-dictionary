@@ -1,6 +1,6 @@
 {
   "id": "remahi",
-  "display_name": "Apnea-Hypopnea Index (REM): (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with discernible flow reduction and with >= 3% oxygen desaturation and with or without arousal) / hour of REM sleep from type I polysomnography",
+  "display_name": "Apnea-Hypopnea Index (REM): (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with discernible flow reduction and with >= 4% oxygen desaturation and with or without arousal) / hour of REM sleep from type I polysomnography",
   "description": "Calculated - Summary metric of sleep disordered breathing events during REM sleep",
   "type": "numeric",
   "units": "events/hour",
