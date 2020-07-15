@@ -5,7 +5,7 @@
   "type": "numeric",
   "units": "percentage",
   "labels": [
-    "pctdursp_o90_f1t1"
+    "pctdursp_salt90_f1t1"
   ],
   "commonly_used": true
 }

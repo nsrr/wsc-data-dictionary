@@ -1,7 +1,0 @@
-{
-  "id": "neck_girth2",
-  "display_name": "Second measurement of neck girth",
-  "description": "With participant sitting or standing erect, measure below Laryngeal prominence at the smallest circumference of neck with tape perpendicular to the long axis of the neck",
-  "type": "numeric",
-  "units": "cm"
-}
