@@ -3,6 +3,5 @@
   "display_name": "Mean of seated systolic measures",
   "description": "",
   "type": "numeric",
-  "units": "mm Hg",
-  "commonly_used": true
+  "units": "mm Hg"
 }

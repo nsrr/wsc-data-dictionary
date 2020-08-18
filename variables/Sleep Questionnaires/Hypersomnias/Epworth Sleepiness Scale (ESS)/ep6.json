@@ -5,6 +5,7 @@
   "type": "choices",
   "domain": "ess",
   "labels": [
+    "subjective_sleepiness",
     "epworth",
     "ess_6sittalk"
   ]

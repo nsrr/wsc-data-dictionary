@@ -1,7 +1,7 @@
 {
   "id": "zung15_scored",
   "display_name": "Zung Depression Scale Item: I am more irritable than usual.",
-  "description": "Items from the Zung Depression Scale [Zung WW 1965 (PubMed ID: 14221692)](https://www.ncbi.nlm.nih.gov/pubmed/14221692)<br><br>[Search for all Zung Depression Scale variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=zung)",
+  "description": "Items from the Zung Depression Scale [Zung WW 1965 (PubMed ID: 14221692)](https://www.ncbi.nlm.nih.gov/pubmed/14221692)<br><br>[Search for all Zung Depression Scale variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=zung]",
   "type": "choices",
   "domain": "noneoralittle",
   "labels": [

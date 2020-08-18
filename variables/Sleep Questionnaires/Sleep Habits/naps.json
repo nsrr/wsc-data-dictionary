@@ -5,7 +5,7 @@
   "type": "numeric",
   "units": "hours",
   "labels": [
-    "sleep_hygiene",
+    "sleep_duration",
     "avgdursp_in_f3"
   ]
 }
