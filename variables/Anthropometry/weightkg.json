@@ -3,5 +3,6 @@
   "display_name": "Weight",
   "description": "Record weight to the nearest 0.5 kg on mechanical beam scale.  ",
   "type": "numeric",
-  "units": "kg"
+  "units": "kg",
+  "commonly_used": true
 }

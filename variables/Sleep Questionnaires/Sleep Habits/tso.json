@@ -7,5 +7,6 @@
   "labels": [
     "sleep_latency",
     "avglatsp_f3"
-  ]
+  ],
+  "commonly_used": true
 }

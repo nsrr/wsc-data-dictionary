@@ -3,5 +3,6 @@
   "display_name": "Mean of seated diastolic pressures",
   "description": "",
   "type": "numeric",
-  "units": "mm Hg"
+  "units": "mm Hg",
+  "commonly_used": true
 }

@@ -3,7 +3,7 @@
   "display_name": "Epworth Sleepiness Scale: Total score",
   "description": "Calculated - Total score based on an 8-item questionnaires ranking likelihood of dozing off Johns MW 1991 (PubMed ID: 1798888). Scale 0-3 for individual items; 0 to 24 for overall score.<br><br>[Search for all ESS variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=epworth)",
   "type": "numeric",
-  "calculation": "ess_total = ess_1sitread + ess_2watchingtv + ess_3sitinactive + ess_4passenger + ess_5lyingdown + ess_6sittalk + ess_7afterlunch + ess_8stoppedcar",
+  "calculation": "ess_total = ep1+ep2+ep3+ep4+ep5+ep6+ep7+ep8",
   "labels": [
     "subjective_sleepiness",
     "epworth",
