@@ -1,6 +1,6 @@
 {
   "id": "apnea_treatment2",
-  "display_name": "Apnea: self-reported treatment recommendation 2",
+  "display_name": "Sleep Apnea: self-reported treatment recommendation 2",
   "description": "If yes, what treatment was recommended? (When told \"Y\" need treatment for sleep apnea)",
   "type": "text",
   "labels": [

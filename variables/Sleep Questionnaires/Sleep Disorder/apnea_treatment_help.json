@@ -1,6 +1,6 @@
 {
   "id": "apnea_treatment_help",
-  "display_name": "Apnea: Self-reported treatment effect",
+  "display_name": "Sleep Apnea: Self-reported treatment effect",
   "description": "Did the treatment help (check one)?",
   "type": "choices",
   "domain": "treatmenthelp",
