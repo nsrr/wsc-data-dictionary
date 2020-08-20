@@ -3,5 +3,9 @@
   "display_name": "Highest education level completed by the participant",
   "description": "",
   "type": "choices",
-  "domain": "education"
+  "domain": "education",
+  "labels": [
+    "ses",
+    "socioeconomic"
+  ]
 }
