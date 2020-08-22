@@ -35,7 +35,7 @@
 * create datasets ;
 *******************************************************************************;
   data wsc_in;
-    set wscs.final2020_2;
+    set wscs.nsrr_wsc;
   run;
 
   data wsc;
