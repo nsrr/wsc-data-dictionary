@@ -26,7 +26,7 @@
   libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
 
   *set data dictionary version;
-  %let version = 0.1.0.rc;
+  %let version = 0.1.0;
 
   *set nsrr csv release path;
   %let releasepath = \\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases;
