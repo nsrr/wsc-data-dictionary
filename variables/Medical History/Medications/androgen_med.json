@@ -1,7 +1,7 @@
 {
   "id": "androgen_med",
   "display_name": "Androgen: Self-reported use",
-  "description": "Self reported drugs at PSG visit, open text then grouped according to effect",
+  "description": "Self-reported drugs at PSG visit, open text then grouped according to effect",
   "type": "choices",
   "domain": "takingornot"
 }
