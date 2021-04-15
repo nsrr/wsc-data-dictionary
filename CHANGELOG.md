@@ -1,3 +1,10 @@
+## 0.2.0
+
+- Add variables for % sleep time in N1 and N2
+- Add `wsc-incident` dataset with incident CVD/stroke outcomes
+- The CSV datasets generated from a SAS export is located here:
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.2.0.pre`
+
 ## 0.1.0 (August 31, 2020)
 
 - Added initial variable set from WSC source data

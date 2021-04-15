@@ -5,6 +5,8 @@
   "type": "numeric",
   "units": "percentage",
   "labels": [
-    "pctdursp_s3s4_f1t1"
+    "pctdursp_s3s4_f1t1",
+    "n3",
+    "n4"
   ]
 }

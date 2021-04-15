@@ -26,7 +26,7 @@
   libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
 
   *set data dictionary version;
-  %let version = 0.1.0;
+  %let version = 0.2.0.pre;
 
   *set nsrr csv release path;
   %let releasepath = \\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases;
@@ -45,6 +45,35 @@
 
   proc sort data=wsc nodupkey;
     by wsc_id wsc_vst;
+  run;
+
+  data wsc_incident_in;
+    set wscs.nsrr_inc_cvd_stroke;
+  run;
+
+  data wsc_incident_in;
+    set wsc_incident_in;
+
+    death_dt_year = year(death_dt);
+    inc_censor_dt_year = year(inc_censor_dt);
+
+    drop 
+      death_dt
+      inc_censor_dt
+      ;
+  run;
+
+  data wsc_incident;
+    set wsc_incident_in;
+
+    rename
+      death_dt_year = death_dt
+      inc_censor_dt_year = inc_censor_dt
+      ;
+  run;
+
+  proc sort data=wsc_incident nodupkey;
+    by wsc_id;
   run;
 
 *******************************************************************************;
@@ -66,6 +95,7 @@
   %mend lowcase;
 
   %lowcase(wsc);
+  %lowcase(wsc_incident);
 
   /*
 
@@ -83,6 +113,10 @@
     *do this later;
   run;
 
+  data wsc_incident_nsrr;
+    set wsc_incident;
+  run;
+
 *******************************************************************************;
 * create permanent sas datasets ;
 *******************************************************************************;
@@ -90,11 +124,21 @@
     set wsc_nsrr;
   run;
 
+  data wscd.wsc_incident_nsrr wsca.wsc_incident_nsrr_&sasfiledate;
+    set wsc_incident_nsrr;
+  run;
+
 *******************************************************************************;
 * export nsrr csv datasets ;
 *******************************************************************************;
   proc export data=wsc_nsrr
     outfile="&releasepath\&version\wsc-dataset-&version..csv"
+    dbms=csv
+    replace;
+  run;
+
+  proc export data=wsc_incident_nsrr
+    outfile="&releasepath\&version\wsc-incident-dataset-&version..csv"
     dbms=csv
     replace;
   run;
