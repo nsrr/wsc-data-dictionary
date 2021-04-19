@@ -6,5 +6,8 @@
   "domain": "slpsatisfactionfreq",
   "labels": [
     "sleep_satisfaction"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

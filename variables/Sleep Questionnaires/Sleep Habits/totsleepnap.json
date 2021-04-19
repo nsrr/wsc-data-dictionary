@@ -8,5 +8,8 @@
   "labels": [
     "sleep_duration",
     "avgdursp_ib_f3"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

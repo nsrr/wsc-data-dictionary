@@ -3,5 +3,8 @@
   "display_name": "Alcohol consumption, none",
   "description": "If you do not drink alcoholic beverages at all check here ____ ",
   "type": "choices",
-  "domain": "noyesny"
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

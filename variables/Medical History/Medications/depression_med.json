@@ -3,5 +3,8 @@
   "display_name": "Antidepressant, any: Self-reported use",
   "description": "Self-reported drugs at PSG visit, open text then grouped according to effect",
   "type": "choices",
-  "domain": "takingornot"
+  "domain": "takingornot",
+  "forms": [
+    "wsc_medications_form"
+  ]
 }

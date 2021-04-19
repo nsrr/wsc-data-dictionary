@@ -3,5 +3,8 @@
   "display_name": "Nasal congestion, today",
   "description": "Have you had any nasal congestion or stuffiness today?",
   "type": "choices",
-  "domain": "noyesny"
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

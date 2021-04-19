@@ -5,5 +5,8 @@
   "type": "text",
   "labels": [
     "sdb"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

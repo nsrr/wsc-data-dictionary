@@ -3,5 +3,8 @@
   "display_name": "Last menstrual period",
   "description": "Difference between date of reported last menstrual period and sleep study date in years",
   "type": "numeric",
-  "units": "years"
+  "units": "years",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

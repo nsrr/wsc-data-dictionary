@@ -7,5 +7,8 @@
   "labels": [
     "insomnia",
     "nhanes_02wokenight"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

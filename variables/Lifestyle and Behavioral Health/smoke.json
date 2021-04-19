@@ -3,5 +3,8 @@
   "display_name": "Smoking, ever",
   "description": "Have you ever smoked tobacco regularly?",
   "type": "choices",
-  "domain": "noyesny"
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

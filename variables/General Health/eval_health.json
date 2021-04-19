@@ -6,5 +6,8 @@
   "domain": "healthrating",
   "labels": [
     "general_health"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

@@ -6,5 +6,8 @@
   "domain": "neverrarely",
   "labels": [
     "insomnia"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

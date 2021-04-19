@@ -3,5 +3,8 @@
   "display_name": "Self-reported sleep quality the morning after  type I polysomnography",
   "description": "How well did you sleep last night? (Please check one)",
   "type": "choices",
-  "domain": "slplastnight"
+  "domain": "slplastnight",
+  "forms": [
+    "wsc_am_sleep_evaluation_form"
+  ]
 }

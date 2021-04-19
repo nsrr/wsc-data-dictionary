@@ -6,5 +6,8 @@
   "domain": "slpsatisfaction",
   "labels": [
     "life_satisfaction"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

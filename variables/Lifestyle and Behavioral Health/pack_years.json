@@ -4,5 +4,8 @@
   "description": "",
   "type": "numeric",
   "units": "pack years",
-  "calculation": "if smoker=0 then pack_years=0, else pack_years=packs_week*smoke_years"
+  "calculation": "if smoker=0 then pack_years=0, else pack_years=packs_week*smoke_years",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

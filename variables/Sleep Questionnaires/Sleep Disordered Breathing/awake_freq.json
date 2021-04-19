@@ -6,5 +6,8 @@
   "domain": "neverorrarely5",
   "labels": [
     "sdb"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

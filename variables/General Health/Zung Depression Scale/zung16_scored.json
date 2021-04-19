@@ -7,5 +7,8 @@
   "labels": [
     "zung_16decision",
     "zung"
+  ],
+  "forms": [
+    "wsc_zung_depression_form"
   ]
 }

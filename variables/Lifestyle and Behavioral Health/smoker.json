@@ -4,5 +4,8 @@
   "description": "Current, Past or Never Smoker",
   "type": "choices",
   "domain": "smokinghistory",
-  "calculation": "if smoke=N then smoker=0, else if smoke_curr=N then smoker=1"
+  "calculation": "if smoke=N then smoker=0, else if smoke_curr=N then smoker=1",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

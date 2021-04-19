@@ -7,5 +7,8 @@
   "calculation": "sum(of cups_coffee, cans_cola)",
   "labels": [
     "sleep_hygiene"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

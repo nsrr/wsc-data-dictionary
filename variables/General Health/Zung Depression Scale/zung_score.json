@@ -6,5 +6,8 @@
   "calculation": "sum (zung1_scored:zung20_scored)",
   "labels": [
     "zung"
+  ],
+  "forms": [
+    "wsc_zung_depression_form"
   ]
 }

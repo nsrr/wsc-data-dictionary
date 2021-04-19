@@ -4,5 +4,8 @@
   "description": "",
   "type": "numeric",
   "units": "beverages/week",
-  "calculation": "sum(of beer_week, hard_week, wine_week), 0 if nondrinker=\"Y\""
+  "calculation": "sum(of beer_week, hard_week, wine_week), 0 if nondrinker=\"Y\"",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

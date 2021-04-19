@@ -3,5 +3,8 @@
   "display_name": "Diabetes: Self-reported diagnosis by a physician",
   "description": "The next section asks about specific medical problems. Please indicate if you have been told by a doctor that you have or have had any of these conditions.:  Diabetes? ___Yes       ___No",
   "type": "choices",
-  "domain": "noyesny"
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
 }

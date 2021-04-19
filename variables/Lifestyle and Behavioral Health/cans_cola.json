@@ -6,5 +6,8 @@
   "units": "cans",
   "labels": [
     "sleep_hygiene"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }

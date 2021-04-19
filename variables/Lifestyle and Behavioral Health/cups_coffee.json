@@ -6,5 +6,8 @@
   "units": "cups",
   "labels": [
     "sleep_hygiene"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
   ]
 }
