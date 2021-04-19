@@ -64,7 +64,16 @@
   run;
 
   data wsc_incident;
-    set wsc_incident_in;
+    merge 
+      wsc_incident_in (in=a)
+      wsc (keep=wsc_id wsc_vst sex race where=(wsc_vst = 1));
+    by wsc_id;
+
+    *only keep those in incident dataset;
+    if a;
+
+    *change visit indicator to '99';
+    wsc_vst = 99;
 
     rename
       death_dt_year = death_dt

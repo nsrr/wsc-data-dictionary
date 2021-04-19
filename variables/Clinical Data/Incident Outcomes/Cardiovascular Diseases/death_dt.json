@@ -1,0 +1,8 @@
+{
+  "id": "death_dt",
+  "display_name": "Death Date",
+  "description": "Only year of death will be provided. The [cvd_stroke_death](https://sleepdata.org/datasets/wsc/variables/cvd_stroke_death) variable describes cause of death.",
+  "type": "integer",
+  "units": "year",
+  "commonly_used": true
+}
