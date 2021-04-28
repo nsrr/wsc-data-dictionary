@@ -26,7 +26,7 @@
   libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
 
   *set data dictionary version;
-  %let version = 0.2.0.pre;
+  %let version = 0.2.0;
 
   *set nsrr csv release path;
   %let releasepath = \\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases;
@@ -57,14 +57,14 @@
     death_dt_year = year(death_dt);
     inc_censor_dt_year = year(inc_censor_dt);
 
-    drop 
+    drop
       death_dt
       inc_censor_dt
       ;
   run;
 
   data wsc_incident;
-    merge 
+    merge
       wsc_incident_in (in=a)
       wsc (keep=wsc_id wsc_vst sex race where=(wsc_vst = 1));
     by wsc_id;

@@ -1,10 +1,10 @@
-## 0.2.0
+## 0.2.0 (April 28, 2021)
 
 - Add variables for % sleep time in N1 and N2
 - Add `wsc-incident` dataset with incident CVD/stroke outcomes
 - Modify metadata for many medical history variables (e.g. stroke_ynd)
 - The CSV datasets generated from a SAS export is located here:
-  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.2.0.pre`
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.2.0`
 
 ## 0.1.0 (August 31, 2020)
 
