@@ -1,7 +1,7 @@
 {
   "id": "thyroid_ynd",
   "display_name": "Thyroid Disorder: Self-reported diagnosis by a physician",
-  "description": "The next section asks about specific medical problems. Please indicate if you have been told by a doctor that you have or have had any of these conditions.:  Thyroid problem? ___Yes       ___No",
+  "description": "The next section asks about specific medical problems. Please indicate if you have been told by a doctor that you have or have had any of these conditions: Thyroid problem",
   "type": "choices",
   "domain": "noyesny",
   "forms": [

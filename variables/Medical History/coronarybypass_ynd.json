@@ -1,7 +1,7 @@
 {
   "id": "coronarybypass_ynd",
   "display_name": "Coronary Artery Bypass Surgery: Self-reported",
-  "description": "Have you ever had any of the following surgical procedures?  If yes, check all that apply: Coronary bypass surgery ",
+  "description": "Have you ever had any of the following surgical procedures? If yes, check all that apply: Coronary bypass surgery",
   "type": "choices",
   "domain": "noyesny",
   "forms": [
