@@ -1,3 +1,5 @@
+## 0.3.0
+
 ## 0.2.0 (April 28, 2021)
 
 - Add variables for % sleep time in N1 and N2
