@@ -1,5 +1,7 @@
 ## 0.3.0
 
+- Include additional context for blood draw variables (drawn morning after PSG)
+
 ## 0.2.0 (April 28, 2021)
 
 - Add variables for % sleep time in N1 and N2
