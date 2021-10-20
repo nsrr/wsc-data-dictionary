@@ -1,7 +1,7 @@
 {
   "id": "triglycerides",
   "display_name": "Triglycerides",
-  "description": "Measure of triglyceride level in blood",
+  "description": "Measure of triglyceride level in blood, obtained from fasting blood draw on the morning after the overnight PSG",
   "type": "numeric",
   "units": "mg/dL"
 }

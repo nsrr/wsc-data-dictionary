@@ -1,7 +1,7 @@
 {
   "id": "ldl",
   "display_name": "LDL Cholesterol ",
-  "description": "Measure of LDL level in blood",
+  "description": "Measure of LDL level in blood, obtained from fasting blood draw on the morning after the overnight PSG",
   "type": "numeric",
   "units": "mg/dL"
 }
