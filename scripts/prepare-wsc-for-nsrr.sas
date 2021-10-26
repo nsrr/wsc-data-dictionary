@@ -146,8 +146,8 @@
 
 data wsc_harmonized;
   set wsc_nsrr;
-  *create wsc_visit variable for Spout to use for graph generation;
-    wsc_vst = 1;
+  *subset wsc visit variable for Spout to use for graph generation;
+   if wsc_vst = 1 then output;
 
 *demographics
 *age;
@@ -239,7 +239,6 @@ run;
 *******************************************************************************;
 
 /* Checking for extreme values for continuous variables */
-
 proc means data=wsc_harmonized;
 VAR   nsrr_age
     nsrr_bmi
