@@ -111,6 +111,9 @@
   proc contents data=wsc_nsrr_censored out=wsc_nsrr_contents;
   run;
 
+  proc contents data=wsc_incident;
+  run;
+
   */
 
 *******************************************************************************;
@@ -138,6 +141,144 @@
   run;
 
 *******************************************************************************;
+* create harmonized datasets ;
+*******************************************************************************;
+
+data wsc_harmonized;
+  set wsc_nsrr;
+  *create wsc_visit variable for Spout to use for graph generation;
+    wsc_vst = 1;
+
+*demographics
+*age;
+*use age;
+  format nsrr_age 8.2;
+  nsrr_age = age;
+
+*age_gt89;
+*use age;
+  format nsrr_age_gt89 $10.; 
+  if age gt 89 then nsrr_age_gt89='yes';
+  else if age le 89 then nsrr_age_gt89='no';
+
+*sex;
+*use sex;
+  format nsrr_sex $10.;
+  if sex = 'M' then nsrr_sex = 'male';
+  else if sex = 'F' then nsrr_sex = 'female';
+  else if sex = '.' then nsrr_sex = 'not reported';
+
+*race;
+*use race;
+    format nsrr_race $100.;
+	if race = '00' then nsrr_race = 'asian';
+    else if race = '01' then nsrr_race = 'black or african american';
+    else if race = '02' then nsrr_race = 'hispanic';
+	else if race = '03' then nsrr_race = 'american indian or alaska native';
+	else if race = '05' then nsrr_race = 'white';
+    *else if race = '03' then nsrr_race = 'other';
+    else if race = '.' then nsrr_race = 'not reported';
+
+*ethnicity;
+*no ethnicity variable in wsc;
+  *format nsrr_ethnicity $100.;
+    *if ethnicity = '01' then nsrr_ethnicity = 'hispanic or latino';
+    *else if ethnicity = '02' then nsrr_ethnicity = 'not hispanic or latino';
+    *else if ethnicity = '.' then nsrr_ethnicity = 'not reported';
+
+*anthropometry
+*bmi;
+*use bmi;
+  format nsrr_bmi 10.9;
+  nsrr_bmi = bmi;
+
+*clinical data/vital signs
+*bp_systolic;
+*use sitsysm;
+  format nsrr_bp_systolic 8.2;
+  nsrr_bp_systolic = sitsysm;
+
+*bp_diastolic;
+*use sitdiam;
+  format nsrr_bp_diastolic 8.2;
+  nsrr_bp_diastolic = sitdiam;
+
+*lifestyle and behavioral health
+*current_smoker;
+*use smoke_curr;
+  format nsrr_current_smoker $100.;
+  if smoke_curr = 'N' then nsrr_current_smoker = 'no';
+  else if smoke_curr = 'Y' then nsrr_current_smoker = 'yes';
+  else if smoke_curr = . then nsrr_current_smoker = 'not reported';
+
+
+*ever_smoker;
+*use smoke; 
+  format nsrr_ever_smoker $100.;
+  if smoke = 'N' then nsrr_ever_smoker = 'no';
+  else if smoke = 'Y' then nsrr_ever_smoker = 'yes';
+  else if smoke = . then nsrr_ever_smoker = 'not reported';
+
+  keep 
+    wsc_id
+    wsc_vst
+    nsrr_age
+    nsrr_age_gt89
+    nsrr_sex
+    nsrr_race
+    nsrr_bmi
+    nsrr_bp_systolic
+    nsrr_bp_diastolic
+    nsrr_current_smoker
+    nsrr_ever_smoker
+    ;
+run;
+
+*******************************************************************************;
+* checking harmonized datasets ;
+*******************************************************************************;
+
+/* Checking for extreme values for continuous variables */
+
+proc means data=wsc_harmonized;
+VAR   nsrr_age
+    nsrr_bmi
+    nsrr_bp_systolic
+    nsrr_bp_diastolic;
+run;
+
+/* Checking categorical variables */
+proc freq data=wsc_harmonized;
+table   nsrr_age_gt89
+    nsrr_sex
+    nsrr_race
+    nsrr_current_smoker
+    nsrr_ever_smoker;
+run;
+
+*******************************************************************************;
+* make all variable names lowercase ;
+*******************************************************************************;
+  options mprint;
+  %macro lowcase(dsn);
+       %let dsid=%sysfunc(open(&dsn));
+       %let num=%sysfunc(attrn(&dsid,nvars));
+       %put &num;
+       data &dsn;
+             set &dsn(rename=(
+          %do i = 1 %to &num;
+          %let var&i=%sysfunc(varname(&dsid,&i));    /*function of varname returns the name of a SAS data set variable*/
+          &&var&i=%sysfunc(lowcase(&&var&i))         /*rename all variables*/
+          %end;));
+          %let close=%sysfunc(close(&dsid));
+    run;
+  %mend lowcase;
+
+  %lowcase(wsc_nsrr);
+  %lowcase(wsc_incident_nsrr);
+  %lowercase(wsc_harmonized);
+
+*******************************************************************************;
 * export nsrr csv datasets ;
 *******************************************************************************;
   proc export data=wsc_nsrr
@@ -148,6 +289,12 @@
 
   proc export data=wsc_incident_nsrr
     outfile="&releasepath\&version\wsc-incident-dataset-&version..csv"
+    dbms=csv
+    replace;
+  run;
+
+    proc export data=wsc_harmonized
+    outfile="&releasepath\&version\wsc-harmonized-dataset-&version..csv"
     dbms=csv
     replace;
   run;
