@@ -140,14 +140,19 @@
     set wsc_incident_nsrr;
   run;
 
+
 *******************************************************************************;
 * create harmonized datasets ;
 *******************************************************************************;
 
-data wsc_harmonized;
+data wsc_harmonized_temp;
   set wsc_nsrr;
   *subset wsc visit variable for Spout to use for graph generation;
    if wsc_vst = 1 then output;
+run;
+
+data wsc_harmonized;
+set wsc_harmonized_temp;
 
 *demographics
 *age;
