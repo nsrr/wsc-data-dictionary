@@ -152,59 +152,6 @@ data wsc_harmonized_temp;
    if wsc_vst = 1 then output;
 run;
 
-data wsc_harmonized_temp_2;
-	set wsc_harmonized_temp;
-	*making new mean systolic variable;
-	format sysm_mean_all 8.2;
-	if sit_sys_repeat = '.' and sit_sys_repeat2 = '.' then sysm_mean_all = (sit_sys1 + sit_sys2)/2;
-	else if sit_sys_repeat = '.' and sit_sys_repeat2 ne '.' then sysm_mean_all = (sit_sys1 + sit_sys2 + sit_sys_repeat2)/3;
-	else if sit_sys_repeat ne '.' and sit_sys_repeat2 = '.' then sysm_mean_all = (sit_sys1 + sit_sys2 + sit_sys_repeat)/3;
-	else if sit_sys_repeat ne'.' and sit_sys_repeat2 ne '.' then sysm_mean_all = (sit_sys1 + sit_sys2 + sit_sys_repeat + sit_sys_repeat2)/4;
-keep
-	wsc_id
-    wsc_vst
-	sysm_mean_all
-	sit_sys1
-	sit_sys2
-	sit_sys_repeat
-	sit_sys_repeat2
-	sitsysm;
-run;
-
-data wsc_harmonized_temp_2;
-	set wsc_harmonized_temp;
-	*diff between 1 and 2;
-    format dia_diff 8.2;
-	dia_diff = abs(sit_dia1 - sit_dia2);
-	*making new mean systolic variable;
-	format dia_mean_all 8.2;
-	if sit_dia_repeat = '.' and sit_dia_repeat2 = '.' then dia_mean_all = (sit_dia1 + sit_dia2)/2;
-	else if sit_dia_repeat = '.' and sit_dia_repeat2 ne '.' then dia_mean_all = (sit_dia1 + sit_dia2 + sit_dia_repeat2)/3;
-	else if sit_dia_repeat ne '.' and sit_dia_repeat2 = '.' then dia_mean_all = (sit_dia1 + sit_dia2 + sit_dia_repeat)/3;
-	else if sit_dia_repeat ne'.' and sit_dia_repeat2 ne '.' then dia_mean_all = (sit_dia1 + sit_dia2 + sit_dia_repeat + sit_dia_repeat2)/4;
-keep
-	wsc_id
-    wsc_vst
-	dia_diff
-	dia_mean_all
-	sit_dia1
-	sit_dia2
-	sit_dia_repeat
-	sit_dia_repeat2
-	sitdiam;
-run;
-
-
-proc print data= wsc_harmonized_temp_2;
-run;
-proc freq data=wsc_harmonized_temp_2;
-table	
-	sit_sys1
-	sit_sys2
-	sit_sys_repeat
-	sit_sys_repeat2
-	sitsysm;
-run;
 data wsc_harmonized;
 set wsc_harmonized_temp;
 
@@ -240,10 +187,6 @@ set wsc_harmonized_temp;
 
 *ethnicity;
 *no ethnicity variable in wsc;
-  *format nsrr_ethnicity $100.;
-    *if ethnicity = '01' then nsrr_ethnicity = 'hispanic or latino';
-    *else if ethnicity = '02' then nsrr_ethnicity = 'not hispanic or latino';
-    *else if ethnicity = '.' then nsrr_ethnicity = 'not reported';
 
 *anthropometry
 *bmi;
