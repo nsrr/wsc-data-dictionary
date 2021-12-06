@@ -1,7 +1,9 @@
-## 0.3.0
+## 0.3.0 (December 6, 2021)
 
 - Include additional context for blood draw variables (drawn morning after PSG)
 - Add initial set of harmonized variables (nsrr_*)
+- The CSV datasets generated from a SAS export is located here:
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.3.0`
 
 ## 0.2.0 (April 28, 2021)
 
