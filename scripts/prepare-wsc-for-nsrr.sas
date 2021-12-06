@@ -177,11 +177,11 @@ set wsc_harmonized_temp;
 *race;
 *use race;
     format nsrr_race $100.;
-	if race = '00' then nsrr_race = 'asian';
+  if race = '00' then nsrr_race = 'asian';
     else if race = '01' then nsrr_race = 'black or african american';
     else if race = '02' then nsrr_race = 'hispanic';
-	else if race = '03' then nsrr_race = 'american indian or alaska native';
-	else if race = '05' then nsrr_race = 'white';
+  else if race = '03' then nsrr_race = 'american indian or alaska native';
+  else if race = '05' then nsrr_race = 'white';
     *else if race = '03' then nsrr_race = 'other';
     else if race = '.' then nsrr_race = 'not reported';
 
@@ -193,17 +193,6 @@ set wsc_harmonized_temp;
 *use bmi;
   format nsrr_bmi 10.9;
   nsrr_bmi = bmi;
-
-*clinical data/vital signs
-*bp_systolic;
-*use sitsysm;
-  format nsrr_bp_systolic 8.2;
-  nsrr_bp_systolic = sitsysm;
-
-*bp_diastolic;
-*use sitdiam;
-  format nsrr_bp_diastolic 8.2;
-  nsrr_bp_diastolic = sitdiam;
 
 *lifestyle and behavioral health
 *current_smoker;
@@ -229,8 +218,6 @@ set wsc_harmonized_temp;
     nsrr_sex
     nsrr_race
     nsrr_bmi
-    nsrr_bp_systolic
-    nsrr_bp_diastolic
     nsrr_current_smoker
     nsrr_ever_smoker
     ;
@@ -243,9 +230,7 @@ run;
 /* Checking for extreme values for continuous variables */
 proc means data=wsc_harmonized;
 VAR   nsrr_age
-    nsrr_bmi
-    nsrr_bp_systolic
-    nsrr_bp_diastolic;
+    nsrr_bmi;
 run;
 
 /* Checking categorical variables */

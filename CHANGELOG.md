@@ -1,6 +1,7 @@
 ## 0.3.0
 
 - Include additional context for blood draw variables (drawn morning after PSG)
+- Add initial set of harmonized variables (nsrr_*)
 
 ## 0.2.0 (April 28, 2021)
 
