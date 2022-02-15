@@ -26,7 +26,7 @@
   libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
 
   *set data dictionary version;
-  %let version = 0.3.0;
+  %let version = 0.4.0.pre;
 
   *set nsrr csv release path;
   %let releasepath = \\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases;
@@ -199,6 +199,7 @@ set wsc_harmonized_temp;
 *use smoke_curr;
   format nsrr_current_smoker $100.;
   if smoke_curr = 'N' then nsrr_current_smoker = 'no';
+  else if smoke = 'N' then nsrr_current_smoker = 'no';
   else if smoke_curr = 'Y' then nsrr_current_smoker = 'yes';
   else if smoke_curr = . then nsrr_current_smoker = 'not reported';
 
@@ -210,6 +211,17 @@ set wsc_harmonized_temp;
   else if smoke = 'Y' then nsrr_ever_smoker = 'yes';
   else if smoke = . then nsrr_ever_smoker = 'not reported';
 
+*polysomnography;
+*nsrr_ahi_hp4u_aasm15;
+*use ahi;
+  format nsrr_ahi_hp4u_aasm15 8.2;
+  nsrr_ahi_hp4u_aasm15 = ahi;
+
+*nsrr_ttldursp_f1;
+*use tst;
+  format nsrr_ttldursp_f1 8.2;
+  nsrr_ttldursp_f1 = tst;
+  
   keep 
     wsc_id
     wsc_vst
@@ -220,6 +232,8 @@ set wsc_harmonized_temp;
     nsrr_bmi
     nsrr_current_smoker
     nsrr_ever_smoker
+	nsrr_ahi_hp4u_aasm15
+	nsrr_ttldursp_f1
     ;
 run;
 
@@ -230,7 +244,10 @@ run;
 /* Checking for extreme values for continuous variables */
 proc means data=wsc_harmonized;
 VAR   nsrr_age
-    nsrr_bmi;
+    nsrr_bmi
+	nsrr_ahi_hp4u_aasm15
+	nsrr_ttldursp_f1
+	;
 run;
 
 /* Checking categorical variables */

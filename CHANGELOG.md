@@ -1,3 +1,8 @@
+## 0.4.0
+
+- Add harmonized core polysomnography variables
+
+
 ## 0.3.0 (December 6, 2021)
 
 - Include additional context for blood draw variables (drawn morning after PSG)
