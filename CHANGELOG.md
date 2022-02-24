@@ -1,6 +1,8 @@
-## 0.4.0
+## 0.4.0 (February 24, 2022)
 
-- Add harmonized core polysomnography variables
+- Add harmonized core polysomnography variables (nsrr_*)
+- The CSV datasets generated from a SAS export is located here:
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.4.0`
 
 
 ## 0.3.0 (December 6, 2021)
