@@ -35,7 +35,7 @@
 * create datasets ;
 *******************************************************************************;
   data wsc_in;
-    set wscs.nsrr_wsc;
+    set wscs.nsrr_wsc_2022_0103; /* last updated january 2022 */
   run;
 
   data wsc;
@@ -232,8 +232,8 @@ set wsc_harmonized_temp;
     nsrr_bmi
     nsrr_current_smoker
     nsrr_ever_smoker
-	nsrr_ahi_hp4u_aasm15
-	nsrr_ttldursp_f1
+  nsrr_ahi_hp4u_aasm15
+  nsrr_ttldursp_f1
     ;
 run;
 
@@ -245,9 +245,9 @@ run;
 proc means data=wsc_harmonized;
 VAR   nsrr_age
     nsrr_bmi
-	nsrr_ahi_hp4u_aasm15
-	nsrr_ttldursp_f1
-	;
+  nsrr_ahi_hp4u_aasm15
+  nsrr_ttldursp_f1
+  ;
 run;
 
 /* Checking categorical variables */

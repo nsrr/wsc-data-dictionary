@@ -1,5 +1,10 @@
 ## 0.5.0
 
+- Update mean seated systolic (sbp_mean) and diastolic (dbp_mean) blood pressure variables (WSC team change)
+- Remove individual readings for seated systolic and distolic blood pressure (WSC team change)
+- The CSV datasets generated from a SAS export is located here:
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.5.0.pre`
+
 ## 0.4.0 (February 24, 2022)
 
 - Add harmonized core polysomnography variables (nsrr_*)

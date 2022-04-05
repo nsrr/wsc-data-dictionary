@@ -1,7 +1,0 @@
-{
-  "id": "sit_sys_repeat2",
-  "display_name": "Second repeat systolic blood pressure",
-  "description": "Standard seated blood pressure on the night of the PSG",
-  "type": "numeric",
-  "units": "mm Hg"
-}
