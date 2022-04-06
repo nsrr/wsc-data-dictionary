@@ -7,8 +7,8 @@
   "labels": [
     "zung"
   ],
+  "commonly_used": true,
   "forms": [
     "wsc_zung_depression_form"
-  ],
-  "commonly_used": true
+  ]
 }

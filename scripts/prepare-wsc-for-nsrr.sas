@@ -159,7 +159,8 @@ set wsc_harmonized_temp;
 *age;
 *use age;
   format nsrr_age 8.2;
-  nsrr_age = age;
+  if age gt 89 then nsrr_age = 90;
+  else if age le 89 then nsrr_age = age;
 
 *age_gt89;
 *use age;
@@ -194,6 +195,17 @@ set wsc_harmonized_temp;
   format nsrr_bmi 10.9;
   nsrr_bmi = bmi;
 
+*clinical data/vital signs
+*bp_systolic;
+*use sbp_mean;
+  format nsrr_bp_systolic 8.2;
+  nsrr_bp_systolic = sbp_mean;
+
+*bp_diastolic;
+*use dbp_mean;
+  format nsrr_bp_diastolic 8.2;
+  nsrr_bp_diastolic = dbp_mean;
+  
 *lifestyle and behavioral health
 *current_smoker;
 *use smoke_curr;
@@ -230,10 +242,12 @@ set wsc_harmonized_temp;
     nsrr_sex
     nsrr_race
     nsrr_bmi
+	nsrr_bp_diastolic
+	nsrr_bp_systolic
     nsrr_current_smoker
     nsrr_ever_smoker
-  nsrr_ahi_hp4u_aasm15
-  nsrr_ttldursp_f1
+	nsrr_ahi_hp4u_aasm15
+	nsrr_ttldursp_f1
     ;
 run;
 
@@ -247,6 +261,8 @@ VAR   nsrr_age
     nsrr_bmi
   nsrr_ahi_hp4u_aasm15
   nsrr_ttldursp_f1
+  nsrr_bp_diastolic
+  nsrr_bp_systolic
   ;
 run;
 
