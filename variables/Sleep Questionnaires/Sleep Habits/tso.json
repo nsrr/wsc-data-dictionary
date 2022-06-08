@@ -8,8 +8,8 @@
     "sleep_latency",
     "avglatsp_f3"
   ],
+  "commonly_used": true,
   "forms": [
     "wsc_health_interview_form"
-  ],
-  "commonly_used": true
+  ]
 }

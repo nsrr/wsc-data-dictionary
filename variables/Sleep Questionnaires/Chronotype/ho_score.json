@@ -7,8 +7,8 @@
     "homeq",
     "chronotype"
   ],
+  "commonly_used": true,
   "forms": [
     "wsc_horne_ostberg_questionnaire_form"
-  ],
-  "commonly_used": true
+  ]
 }

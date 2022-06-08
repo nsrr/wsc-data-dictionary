@@ -7,8 +7,8 @@
   "labels": [
     "sdb"
   ],
+  "commonly_used": true,
   "forms": [
     "wsc_health_interview_form"
-  ],
-  "commonly_used": true
+  ]
 }
