@@ -1,11 +1,11 @@
 WSC Data Dictionary
 ======================
 
-[![Build Status](https://travis-ci.com/nsrr/wsc-data-dictionary.svg?branch=master)](https://travis-ci.com/nsrr/wsc-data-dictionary)
+[![Build Status](https://app.travis-ci.com/nsrr/wsc-data-dictionary.svg?branch=master)](https://travis-ci.com/github/nsrr/wsc-data-dictionary)
 
 ### Exports
 
-The WSC data dictionary data dictionary can be exported to CSV by typing:
+The WSC data dictionary can be exported to CSV by typing:
 
 ```
 spout export
