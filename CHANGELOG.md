@@ -3,6 +3,7 @@
 - Update mean seated systolic (sbp_mean) and diastolic (dbp_mean) blood pressure variables (WSC team change)
 - Remove individual readings for seated systolic and distolic blood pressure (WSC team change)
 - Add harmonized seated blood pressure (nsrr_bp_diastolic, nsrr_bp_systolic)
+- Add updated death data from WSC team
 - The CSV datasets generated from a SAS export is located here:
   - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.5.0.pre`
 
