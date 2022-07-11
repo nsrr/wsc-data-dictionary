@@ -63,14 +63,23 @@
       ;
   run;
 
+  data wsc_death_in;
+    set wscs.nsrr_death;
+  run;
+
+  proc sort data=wsc_death_in nodupkey;
+    by wsc_id;
+  run;
+
   data wsc_incident;
     merge
       wsc_incident_in (in=a)
+      wsc_death_in (in=b)
       wsc (keep=wsc_id wsc_vst sex race where=(wsc_vst = 1));
     by wsc_id;
 
     *only keep those in incident dataset;
-    if a;
+    if a or b;
 
     *change visit indicator to '99';
     wsc_vst = 99;
@@ -84,6 +93,22 @@
   proc sort data=wsc_incident nodupkey;
     by wsc_id;
   run;
+
+  /*
+
+  proc sql;
+    select wsc_id, death_dt, death_year
+    from wsc_incident
+    where death_dt ne death_year;
+  quit;
+
+  proc sql;
+    select wsc_id, death_dt, death_year
+    from wsc_incident
+    where death_dt ne . and death_year = .;
+  quit;
+
+  */
 
 *******************************************************************************;
 * make all variable names lowercase ;
@@ -242,12 +267,12 @@ set wsc_harmonized_temp;
     nsrr_sex
     nsrr_race
     nsrr_bmi
-	nsrr_bp_diastolic
-	nsrr_bp_systolic
+  nsrr_bp_diastolic
+  nsrr_bp_systolic
     nsrr_current_smoker
     nsrr_ever_smoker
-	nsrr_ahi_hp4u_aasm15
-	nsrr_ttldursp_f1
+  nsrr_ahi_hp4u_aasm15
+  nsrr_ttldursp_f1
     ;
 run;
 

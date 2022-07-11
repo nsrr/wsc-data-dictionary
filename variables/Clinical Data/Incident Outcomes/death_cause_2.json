@@ -1,0 +1,6 @@
+{
+  "id": "death_cause_2",
+  "display_name": "Death cause #2",
+  "description": "Cause of death came from death certificates with an internal adjudication process to categorize cause of death into grouping for research purposes. Death certificate searches were completed on a regular basis. Due to delays in reporting of deaths and death searches, cause of death was not available for all known deaths; based on the last search, death year was available for deaths reported through 2017. (CVD = Cardiovascular Disease)",
+  "type": "text"
+}
