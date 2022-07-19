@@ -47,22 +47,6 @@
     by wsc_id wsc_vst;
   run;
 
-  data wsc_incident_in;
-    set wscs.nsrr_inc_cvd_stroke;
-  run;
-
-  data wsc_incident_in;
-    set wsc_incident_in;
-
-    death_dt_year = year(death_dt);
-    inc_censor_dt_year = year(inc_censor_dt);
-
-    drop
-      death_dt
-      inc_censor_dt
-      ;
-  run;
-
   data wsc_death_in;
     set wscs.nsrr_death;
   run;
@@ -71,42 +55,24 @@
     by wsc_id;
   run;
 
-  data wsc_incident;
+  data wsc_death;
     merge
-      wsc_incident_in (in=a)
-      wsc_death_in (in=b)
+      wsc_death_in (in=a)
       wsc (keep=wsc_id wsc_vst sex race where=(wsc_vst = 1));
     by wsc_id;
 
-    *only keep those in incident dataset;
-    if a or b;
+    *only keep those in death dataset;
+    if a;
 
     *change visit indicator to '99';
     wsc_vst = 99;
-
-    rename
-      death_dt_year = death_dt
-      inc_censor_dt_year = inc_censor_dt
-      ;
   run;
 
-  proc sort data=wsc_incident nodupkey;
+  proc sort data=wsc_death nodupkey;
     by wsc_id;
   run;
 
   /*
-
-  proc sql;
-    select wsc_id, death_dt, death_year
-    from wsc_incident
-    where death_dt ne death_year;
-  quit;
-
-  proc sql;
-    select wsc_id, death_dt, death_year
-    from wsc_incident
-    where death_dt ne . and death_year = .;
-  quit;
 
   */
 
@@ -129,7 +95,7 @@
   %mend lowcase;
 
   %lowcase(wsc);
-  %lowcase(wsc_incident);
+  %lowcase(wsc_death);
 
   /*
 
@@ -150,8 +116,8 @@
     *do this later;
   run;
 
-  data wsc_incident_nsrr;
-    set wsc_incident;
+  data wsc_death_nsrr;
+    set wsc_death;
   run;
 
 *******************************************************************************;
@@ -161,16 +127,16 @@
     set wsc_nsrr;
   run;
 
-  data wscd.wsc_incident_nsrr wsca.wsc_incident_nsrr_&sasfiledate;
-    set wsc_incident_nsrr;
+  data wscd.wsc_death_nsrr wsca.wsc_death_nsrr_&sasfiledate;
+    set wsc_death_nsrr;
   run;
 
-proc contents data=wsc_nsrr;
-run;
+  proc contents data=wsc_nsrr;
+  run;
+
 *******************************************************************************;
 * create harmonized datasets ;
 *******************************************************************************;
-
 data wsc_harmonized_temp;
   set wsc_nsrr;
   *subset wsc visit variable for Spout to use for graph generation;
@@ -319,7 +285,7 @@ run;
   %mend lowcase;
 
   %lowcase(wsc_nsrr);
-  %lowcase(wsc_incident_nsrr);
+  %lowcase(wsc_death_nsrr);
   %lowercase(wsc_harmonized);
 
 *******************************************************************************;
@@ -331,8 +297,8 @@ run;
     replace;
   run;
 
-  proc export data=wsc_incident_nsrr
-    outfile="&releasepath\&version\wsc-incident-dataset-&version..csv"
+  proc export data=wsc_death_nsrr
+    outfile="&releasepath\&version\wsc-death-dataset-&version..csv"
     dbms=csv
     replace;
   run;

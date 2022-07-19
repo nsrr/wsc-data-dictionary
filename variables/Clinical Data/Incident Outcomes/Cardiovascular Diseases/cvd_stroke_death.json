@@ -1,8 +1,0 @@
-{
-  "id": "cvd_stroke_death",
-  "display_name": "Cause of Death Indicator",
-  "description": "Cause of death came from death certificates with an internal adjudication process to categorize cause of death into grouping for research purposes.  Death certificate searches were completed on a regular basis. Due to delays in reporting of deaths and death searches, cause of death was not available for all known deaths; based on the last search, cause of death was available for deaths reported through 2018. MI=myocardial infarction, CHF= congestive heart failure. If a participant reported having any of the CVD/stroke events in the INC_CVD_STROKE definition at the start of the WSC, they were excluded from this dataset.",
-  "type": "choices",
-  "domain": "cause_of_death",
-  "commonly_used": true
-}

@@ -1,8 +1,0 @@
-{
-  "id": "inc_cvd_stroke",
-  "display_name": "Incident Cardiovascular Disease (CVD) or Stroke Indicator",
-  "description": "Yes, if ever indicated having had a stroke or cardiovascular disease (CVD).  Cardiovascular disease was defined as any of the of following: heart attack (or myocardial infarction (MI)), congestive heart failure (CHF), cardiovascular procedure (pacemaker, balloon or coronary angioplasty, coronary artery stents, coronary artery bypass surgery). Participants who reported having any of these events when they started in the Wisconsin Sleep Cohort were excluded from this dataset. All data for this variable come from self-reports on health questionnaires (no death data).  The last data was collected in December 2015.",
-  "type": "choices",
-  "domain": "noyes01",
-  "commonly_used": true
-}

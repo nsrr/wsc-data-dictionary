@@ -4,6 +4,7 @@
 - Remove individual readings for seated systolic and distolic blood pressure (WSC team change)
 - Add harmonized seated blood pressure (nsrr_bp_diastolic, nsrr_bp_systolic)
 - Add updated death data from WSC team
+- Remove incident CVD/stroke variables (WSC team request; contact them for additional variables)
 - The CSV datasets generated from a SAS export is located here:
   - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.5.0.pre`
 

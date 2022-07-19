@@ -1,8 +1,0 @@
-{
-  "id": "inc_censor_dt",
-  "display_name": "Incident Cardiovascular Disease (CVD) or Stroke Censoring Date",
-  "description": "Month/day/year was not collected for any of these events.  Year of event was most commonly collected for the heart attack, congestive heart failure and stroke events.  If only year was known, event month/year was imputed as June 1.  If month/year was known, event day imputed as 15.  Date of cardiovascular procedure was never collected, therefore event date was imputed as the midpoint between interview date when they said yes and last interview date when they said no. For several participants who only had stroke events, the year of stroke was not available; these participants have missing event dates.",
-  "type": "integer",
-  "units": "year",
-  "commonly_used": true
-}
