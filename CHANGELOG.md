@@ -1,4 +1,4 @@
-## 0.5.0
+## 0.5.0 (July 19, 2022)
 
 - Update mean seated systolic (sbp_mean) and diastolic (dbp_mean) blood pressure variables (WSC team change)
 - Remove individual readings for seated systolic and distolic blood pressure (WSC team change)
@@ -6,7 +6,7 @@
 - Add updated death data from WSC team
 - Remove incident CVD/stroke variables (WSC team request; contact them for additional variables)
 - The CSV datasets generated from a SAS export is located here:
-  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.5.0.pre`
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.5.0`
 
 ## 0.4.0 (February 24, 2022)
 
