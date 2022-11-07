@@ -1,0 +1,10 @@
+{
+  "id": "nap2_rem",
+  "display_name": "MSLT: Latency to REM (Nap 2)",
+  "description": "Variable from a Multiple Sleep Latency Test (MSLT), [Roehrs & Roth 1992 (PubMed ID: 1552009)](https://pubmed.ncbi.nlm.nih.gov/1552009/).<br><br>[Search for all Multiple Sleep Latency TestVariables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=mslt)",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "mslt"
+  ]
+}

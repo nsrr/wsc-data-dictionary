@@ -1,0 +1,10 @@
+{
+  "id": "bedtime0",
+  "display_name": "Bedtime on Night before MSLT",
+  "description": "If Clinical MSLT, the night before the MSLT is the participant's nPSG. <br><br>Variable from a Multiple Sleep Latency Test (MSLT), [Roehrs & Roth 1992 (PubMed ID: 1552009)](https://pubmed.ncbi.nlm.nih.gov/1552009/).<br><br><em>Are you feeling discomfort today?</em> <br><br>[Search for all Multiple Sleep Latency Test variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=mslt)",
+  "type": "time",
+  "units": "HHMM (24-hour clock)",
+  "labels": [
+    "mslt"
+  ]
+}

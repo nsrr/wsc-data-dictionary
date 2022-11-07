@@ -1,0 +1,10 @@
+{
+  "id": "naps_yn7",
+  "display_name": "Diary: Naps on Day n7 before MSLT",
+  "description": "",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

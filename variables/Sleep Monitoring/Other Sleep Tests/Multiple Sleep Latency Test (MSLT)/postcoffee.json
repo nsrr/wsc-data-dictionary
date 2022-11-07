@@ -1,0 +1,10 @@
+{
+  "id": "postcoffee",
+  "display_name": "MSLT: Capacity to go until 4pm without caffeine or smoking 30 min prior to each nap",
+  "description": "Variable from a Multiple Sleep Latency Test (MSLT), [Roehrs & Roth 1992 (PubMed ID: 1552009)](https://pubmed.ncbi.nlm.nih.gov/1552009/).<br><br>  <em>Will you be able to go until 4pm today without caffeine or smoking 30 min prior to each nap?</em>  <br><br>[Search for all Multiple Sleep Latency Test variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=mslt)",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

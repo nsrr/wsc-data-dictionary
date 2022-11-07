@@ -1,0 +1,10 @@
+{
+  "id": "nap3_sl",
+  "display_name": "MSLT: Nap 3 Sleep Latency",
+  "description": "Sleep latency was scored by two scorers. It is the average of the two scores. <br><br>Variable from a Multiple Sleep Latency Test (MSLT), [Roehrs & Roth 1992 (PubMed ID: 1552009)](https://pubmed.ncbi.nlm.nih.gov/1552009/).<br><br>[Search for all Multiple Sleep Latency Test variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=mslt)",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "mslt"
+  ]
+}

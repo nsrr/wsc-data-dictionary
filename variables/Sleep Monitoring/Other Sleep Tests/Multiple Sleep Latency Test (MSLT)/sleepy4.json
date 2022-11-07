@@ -1,0 +1,12 @@
+{
+  "id": "sleepy4",
+  "display_name": "MSLT: Stanford Sleepiness Scale Prior to Nap 4",
+  "description": "Score from Stanford Sleepiness Scale (SSS). A subjective measure of sleepiness from 1-7, where higher scores indicate more sleepiness (Hoddes, E., & Dement, W. Z. V (1972). The development and use of the Stanford Sleepiness Scale (SSS). Psychophysiology, 9, 150.) <br><br>[Search for all Stanford Sleepiness Scale variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sss) <br><br>Variable from a Multiple Sleep Latency Test (MSLT), [Roehrs & Roth 1992 (PubMed ID: 1552009)](https://pubmed.ncbi.nlm.nih.gov/1552009/).<br><br>[Search for all Multiple Sleep Latency Test variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=mslt)",
+  "type": "choices",
+  "domain": "currentsleepiness",
+  "labels": [
+    "mslt",
+    "subjective_sleepiness",
+    "sss"
+  ]
+}
