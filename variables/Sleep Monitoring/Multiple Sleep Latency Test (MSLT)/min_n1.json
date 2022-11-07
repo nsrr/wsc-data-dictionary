@@ -1,0 +1,10 @@
+{
+  "id": "min_n1",
+  "display_name": "Minutes of Sleep the Night Before the Night Before the MSLT (n1)",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "mslt"
+  ]
+}

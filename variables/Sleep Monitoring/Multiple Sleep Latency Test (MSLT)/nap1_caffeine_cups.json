@@ -1,0 +1,10 @@
+{
+  "id": "nap1_caffeine_cups",
+  "display_name": "MSLT: # Cups Drank Prior to Nap 1",
+  "description": "Clinical MSLT only",
+  "type": "numeric",
+  "units": "# of cups",
+  "labels": [
+    "mslt"
+  ]
+}

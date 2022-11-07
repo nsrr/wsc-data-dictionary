@@ -1,0 +1,10 @@
+{
+  "id": "nap5_caffeine_yn",
+  "display_name": "MSLT: Drank Caffeine prior to Nap 5?",
+  "description": "Clinical MSLT only",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "nap1_sleep",
+  "display_name": "MSLT: Volunteer Reported Falling Asleep (Nap 1)",
+  "description": "",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

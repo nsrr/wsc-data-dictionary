@@ -1,0 +1,10 @@
+{
+  "id": "precoffee",
+  "display_name": "MSLT: Did you have any coffee or other stimulants this am?",
+  "description": "",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "bedtime5",
+  "display_name": "Diary: Bedtime on Night n5 before MSLT",
+  "description": "",
+  "type": "time",
+  "units": "HHMM (24-hour clock)",
+  "labels": [
+    "mslt"
+  ]
+}

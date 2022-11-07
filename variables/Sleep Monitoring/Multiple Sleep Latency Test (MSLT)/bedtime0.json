@@ -1,0 +1,10 @@
+{
+  "id": "bedtime0",
+  "display_name": "Bedtime on Night before MSLT",
+  "description": "If Clinical MSLT, the night before the MSLT is the participant's nPSG.",
+  "type": "time",
+  "units": "HHMM (24-hour clock)",
+  "labels": [
+    "mslt"
+  ]
+}

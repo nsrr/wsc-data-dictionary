@@ -1,0 +1,10 @@
+{
+  "id": "nap3_smoke_yn",
+  "display_name": "MSLT: Smoked prior to Nap 3?",
+  "description": "Clinical MSLT only",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

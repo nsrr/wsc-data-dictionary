@@ -1,0 +1,10 @@
+{
+  "id": "mslt_day",
+  "display_name": "Day of Week of MSLT",
+  "description": "",
+  "type": "choices",
+  "domain": "dayofweek",
+  "labels": [
+    "mslt"
+  ]
+}

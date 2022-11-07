@@ -1,0 +1,10 @@
+{
+  "id": "mslt_year",
+  "display_name": "Year of MSLT",
+  "description": "",
+  "type": "integer",
+  "units": "year",
+  "labels": [
+    "mslt"
+  ]
+}

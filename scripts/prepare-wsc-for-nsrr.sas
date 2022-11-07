@@ -23,10 +23,10 @@
   libname wsca "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_archive";
 
   *nsrr id location;
-  libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
+  *libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
 
   *set data dictionary version;
-  %let version = 0.5.0;
+  %let version = 0.6.0.pre;
 
   *set nsrr csv release path;
   %let releasepath = \\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases;
@@ -36,6 +36,10 @@
 *******************************************************************************;
   data wsc_in;
     set wscs.nsrr_wsc_2022_0103; /* last updated january 2022 */
+  run;
+
+  data wsc_mslt;
+    set wscs.nsrr_mslt;
   run;
 
   data wsc;
@@ -53,6 +57,10 @@
 
   proc sort data=wsc_death_in nodupkey;
     by wsc_id;
+  run;
+
+   proc sort data=wsc_mslt nodupkey;
+    by wsc_id wsc_vst;
   run;
 
   data wsc_death;
@@ -96,6 +104,7 @@
 
   %lowcase(wsc);
   %lowcase(wsc_death);
+  %lowcase(wsc_mslt);
 
   /*
 
@@ -131,7 +140,14 @@
     set wsc_death_nsrr;
   run;
 
+   data wscs.wsc_mslt wsca.wsc_mslt_nsrr_&sasfiledate;
+    set wsc_mslt;
+  run;
+
   proc contents data=wsc_nsrr;
+  run;
+
+   proc contents data=wsc_mslt;
   run;
 
 *******************************************************************************;
@@ -305,6 +321,12 @@ run;
 
     proc export data=wsc_harmonized
     outfile="&releasepath\&version\wsc-harmonized-dataset-&version..csv"
+    dbms=csv
+    replace;
+  run;
+
+      proc export data=wsc_mslt
+    outfile="&releasepath\&version\wsc-mslt-dataset-&version..csv"
     dbms=csv
     replace;
   run;

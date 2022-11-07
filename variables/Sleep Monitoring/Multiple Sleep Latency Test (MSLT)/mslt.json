@@ -1,0 +1,10 @@
+{
+  "id": "mslt",
+  "display_name": "MSLT Score (average of first 4 naps)",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "mslt"
+  ]
+}

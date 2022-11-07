@@ -1,0 +1,10 @@
+{
+  "id": "waketime1",
+  "display_name": "Diary: Waketime on Morning before MSLT",
+  "description": "",
+  "type": "time",
+  "units": "HHMM (24-hour clock)",
+  "labels": [
+    "mslt"
+  ]
+}

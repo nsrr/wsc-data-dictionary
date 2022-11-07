@@ -1,0 +1,10 @@
+{
+  "id": "discomfort",
+  "display_name": "MSLT: Are you feeling discomfort today?",
+  "description": "",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

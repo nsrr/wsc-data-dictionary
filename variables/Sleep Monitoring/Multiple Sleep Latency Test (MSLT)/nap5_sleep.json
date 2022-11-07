@@ -1,0 +1,10 @@
+{
+  "id": "nap5_sleep",
+  "display_name": "MSLT: Volunteer Reported Falling Asleep (Nap 5) (Clinical MSLT only)",
+  "description": "Clinical MSLT only: the 5th nap was only conducted if the participant had REM sleep in one of the first 4 naps.",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "mslt"
+  ]
+}

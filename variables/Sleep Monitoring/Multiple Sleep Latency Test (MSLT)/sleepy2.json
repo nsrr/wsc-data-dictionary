@@ -1,0 +1,10 @@
+{
+  "id": "sleepy2",
+  "display_name": "MSLT: Stanford Sleepiness Scale Prior to Nap 2",
+  "description": "",
+  "type": "choices",
+  "domain": "currentsleepiness",
+  "labels": [
+    "mslt"
+  ]
+}

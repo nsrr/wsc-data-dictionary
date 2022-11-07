@@ -1,0 +1,10 @@
+{
+  "id": "slq1",
+  "display_name": "MSLT: Was your nights sleep as usual (last night)?",
+  "description": "",
+  "type": "choices",
+  "domain": "slplastnight_mlst",
+  "labels": [
+    "mslt"
+  ]
+}

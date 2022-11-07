@@ -1,0 +1,10 @@
+{
+  "id": "nap1_rem",
+  "display_name": "MSLT: Latency to REM (Nap 1)",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "mslt"
+  ]
+}
