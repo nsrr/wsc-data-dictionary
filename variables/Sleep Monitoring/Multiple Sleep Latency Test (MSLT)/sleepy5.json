@@ -5,6 +5,8 @@
   "type": "choices",
   "domain": "currentsleepiness",
   "labels": [
-    "mslt"
+    "mslt",
+    "subjective_sleepiness",
+    "sss"
   ]
 }
