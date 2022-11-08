@@ -1,3 +1,7 @@
+## 0.6.0 (November 8, 2022)
+- Add Multiple Sleep Latency Test dataset
+- Fix nsrr_bp variable links
+
 ## 0.5.0 (July 19, 2022)
 
 - Update mean seated systolic (sbp_mean) and diastolic (dbp_mean) blood pressure variables (WSC team change)
