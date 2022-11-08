@@ -106,24 +106,36 @@
   %lowcase(wsc_death);
   %lowcase(wsc_mslt);
 
-  /*
-
-  proc contents data=wsc_nsrr_censored out=wsc_nsrr_contents;
+    data wsc_nsrr;
+    set wsc;
   run;
 
-  proc contents data=wsc_incident;
+
+  *merge sex and race into mslt dataset;
+
+*make small dataset with only sex and race to merge;
+ data wsc_sexrace (keep = sex race wsc_id wsc_vst);
+    set wsc_nsrr;
+
+ run;
+
+
+  data wsc_mslt_merge;
+    merge
+	  wsc_mslt (in=a)
+	  wsc_sexrace
+      ;
+    by wsc_id wsc_vst;
+
+	if a;
+
   run;
 
-  */
+
 
 *******************************************************************************;
 * create separate datasets for each visit ;
 *******************************************************************************;
-  data wsc_nsrr;
-    set wsc;
-
-    *do this later;
-  run;
 
   data wsc_death_nsrr;
     set wsc_death;
@@ -140,14 +152,14 @@
     set wsc_death_nsrr;
   run;
 
-   data wscs.wsc_mslt wsca.wsc_mslt_nsrr_&sasfiledate;
-    set wsc_mslt;
+   data wscs.wsc_mslt_merge wsca.wsc_mslt_merge_nsrr_&sasfiledate;
+    set wsc_mslt_merge;
   run;
 
   proc contents data=wsc_nsrr;
   run;
 
-   proc contents data=wsc_mslt;
+   proc contents data=wsc_mslt_merge;
   run;
 
 *******************************************************************************;
@@ -325,7 +337,7 @@ run;
     replace;
   run;
 
-      proc export data=wsc_mslt
+      proc export data=wsc_mslt_merge
     outfile="&releasepath\&version\wsc-mslt-dataset-&version..csv"
     dbms=csv
     replace;
