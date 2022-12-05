@@ -1,5 +1,5 @@
 ## 0.6.0 (November 8, 2022)
-- Add Multiple Sleep Latency Test dataset
+- Add Multiple Sleep Latency Test dataset and data dictionary entries
 - Fix nsrr_bp variable links
 
 ## 0.5.0 (July 19, 2022)

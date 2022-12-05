@@ -168,7 +168,7 @@
 data wsc_harmonized_temp;
   set wsc_nsrr;
   *subset wsc visit variable for Spout to use for graph generation;
-   if wsc_vst = 1 then output;
+   *if wsc_vst = 1 then output;
 run;
 
 data wsc_harmonized;
