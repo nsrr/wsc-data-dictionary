@@ -1,6 +1,8 @@
-## 0.6.0 (November 8, 2022)
+## 0.6.0 (December 12, 2022)
 - Add Multiple Sleep Latency Test dataset and data dictionary entries
 - Fix nsrr_bp variable links
+- The CSV datasets generated from a SAS export is located here:
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.6.0`
 
 ## 0.5.0 (July 19, 2022)
 
