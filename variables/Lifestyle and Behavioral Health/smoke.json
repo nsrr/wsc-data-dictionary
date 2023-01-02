@@ -4,6 +4,9 @@
   "description": "Have you ever smoked tobacco regularly?",
   "type": "choices",
   "domain": "noyesny",
+  "labels": [
+    "smoking"
+  ],
   "forms": [
     "wsc_health_interview_form"
   ]

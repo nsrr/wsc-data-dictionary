@@ -4,6 +4,9 @@
   "description": "Do you currently smoke? ",
   "type": "choices",
   "domain": "noyesny",
+  "labels": [
+    "smoking"
+  ],
   "forms": [
     "wsc_health_interview_form"
   ]

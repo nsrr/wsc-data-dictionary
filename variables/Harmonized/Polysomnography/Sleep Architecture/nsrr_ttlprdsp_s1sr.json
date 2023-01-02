@@ -1,5 +1,5 @@
 {
-  "id": "nsrr_ttlprdsp_bdsr",
+  "id": "nsrr_ttlprdsp_s1sr",
   "display_name": "REM Sleep Latency: the interval between lights-out/in-bed time and the first epoch of REM sleep from polysomnography",
   "description": "Harmonized by the NSRR team. Source: :rem_latency:",
   "type": "numeric",

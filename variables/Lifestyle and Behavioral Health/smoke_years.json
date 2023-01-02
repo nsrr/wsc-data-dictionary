@@ -3,6 +3,9 @@
   "display_name": "Smoking, number of years",
   "description": "Overall, how many years total, have you been OR were you a regular smoker? ",
   "type": "numeric",
+  "labels": [
+    "smoking"
+  ],
   "forms": [
     "wsc_health_interview_form"
   ]

@@ -5,6 +5,9 @@
   "type": "choices",
   "domain": "smokinghistory",
   "calculation": "if smoke=N then smoker=0, else if smoke_curr=N then smoker=1",
+  "labels": [
+    "smoking"
+  ],
   "forms": [
     "wsc_health_interview_form"
   ]
