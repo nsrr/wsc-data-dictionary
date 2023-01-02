@@ -1,9 +1,0 @@
-{
-  "id": "smoke_years",
-  "display_name": "Smoking, number of years",
-  "description": "Overall, how many years total, have you been OR were you a regular smoker? ",
-  "type": "numeric",
-  "forms": [
-    "wsc_health_interview_form"
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "id": "hdl",
-  "display_name": "HDL Cholesterol ",
-  "description": "Measure of HDL level in blood, obtained from fasting blood draw on the morning after the overnight PSG",
-  "type": "numeric",
-  "units": "mg/dL"
-}

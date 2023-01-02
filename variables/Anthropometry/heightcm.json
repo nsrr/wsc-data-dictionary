@@ -1,7 +1,0 @@
-{
-  "id": "heightcm",
-  "display_name": "Height",
-  "description": "Height (without shoes) to the nearest cm. on mechanical beam scale with participant facing outward and measuring bar perpendicular to floor",
-  "type": "numeric",
-  "units": "cm"
-}

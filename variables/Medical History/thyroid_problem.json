@@ -1,9 +1,0 @@
-{
-  "id": "thyroid_problem",
-  "display_name": "Thyroid Disorder: Self-reported type",
-  "description": "Also, describe the type of thyroid problem",
-  "type": "text",
-  "forms": [
-    "wsc_health_interview_form"
-  ]
-}

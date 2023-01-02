@@ -1,6 +1,0 @@
-{
-  "id": "death_type_2",
-  "display_name": "More Detail on Cause of Death #2",
-  "description": "Afib=Atrial Fibrillation, Athero_HD=Atherosclerosis, CHF=Congestive Heart Failure, MI=Myocardial Infarction, Vfib=Ventricular Fibrillation, PE=Pulmonary Embolism, AD=Alzheimers Disease, UTI=Urinary Track Infection, COPD=Chronic Obstructive Pulmonary Disease, ESRD=End Stage Renal Disease",
-  "type": "text"
-}

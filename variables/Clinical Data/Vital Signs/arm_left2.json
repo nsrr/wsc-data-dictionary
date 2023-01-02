@@ -1,7 +1,0 @@
-{
-  "id": "arm_left2",
-  "display_name": "Second blood pressure from left arm",
-  "description": "Brachial blood pressure by Dopler at the overnight PSG",
-  "type": "numeric",
-  "units": "mm Hg"
-}

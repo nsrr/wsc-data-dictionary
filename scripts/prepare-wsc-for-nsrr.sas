@@ -26,7 +26,7 @@
   *libname wsci "\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_ids";
 
   *set data dictionary version;
-  %let version = 0.6.0;
+  %let version = 0.7.0.pre;
 
   *set nsrr csv release path;
   %let releasepath = \\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases;
@@ -252,6 +252,46 @@ set wsc_harmonized_temp;
 *use tst;
   format nsrr_ttldursp_f1 8.2;
   nsrr_ttldursp_f1 = tst;
+
+*nsrr_ttleffsp_f1;
+*use se;
+  format nsrr_ttleffsp_f1 8.2;
+  nsrr_ttleffsp_f1 = se;  
+
+*nsrr_ttllatsp_f1;
+*use sleep_latency;
+  format nsrr_ttllatsp_f1 8.2;
+  nsrr_ttllatsp_f1 = sleep_latency; 
+
+*nsrr_ttlprdsp_bdsr;
+*use rem_latency;
+  format nsrr_ttlprdsp_bdsr 8.2;
+  nsrr_ttlprdsp_bdsr = rem_latency; 
+
+*nsrr_ttldurws_f1;
+*use waso;
+  format nsrr_ttldurws_f1 8.2;
+  nsrr_ttldurws_f1 = waso;
+  
+*nsrr_pctdursp_s1;
+*use pcttststagen1;
+  format nsrr_pctdursp_s1 8.2;
+  nsrr_pctdursp_s1 = pcttststagen1;
+
+*nsrr_pctdursp_s2;
+*use pcttststagen2;
+  format nsrr_pctdursp_s2 8.2;
+  nsrr_pctdursp_s2 = pcttststagen2;
+
+*nsrr_pctdursp_s3;
+*use pcttststage34;
+  format nsrr_pctdursp_s3 8.2;
+  nsrr_pctdursp_s3 = pcttststage34;
+
+*nsrr_pctdursp_sr;
+*use pcttstrem;
+  format nsrr_pctdursp_sr 8.2;
+  nsrr_pctdursp_sr = pcttstrem;
   
   keep 
     wsc_id
@@ -261,12 +301,20 @@ set wsc_harmonized_temp;
     nsrr_sex
     nsrr_race
     nsrr_bmi
-  nsrr_bp_diastolic
-  nsrr_bp_systolic
+    nsrr_bp_diastolic
+    nsrr_bp_systolic
     nsrr_current_smoker
     nsrr_ever_smoker
-  nsrr_ahi_hp4u_aasm15
-  nsrr_ttldursp_f1
+    nsrr_ahi_hp4u_aasm15
+    nsrr_ttldursp_f1
+  	nsrr_ttleffsp_f1
+	nsrr_ttllatsp_f1
+	nsrr_ttlprdsp_bdsr
+	nsrr_ttldurws_f1
+	nsrr_pctdursp_s1
+	nsrr_pctdursp_s2
+	nsrr_pctdursp_s3
+	nsrr_pctdursp_sr
     ;
 run;
 
@@ -282,6 +330,14 @@ VAR   nsrr_age
   nsrr_ttldursp_f1
   nsrr_bp_diastolic
   nsrr_bp_systolic
+  nsrr_ttleffsp_f1
+  nsrr_ttllatsp_f1
+  nsrr_ttlprdsp_bdsr
+  nsrr_ttldurws_f1
+  nsrr_pctdursp_s1
+  nsrr_pctdursp_s2
+  nsrr_pctdursp_s3
+  nsrr_pctdursp_sr
   ;
 run;
 
