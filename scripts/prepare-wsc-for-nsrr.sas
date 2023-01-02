@@ -263,10 +263,10 @@ set wsc_harmonized_temp;
   format nsrr_ttllatsp_f1 8.2;
   nsrr_ttllatsp_f1 = sleep_latency; 
 
-*nsrr_ttlprdsp_bdsr;
+*nsrr_ttlprdsp_s1sr;
 *use rem_latency;
-  format nsrr_ttlprdsp_bdsr 8.2;
-  nsrr_ttlprdsp_bdsr = rem_latency; 
+  format nsrr_ttlprdsp_s1sr 8.2;
+  nsrr_ttlprdsp_s1sr = rem_latency; 
 
 *nsrr_ttldurws_f1;
 *use waso;
@@ -309,7 +309,7 @@ set wsc_harmonized_temp;
     nsrr_ttldursp_f1
   	nsrr_ttleffsp_f1
 	nsrr_ttllatsp_f1
-	nsrr_ttlprdsp_bdsr
+	nsrr_ttlprdsp_s1sr
 	nsrr_ttldurws_f1
 	nsrr_pctdursp_s1
 	nsrr_pctdursp_s2
@@ -332,7 +332,7 @@ VAR   nsrr_age
   nsrr_bp_systolic
   nsrr_ttleffsp_f1
   nsrr_ttllatsp_f1
-  nsrr_ttlprdsp_bdsr
+  nsrr_ttlprdsp_s1sr
   nsrr_ttldurws_f1
   nsrr_pctdursp_s1
   nsrr_pctdursp_s2
