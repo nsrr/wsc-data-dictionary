@@ -1,0 +1,14 @@
+{
+  "id": "zung13_scored",
+  "display_name": "Zung Depression Scale Item: I am restless and can not keep still.",
+  "description": "Items from the Zung Depression Scale [Zung WW 1965 (PubMed ID: 14221692)](https://www.ncbi.nlm.nih.gov/pubmed/14221692)<br><br>[Search for all Zung Depression Scale variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=zung)",
+  "type": "choices",
+  "domain": "noneoralittle",
+  "labels": [
+    "zung_13restless",
+    "zung"
+  ],
+  "forms": [
+    "wsc_zung_depression_form"
+  ]
+}

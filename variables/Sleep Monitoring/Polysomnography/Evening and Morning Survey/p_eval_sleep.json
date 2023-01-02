@@ -1,0 +1,10 @@
+{
+  "id": "p_eval_sleep",
+  "display_name": "Stanford sleepiness scale before type I polysomnography",
+  "description": "This question refers to how sleepy or alert you feel at a particular time. We would like you to read the scale below and then rate how sleepy you feel right now. The scale ranges from 1 to 7, with 7 being the most sleepy. Please read the entire scale, and then check the level that best describes your current state of sleepiness.",
+  "type": "choices",
+  "domain": "currentsleepiness",
+  "labels": [
+    "sleepiness_pm_sss"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "coronary_artery_stent_ynd",
+  "display_name": "Coronary Artery Stent: Self-reported",
+  "description": "Have you ever had any of the following surgical procedures? Coronary artery stent",
+  "type": "choices",
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

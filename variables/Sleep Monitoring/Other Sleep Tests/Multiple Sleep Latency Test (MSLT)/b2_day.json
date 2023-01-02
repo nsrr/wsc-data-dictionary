@@ -1,0 +1,10 @@
+{
+  "id": "b2_day",
+  "display_name": "Day of Week on Day -3 Before MSLT",
+  "description": "",
+  "type": "choices",
+  "domain": "dayofweek",
+  "labels": [
+    "mslt"
+  ]
+}

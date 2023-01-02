@@ -1,0 +1,14 @@
+{
+  "id": "zung_index",
+  "display_name": "Standardized Zung Depression Scale Total Score",
+  "description": "Scaled Zung Depression Scale score used with clinical cutpoints",
+  "type": "numeric",
+  "calculation": "100*(zung_score / 80)",
+  "labels": [
+    "zung"
+  ],
+  "commonly_used": true,
+  "forms": [
+    "wsc_zung_depression_form"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "asthma_ynd",
+  "display_name": "Asthma: Self-reported diagnosis by a physician",
+  "description": "The next section asks about specific medical problems. Please indicate if you have been told by a doctor that you have or have had any of these conditions: Asthma",
+  "type": "choices",
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

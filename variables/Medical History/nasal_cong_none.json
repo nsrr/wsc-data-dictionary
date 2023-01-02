@@ -1,0 +1,10 @@
+{
+  "id": "nasal_cong_none",
+  "display_name": "Nasal congestion, none, today or tonight",
+  "description": "No nasal congestion today or tonight",
+  "type": "choices",
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

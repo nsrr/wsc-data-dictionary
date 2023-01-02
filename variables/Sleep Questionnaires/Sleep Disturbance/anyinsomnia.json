@@ -1,0 +1,11 @@
+{
+  "id": "anyinsomnia",
+  "display_name": "Indicator for insomnia symptoms",
+  "description": "Calculated - If any of the four insomnia symptoms (i.e. difficulty falling asleep, difficulty falling back to sleep, waking up frequently, waking up too early) have a frequency of more than 5-15 time a month, then it is a 1: yes.",
+  "type": "choices",
+  "domain": "noyes01",
+  "calculation": "1=Yes if Y any of the following were a 3 or 4 (ps_diff, ps_backsleep, ps_wakerepeat, ps_tooearly), 0=all 4 variables were 0, 1, or 2",
+  "labels": [
+    "insomnia"
+  ]
+}

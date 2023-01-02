@@ -1,0 +1,10 @@
+{
+  "id": "nap5_rem",
+  "display_name": "MSLT: Latency to REM (Nap 5)",
+  "description": "Clinical MSLT only: the 5th nap was only conducted if the participant had REM sleep in one of the first 4 naps.  <br><br>Variable from a Multiple Sleep Latency Test (MSLT), [Roehrs & Roth 1992 (PubMed ID: 1552009)](https://pubmed.ncbi.nlm.nih.gov/1552009/).<br><br>[Search for all Multiple Sleep Latency Test variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=mslt)",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "mslt"
+  ]
+}

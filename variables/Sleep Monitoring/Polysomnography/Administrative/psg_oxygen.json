@@ -1,0 +1,7 @@
+{
+  "id": "psg_oxygen",
+  "display_name": "Reported use of Oxygen at time of nPSG",
+  "description": "",
+  "type": "choices",
+  "domain": "psgoxygen"
+}

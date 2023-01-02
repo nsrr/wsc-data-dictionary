@@ -1,0 +1,10 @@
+{
+  "id": "naptime7",
+  "display_name": "Diary: Time Spent Napping Day 7 Before MSLT",
+  "description": "",
+  "type": "time",
+  "units": "HHMM (24-hour clock)",
+  "labels": [
+    "mslt"
+  ]
+}

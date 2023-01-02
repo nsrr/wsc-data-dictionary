@@ -1,0 +1,7 @@
+{
+  "id": "waistgirthm",
+  "display_name": "Mean of waist girth measurements",
+  "description": "",
+  "type": "numeric",
+  "units": "cm"
+}

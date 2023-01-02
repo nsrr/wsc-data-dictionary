@@ -1,0 +1,10 @@
+{
+  "id": "reproductive_surg",
+  "display_name": "Menopause, after surgery: Self-reported",
+  "description": "Have you had surgery that caused your menstrual periods to stop permanently?",
+  "type": "choices",
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

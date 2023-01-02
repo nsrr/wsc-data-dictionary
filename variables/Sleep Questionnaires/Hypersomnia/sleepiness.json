@@ -1,0 +1,13 @@
+{
+  "id": "sleepiness",
+  "display_name": "Excessive daytime sleepiness",
+  "description": "Many people have periods of low energy or fatigue, but, during a typical day do you experience excessive sleepiness when it is difficult to fight an uncontrollable urge to fall asleep?",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "subjective_sleepiness"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

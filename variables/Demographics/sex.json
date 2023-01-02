@@ -1,0 +1,8 @@
+{
+  "id": "sex",
+  "display_name": "Sex of the participant",
+  "description": "",
+  "type": "choices",
+  "domain": "gender",
+  "commonly_used": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "apnea_treatment3",
+  "display_name": "Sleep Apnea: Self-reported treatment recommendation 3",
+  "description": "If yes, what treatment was recommended? (When told \"Y\" need treatment for sleep apnea)",
+  "type": "text",
+  "labels": [
+    "sdb"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

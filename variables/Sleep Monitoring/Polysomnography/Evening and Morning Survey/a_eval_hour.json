@@ -1,0 +1,10 @@
+{
+  "id": "a_eval_hour",
+  "display_name": "Self report sleep duration the morning after type I polysomnography",
+  "description": "About how many hours of restful sleep do you feel you got last night?",
+  "type": "numeric",
+  "units": "hours",
+  "forms": [
+    "wsc_am_sleep_evaluation_form"
+  ]
+}

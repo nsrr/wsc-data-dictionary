@@ -1,0 +1,14 @@
+{
+  "id": "zung19_scored",
+  "display_name": "Zung Depression Scale Item: I feel that others would be better off if I were dead.",
+  "description": "Items from the Zung Depression Scale [Zung WW 1965 (PubMed ID: 14221692)](https://www.ncbi.nlm.nih.gov/pubmed/14221692)<br><br>[Search for all Zung Depression Scale variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=zung)",
+  "type": "choices",
+  "domain": "noneoralittle",
+  "labels": [
+    "zung_19dead",
+    "zung"
+  ],
+  "forms": [
+    "wsc_zung_depression_form"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ps_tooearly",
+  "display_name": "Wake up too early",
+  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you wake up too early in the morning and can't get back to sleep?",
+  "type": "choices",
+  "domain": "neverrarely",
+  "labels": [
+    "insomnia",
+    "nhanes_03wokemorn"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

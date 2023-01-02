@@ -1,0 +1,10 @@
+{
+  "id": "mean_desat_dur",
+  "display_name": "Average Duration of Apnea and Hypopnea Event: (Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with discernible flow reduction and with >= 4% oxygen desaturation and with or without arousal) from type I polysomnography",
+  "description": "",
+  "type": "numeric",
+  "units": "seconds",
+  "labels": [
+    "avgdurah_ap0uhp3x4u_f1t1"
+  ]
+}

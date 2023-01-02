@@ -1,0 +1,10 @@
+{
+  "id": "emphysema_year",
+  "display_name": "Emphysema/Obstructive Lung Disease: Self-reported year of diagnosis",
+  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if Emphysema/Obstructive Lung Disease?=\"Y\")",
+  "type": "numeric",
+  "units": "year",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

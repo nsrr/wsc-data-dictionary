@@ -1,0 +1,8 @@
+{
+  "id": "vst_year",
+  "display_name": "Year of polysomnography data collection",
+  "description": "",
+  "type": "numeric",
+  "units": "year",
+  "commonly_used": true
+}

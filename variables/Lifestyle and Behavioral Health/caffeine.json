@@ -1,0 +1,14 @@
+{
+  "id": "caffeine",
+  "display_name": "Caffeine intake - beverages per day",
+  "description": "",
+  "type": "numeric",
+  "units": "beverages/day",
+  "calculation": "sum(of cups_coffee, cans_cola)",
+  "labels": [
+    "sleep_hygiene"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

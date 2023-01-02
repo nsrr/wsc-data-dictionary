@@ -1,0 +1,7 @@
+{
+  "id": "creatinine",
+  "display_name": "Creatinine",
+  "description": "Measure of creatinine level in blood, obtained from fasting blood draw on the morning after the overnight PSG",
+  "type": "numeric",
+  "units": "mg/dL"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ps_diff",
+  "display_name": "Difficulty falling asleep",
+  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you have difficulty getting to sleep?",
+  "type": "choices",
+  "domain": "neverrarely",
+  "labels": [
+    "insomnia",
+    "nhanes_01fallaslp"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

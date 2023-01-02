@@ -1,0 +1,7 @@
+{
+  "id": "hipgirthm",
+  "display_name": "Mean of hip girth measures",
+  "description": "",
+  "type": "numeric",
+  "units": "cm"
+}

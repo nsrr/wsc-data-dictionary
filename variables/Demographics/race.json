@@ -1,0 +1,8 @@
+{
+  "id": "race",
+  "display_name": "Race of the participant",
+  "description": "",
+  "type": "choices",
+  "domain": "pptrace",
+  "commonly_used": true
+}

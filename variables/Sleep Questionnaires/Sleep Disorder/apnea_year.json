@@ -1,0 +1,13 @@
+{
+  "id": "apnea_year",
+  "display_name": "Sleep Apnea: Self-reported year of diagnosis",
+  "description": "If yes, when was this? ______ Year",
+  "type": "integer",
+  "units": "year",
+  "labels": [
+    "sdb"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

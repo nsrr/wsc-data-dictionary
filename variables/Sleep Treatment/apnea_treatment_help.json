@@ -1,0 +1,13 @@
+{
+  "id": "apnea_treatment_help",
+  "display_name": "Sleep Apnea: Self-reported treatment effect",
+  "description": "Did the treatment help (check one)?",
+  "type": "choices",
+  "domain": "treatmenthelp",
+  "labels": [
+    "sdb"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

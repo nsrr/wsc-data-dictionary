@@ -1,0 +1,13 @@
+{
+  "id": "eval_general",
+  "display_name": "Self-reported satisfaction with sleep",
+  "description": "Are you satisfied with your usual night's sleep (check one)?",
+  "type": "choices",
+  "domain": "slpsatisfactionfreq",
+  "labels": [
+    "sleep_satisfaction"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

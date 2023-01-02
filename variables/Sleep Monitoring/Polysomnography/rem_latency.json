@@ -1,0 +1,10 @@
+{
+  "id": "rem_latency",
+  "display_name": "Time from sleep onset to first epoch staged REM (includes wake time between sleep onset and first epoch of REM) from type I polysomnography",
+  "description": "Time to first epoch of REM sleep",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "ttllatsp_sr_f1t1"
+  ]
+}

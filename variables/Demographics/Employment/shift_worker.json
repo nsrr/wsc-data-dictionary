@@ -1,0 +1,10 @@
+{
+  "id": "shift_worker",
+  "display_name": "Shift Worker (from Health Interview)",
+  "description": "",
+  "type": "choices",
+  "domain": "noyes01",
+  "labels": [
+    "mslt"
+  ]
+}

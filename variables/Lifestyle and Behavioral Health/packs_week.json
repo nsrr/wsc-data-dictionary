@@ -1,0 +1,9 @@
+{
+  "id": "packs_week",
+  "display_name": "Cigarette smoking, packs per week",
+  "description": "How much do you smoke now, OR if you quit smoking, how much did you smoke in the past (answer all that apply)? packs per week",
+  "type": "numeric",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

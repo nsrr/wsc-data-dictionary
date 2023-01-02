@@ -1,0 +1,13 @@
+{
+  "id": "snore_freq",
+  "display_name": "Snoring frequency",
+  "description": "According to what others have told you or to your own awareness, how often do you snore?",
+  "type": "choices",
+  "domain": "neverorrarely5",
+  "labels": [
+    "sdb"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "apnea_need",
+  "display_name": "Sleep Apnea: Self-reported treatment need",
+  "description": "Were you told you needed treatment? ___Yes       ___No (reported Y told by a doctor that they had sleep apnea)",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "sdb"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

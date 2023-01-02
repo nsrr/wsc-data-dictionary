@@ -1,0 +1,13 @@
+{
+  "id": "ps_wakerepeat",
+  "display_name": "Wake up frequently during the night",
+  "description": "How often, if ever, do you have any of the following problems sleeping? (Circle one response for each item.) Do you wake up repeatedly during the night?",
+  "type": "choices",
+  "domain": "neverrarely",
+  "labels": [
+    "insomnia"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

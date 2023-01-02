@@ -1,0 +1,10 @@
+{
+  "id": "hypertension_year",
+  "display_name": "Hypertension: Self-reported year of diagnosis",
+  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if High blood pressure or hypertension? =\"Y\")",
+  "type": "numeric",
+  "units": "year",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

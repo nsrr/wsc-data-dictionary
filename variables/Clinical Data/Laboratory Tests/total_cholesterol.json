@@ -1,0 +1,7 @@
+{
+  "id": "total_cholesterol",
+  "display_name": "Total cholesterol",
+  "description": "Measure of total cholesterol level in blood, obtained from fasting blood draw on the morning after the overnight PSG",
+  "type": "numeric",
+  "units": "mg/dL"
+}

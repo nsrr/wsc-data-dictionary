@@ -1,0 +1,10 @@
+{
+  "id": "coronary_year",
+  "display_name": "Coronary Artery Disease: Self-reported year of diagnosis",
+  "description": "If yes, indicate how many years ago ____ or the year ____ you were diagnosed. (if Coronary artery disease? =\"Y\")",
+  "type": "numeric",
+  "units": "year",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}
