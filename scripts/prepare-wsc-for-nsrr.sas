@@ -35,7 +35,7 @@
 * create datasets ;
 *******************************************************************************;
   data wsc_in;
-    set wscs.nsrr_wsc_2022_0103; /* last updated january 2022 */
+    set wscs.nsrr_wsc_2024_0711; /* last updated july 2024 */
   run;
 
   data wsc_mslt;
@@ -51,33 +51,8 @@
     by wsc_id wsc_vst;
   run;
 
-  data wsc_death_in;
-    set wscs.nsrr_death;
-  run;
-
-  proc sort data=wsc_death_in nodupkey;
-    by wsc_id;
-  run;
-
    proc sort data=wsc_mslt nodupkey;
     by wsc_id wsc_vst;
-  run;
-
-  data wsc_death;
-    merge
-      wsc_death_in (in=a)
-      wsc (keep=wsc_id wsc_vst sex race where=(wsc_vst = 1));
-    by wsc_id;
-
-    *only keep those in death dataset;
-    if a;
-
-    *change visit indicator to '99';
-    wsc_vst = 99;
-  run;
-
-  proc sort data=wsc_death nodupkey;
-    by wsc_id;
   run;
 
   /*
@@ -103,7 +78,6 @@
   %mend lowcase;
 
   %lowcase(wsc);
-  %lowcase(wsc_death);
   %lowcase(wsc_mslt);
 
     data wsc_nsrr;
@@ -122,12 +96,12 @@
 
   data wsc_mslt_merge;
     merge
-	  wsc_mslt (in=a)
-	  wsc_sexrace
+    wsc_mslt (in=a)
+    wsc_sexrace
       ;
     by wsc_id wsc_vst;
 
-	if a;
+  if a;
 
   run;
 
@@ -137,19 +111,12 @@
 * create separate datasets for each visit ;
 *******************************************************************************;
 
-  data wsc_death_nsrr;
-    set wsc_death;
-  run;
 
 *******************************************************************************;
 * create permanent sas datasets ;
 *******************************************************************************;
   data wscd.wsc_nsrr wsca.wsc_nsrr_&sasfiledate;
     set wsc_nsrr;
-  run;
-
-  data wscd.wsc_death_nsrr wsca.wsc_death_nsrr_&sasfiledate;
-    set wsc_death_nsrr;
   run;
 
    data wscs.wsc_mslt_merge wsca.wsc_mslt_merge_nsrr_&sasfiledate;
@@ -248,6 +215,10 @@ set wsc_harmonized_temp;
   format nsrr_ahi_hp4u_aasm15 8.2;
   nsrr_ahi_hp4u_aasm15 = ahi;
 
+*nsrr_ahi_hp3u;
+  format nsrr_ahi_hp3u 8.2;
+  nsrr_ahi_hp3u = ahi3;
+
 *nsrr_ttldursp_f1;
 *use tst;
   format nsrr_ttldursp_f1 8.2;
@@ -306,15 +277,16 @@ set wsc_harmonized_temp;
     nsrr_current_smoker
     nsrr_ever_smoker
     nsrr_ahi_hp4u_aasm15
+    nsrr_ahi_hp3u
     nsrr_ttldursp_f1
-  	nsrr_ttleffsp_f1
-	nsrr_ttllatsp_f1
-	nsrr_ttlprdsp_s1sr
-	nsrr_ttldurws_f1
-	nsrr_pctdursp_s1
-	nsrr_pctdursp_s2
-	nsrr_pctdursp_s3
-	nsrr_pctdursp_sr
+    nsrr_ttleffsp_f1
+  nsrr_ttllatsp_f1
+  nsrr_ttlprdsp_s1sr
+  nsrr_ttldurws_f1
+  nsrr_pctdursp_s1
+  nsrr_pctdursp_s2
+  nsrr_pctdursp_s3
+  nsrr_pctdursp_sr
     ;
 run;
 
@@ -327,6 +299,7 @@ proc means data=wsc_harmonized;
 VAR   nsrr_age
     nsrr_bmi
   nsrr_ahi_hp4u_aasm15
+  nsrr_ahi_hp3u
   nsrr_ttldursp_f1
   nsrr_bp_diastolic
   nsrr_bp_systolic
@@ -369,7 +342,6 @@ run;
   %mend lowcase;
 
   %lowcase(wsc_nsrr);
-  %lowcase(wsc_death_nsrr);
   %lowercase(wsc_harmonized);
 
 *******************************************************************************;
@@ -377,12 +349,6 @@ run;
 *******************************************************************************;
   proc export data=wsc_nsrr
     outfile="&releasepath\&version\wsc-dataset-&version..csv"
-    dbms=csv
-    replace;
-  run;
-
-  proc export data=wsc_death_nsrr
-    outfile="&releasepath\&version\wsc-death-dataset-&version..csv"
     dbms=csv
     replace;
   run;

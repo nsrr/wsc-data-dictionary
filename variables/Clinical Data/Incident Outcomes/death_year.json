@@ -1,8 +1,0 @@
-{
-  "id": "death_year",
-  "display_name": "Death Year",
-  "description": "",
-  "type": "integer",
-  "units": "year",
-  "commonly_used": true
-}

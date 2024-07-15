@@ -1,4 +1,6 @@
 ## 0.7.0 
+- Remove death data (WSC contributor request)
+- Add ahi3 variable
 - Add harmonized sleep architecture variables
 - The CSV datasets generated from a SAS export is located here:
   - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.7.0`
