@@ -1,0 +1,7 @@
+{
+  "id": "dr502",
+  "display_name": "Tetracycline",
+  "description": "",
+  "type": "choices",
+  "domain": "noyes01"
+}

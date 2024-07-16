@@ -1,0 +1,7 @@
+{
+  "id": "dr001",
+  "display_name": "Contraceptives (Ethinyl estradiol, Levonorgestrel)",
+  "description": "",
+  "type": "choices",
+  "domain": "noyes01"
+}
