@@ -3,5 +3,5 @@
   "display_name": "Antacids (Acifex use 710), Cimetidine, Pepcid, Prevacid, Tagamet, Nadh / ascorbic acid / sodium bicarbonate oral combo",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

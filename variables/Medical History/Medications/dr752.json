@@ -3,5 +3,5 @@
   "display_name": "Antilipemic agents: Advicor, Crestor, Lescol, Lipitor, Niaspan, Niacin, Tricor, Vytorin, Zetia",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

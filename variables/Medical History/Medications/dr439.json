@@ -3,5 +3,5 @@
   "display_name": "Citalopram hydrobromide (Celexa,Lexapro)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

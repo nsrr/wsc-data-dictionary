@@ -3,5 +3,5 @@
   "display_name": "Glucosamine, Orudis, & other OTC arthritis meds",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

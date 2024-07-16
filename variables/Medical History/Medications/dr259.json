@@ -3,5 +3,5 @@
   "display_name": "Formoterol oral (Foradil aerolizer)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

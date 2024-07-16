@@ -3,5 +3,5 @@
   "display_name": "Medroxyprogesterone acetate (Amen, Androderm, Curretab, Cycrin, Depo-Provera, Provera)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

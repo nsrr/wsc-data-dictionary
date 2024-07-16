@@ -3,5 +3,5 @@
   "display_name": "Diltiazem HCL (Cardizem, Dilacor, Taztia XT, Tiazac)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

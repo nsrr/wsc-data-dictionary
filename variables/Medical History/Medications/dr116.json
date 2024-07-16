@@ -3,5 +3,5 @@
   "display_name": "Lisinopril (Accupril, Mavik, Prinivil, Zestril, Zestoretic)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

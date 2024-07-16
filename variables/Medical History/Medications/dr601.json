@@ -3,5 +3,5 @@
   "display_name": "Lovastatin, Mevacor, Simvastatin, Zocor",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

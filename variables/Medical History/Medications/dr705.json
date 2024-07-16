@@ -3,5 +3,5 @@
   "display_name": "Fiorinal w/ or w/out codeine (aspirin, butalbital, and caffeine)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

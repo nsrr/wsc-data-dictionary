@@ -3,5 +3,5 @@
   "display_name": "Contraceptives (Ethinyl estradiol, Levonorgestrel)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

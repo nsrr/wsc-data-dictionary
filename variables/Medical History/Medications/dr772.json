@@ -3,5 +3,5 @@
   "display_name": "Colace, Fibercon, Metamucil and other laxatives",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

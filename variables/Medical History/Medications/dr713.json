@@ -3,5 +3,5 @@
   "display_name": "Eye drops for pink eye or burning eyes",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

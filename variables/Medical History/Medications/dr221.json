@@ -3,5 +3,5 @@
   "display_name": "Rynatan (phenylephrine tannate and chlorpheniramine tannate)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

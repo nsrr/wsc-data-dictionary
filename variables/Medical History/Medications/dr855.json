@@ -3,5 +3,5 @@
   "display_name": "Mycophenolate (Myfortic) (Cellcept) (ERL080)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

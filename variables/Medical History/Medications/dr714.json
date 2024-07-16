@@ -3,5 +3,5 @@
   "display_name": "NSAIDs / anti-inflammatory: BC Powder, Bextra, Diclofenac, Etodolac, Lodine, Lotemax, Meclofenamate, Mobic, Norflex, Norgesic, Relafen, Soma, Vioxx, Voltaren",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

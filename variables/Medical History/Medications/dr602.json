@@ -3,5 +3,5 @@
   "display_name": "Isosorbide dinitrate (Isordil)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

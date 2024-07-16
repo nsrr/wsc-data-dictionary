@@ -3,5 +3,5 @@
   "display_name": "Herbal & homeopathic remedies (zinc lozenges, Thermochrome, ColdEase, Lysine, Valerian)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

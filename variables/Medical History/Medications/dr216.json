@@ -3,5 +3,5 @@
   "display_name": "Pseudoephedrine hydrochloride and guaifenesin (Duratuss, Guaifed, Humbid, Qbid)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

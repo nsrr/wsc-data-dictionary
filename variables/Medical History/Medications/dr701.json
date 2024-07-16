@@ -3,5 +3,5 @@
   "display_name": "Rantidine HCL (Zantac)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

@@ -3,5 +3,5 @@
   "display_name": "Hypnotics (Zolpidem, Ambien, Lunesta, Sonata)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

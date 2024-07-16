@@ -3,5 +3,5 @@
   "display_name": "Decongestant or generic allergy meds (Wal-Fed et. al.)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

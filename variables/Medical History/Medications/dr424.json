@@ -3,5 +3,5 @@
   "display_name": "Nardil (Phenelzine), Parnate (Tranylcypromine)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

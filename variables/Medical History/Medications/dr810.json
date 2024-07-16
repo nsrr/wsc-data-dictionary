@@ -3,5 +3,5 @@
   "display_name": "Phen-Fen, Orlistat, Xenical, other obesity rxs",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

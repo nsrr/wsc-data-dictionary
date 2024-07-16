@@ -3,5 +3,5 @@
   "display_name": "Brompheniramine maleate and pseudoephedrine hydrochloride (Bromfed)",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

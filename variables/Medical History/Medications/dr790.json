@@ -3,5 +3,5 @@
   "display_name": "Chloroquine, Quinine",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }

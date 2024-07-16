@@ -3,5 +3,5 @@
   "display_name": "Triaminic, Phenergan, Tessalon, Benzonatate, or other syrups incl. those w/ codeine",
   "description": "",
   "type": "choices",
-  "domain": "noyes01"
+  "domain": "noyes_drug"
 }
