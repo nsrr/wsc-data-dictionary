@@ -51,7 +51,15 @@
     by wsc_id wsc_vst;
   run;
 
-   proc sort data=wsc_mslt nodupkey;
+  proc sort data=wsc_mslt nodupkey;
+    by wsc_id wsc_vst;
+  run;
+
+  data wsc_drug;
+    set wscs.nsrr_alldrugs; 
+  run;
+
+  proc sort data=wsc_drug nodupkey;
     by wsc_id wsc_vst;
   run;
 
@@ -79,9 +87,17 @@
 
   %lowcase(wsc);
   %lowcase(wsc_mslt);
+  %lowcase(wsc_drug);
 
-    data wsc_nsrr;
-    set wsc;
+  data wsc_nsrr;
+    merge
+      wsc (in=a)
+      wsc_drug
+      ;
+    by wsc_id wsc_vst;
+
+    *only keep rows in main wsc dataset;
+    if a;
   run;
 
 
@@ -90,7 +106,6 @@
 *make small dataset with only sex and race to merge;
  data wsc_sexrace (keep = sex race wsc_id wsc_vst);
     set wsc_nsrr;
-
  run;
 
 
@@ -342,57 +357,12 @@ run;
   %mend lowcase;
 
   %lowcase(wsc_nsrr);
-  %lowercase(wsc_harmonized);
-
-
-***************************************;
-*****merging with nsrr_alldrugs********;
-***************************************;
-
-data drug;
-    set wscs.nsrr_alldrugs; 
-run;
-
-data wsc_nsrr;
-    set wscs.nsrr_wsc_nsrr; 
-run;
-
-proc sql;
-    create table merged_data as
-    select a.*, b.*
-    from drug as a
-    inner join wsc_nsrr as b
-    on a.wsc_id = b.wsc_id and a.wsc_vst = b.wsc_vst;
-quit;
-
-proc sql;
-    create table drug_filtered as
-    select *
-    from drug
-    where wsc_id in (select wsc_id from merged_data)
-      and wsc_vst in (select wsc_vst from merged_data);
-quit;
-
-proc sql;
-    create table final_merged_data as
-    select a.*, b.*
-    from drug_filtered as a
-    inner join wsc_nsrr as b
-    on a.wsc_id = b.wsc_id and a.wsc_vst = b.wsc_vst;
-quit;
-
-proc sql;
-    create table rearranged_merged_data as
-    select b.*, a.*
-    from final_merged_data as a
-    inner join wsc_nsrr as b
-    on a.wsc_id = b.wsc_id and a.wsc_vst = b.wsc_vst;
-quit;
+  %lowcase(wsc_harmonized);
 
 *******************************************************************************;
 * export nsrr csv datasets ;
 *******************************************************************************;
-  proc export data=rearranged_merged_data
+  proc export data=wsc_nsrr
     outfile="&releasepath\&version\wsc-dataset-&version..csv"
     dbms=csv
     replace;
