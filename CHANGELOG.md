@@ -1,4 +1,4 @@
-## 0.7.0 
+## 0.7.0 (July 17, 2024)
 - Remove death data (WSC contributor request)
 - Add ahi3 variable
 - Add harmonized sleep architecture variables
