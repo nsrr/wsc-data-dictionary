@@ -3,7 +3,7 @@
   "display_name": "Diary: Time Spent Napping Day n1 Before MSLT",
   "description": "Due to the timing of the sleep diary to nPSG, naptime1 is not available for Clinical MSLTs.",
   "type": "numeric",
-  "units": "minutes",
+  "units": "minutes (min)",
   "labels": [
     "mslt"
   ]

@@ -3,7 +3,7 @@
   "display_name": "Caffeine intake - beverages per day",
   "description": "",
   "type": "numeric",
-  "units": "beverages/day",
+  "units": "number of servings per day",
   "calculation": "sum(of cups_coffee, cans_cola)",
   "labels": [
     "sleep_hygiene"

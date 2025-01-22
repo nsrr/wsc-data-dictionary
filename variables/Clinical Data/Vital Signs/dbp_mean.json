@@ -3,7 +3,7 @@
   "display_name": "Mean of seated diastolic pressures",
   "description": "Mean of two standard seated blood pressure measurements on the night of the PSG. If repeat measurements were taken, the mean of the closest two measurements.",
   "type": "numeric",
-  "units": "mm Hg",
+  "units": "millimeters of mercury (mmHg)",
   "labels": [
     "sitdiam"
   ],

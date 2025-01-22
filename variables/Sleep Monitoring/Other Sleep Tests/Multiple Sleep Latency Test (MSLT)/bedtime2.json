@@ -3,7 +3,7 @@
   "display_name": "Diary: Bedtime on Night n2 before MSLT",
   "description": "",
   "type": "time",
-  "units": "HHMM (24-hour clock)",
+  "units": "HHmm",
   "labels": [
     "mslt"
   ]

@@ -3,6 +3,6 @@
   "display_name": "Age of the participant",
   "description": "Age at time of study visit",
   "type": "integer",
-  "units": "years (truncated)",
+  "units": "years",
   "commonly_used": true
 }

@@ -3,6 +3,7 @@
   "display_name": "Cigar smoking, number per day",
   "description": "How much do you smoke now, OR if you quit smoking, how much did you smoke in the past (answer all that apply)? Cigars per day",
   "type": "integer",
+  "units":"number of servings per day",
   "forms": [
     "wsc_health_interview_form"
   ]

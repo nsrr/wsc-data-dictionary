@@ -3,7 +3,7 @@
   "display_name": "Alcohol consumption, number of beverages per week",
   "description": "",
   "type": "numeric",
-  "units": "beverages/week",
+  "units": "number of servings per week",
   "calculation": "sum(of beer_week, hard_week, wine_week), 0 if nondrinker=\"Y\"",
   "forms": [
     "wsc_health_interview_form"

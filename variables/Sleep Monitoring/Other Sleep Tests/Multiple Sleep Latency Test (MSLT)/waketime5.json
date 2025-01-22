@@ -3,7 +3,7 @@
   "display_name": "Diary: Waketime on Morning n5 before MSLT",
   "description": "",
   "type": "time",
-  "units": "HHMM (24-hour clock)",
+  "units": "HHmm",
   "labels": [
     "mslt"
   ]

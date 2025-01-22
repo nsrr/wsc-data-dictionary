@@ -3,6 +3,6 @@
   "display_name": "Year of polysomnography data collection",
   "description": "",
   "type": "numeric",
-  "units": "year",
+  "units": "years",
   "commonly_used": true
 }

@@ -3,6 +3,7 @@
   "display_name": "Smoking, number of years",
   "description": "Overall, how many years total, have you been OR were you a regular smoker? ",
   "type": "numeric",
+  "units":"years",
   "labels": [
     "smoking"
   ],

@@ -3,7 +3,7 @@
   "display_name": "Alcohol consumption, number of hard drinks per week",
   "description": "Please estimate your usual consumption of alcoholic beverages,How many mixed drinks or shots might you have per week? ",
   "type": "numeric",
-  "units": "mixed drinks/shots",
+  "units": "number of servings per week",
   "forms": [
     "wsc_health_interview_form"
   ]

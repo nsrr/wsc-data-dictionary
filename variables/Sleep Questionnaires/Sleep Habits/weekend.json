@@ -3,7 +3,7 @@
   "display_name": "Self-reported weekend sleep duration in main sleep",
   "description": "How many hours of sleep do you usually get during: a weekend or non worknight",
   "type": "numeric",
-  "units": "hours",
+  "units": "hours (hr)",
   "labels": [
     "sleep_duration",
     "avgdursp_w2_f3"

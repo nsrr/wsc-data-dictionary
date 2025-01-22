@@ -3,7 +3,7 @@
   "display_name": "Diary: Time Spent Napping Day 5 Before MSLT",
   "description": "",
   "type": "numeric",
-  "units": "minutes",
+  "units": "minutes (min)",
   "labels": [
     "mslt"
   ]

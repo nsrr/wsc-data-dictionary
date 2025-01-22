@@ -3,5 +3,5 @@
   "display_name": "Second measurement of hip girth",
   "description": "Measure at largest circumference over the buttocks with participant standing erect with arms at side",
   "type": "numeric",
-  "units": "cm"
+  "units": "centimeters (cm)"
 }

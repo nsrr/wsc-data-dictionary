@@ -3,7 +3,7 @@
   "display_name": "Caffeine intake - soft drinks per day",
   "description": "How many cans of cola or other soft drinks, with caffeine, do you usually drink in a typical day? Modified in 2012: Energy drinks was added.",
   "type": "numeric",
-  "units": "cans",
+  "units": "number of servings per day",
   "labels": [
     "sleep_hygiene"
   ],
