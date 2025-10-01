@@ -1,0 +1,10 @@
+{
+  "id": "q19b_s2",
+  "display_name": "Last Blood Pressure Reading: Diastolic (mmHg)",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "numeric",
+  "units": "millimeters of mercury (mmHg)",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

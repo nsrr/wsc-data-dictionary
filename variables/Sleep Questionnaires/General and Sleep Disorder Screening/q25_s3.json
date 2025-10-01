@@ -1,0 +1,10 @@
+{
+  "id": "q25_s3",
+  "display_name": "Ever awakened from nap and found you were unable to move whole body/felt paralyzed?",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "domain": "freqsick5",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

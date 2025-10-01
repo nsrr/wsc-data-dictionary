@@ -1,0 +1,10 @@
+{
+  "id": "q14b_s2",
+  "display_name": "Hours of Sleep: Weekend or Non-Work Night",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "numeric",
+  "units": "hours per day",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

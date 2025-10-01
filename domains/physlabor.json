@@ -1,0 +1,22 @@
+[
+  {
+    "value": "1",
+    "display_name": "High (job involves strenous work)",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Moderate (standing, reaching, walking)",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Low (desk job, sitting)",
+    "description": ""
+  },
+  {
+    "value": "7",
+    "display_name": "Does not apply",
+    "description": ""
+  }
+]

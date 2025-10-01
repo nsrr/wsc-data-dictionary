@@ -1,0 +1,10 @@
+{
+  "id": "q12c_s3",
+  "display_name": "Hours of Sleep Per Week: Naps",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "units": "hours per week",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

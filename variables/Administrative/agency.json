@@ -1,0 +1,6 @@
+{
+  "id": "agency",
+  "display_name": "WI State Agency Surveyed",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric"
+}

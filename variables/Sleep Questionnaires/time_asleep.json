@@ -1,0 +1,10 @@
+{
+  "id": "time_asleep",
+  "display_name": "Last Night: When did you fall asleep?",
+  "description": "Last Night: When did you fall asleep?",
+  "type": "numeric",
+  "units": "hh:mm:ss or hh:mm",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

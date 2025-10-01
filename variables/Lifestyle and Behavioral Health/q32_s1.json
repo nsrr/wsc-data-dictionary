@@ -1,0 +1,10 @@
+{
+  "id": "q32_s1",
+  "display_name": "Physical Labor Demands of Your Present Job",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "choices",
+  "domain": "physlabor",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

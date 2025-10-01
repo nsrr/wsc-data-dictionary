@@ -1,0 +1,6 @@
+{
+  "id": "abi",
+  "display_name": "Ankle Brachial Index",
+  "description": "ABI computed using the method described in Shah et all 2015.",
+  "type": "numeric"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "q8_s1",
+  "display_name": "According to others, how often do you gasp, choke or make snorting sounds during sleep?",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "choices",
+  "domain": "freqneveroft",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

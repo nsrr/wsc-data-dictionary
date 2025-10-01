@@ -1,0 +1,10 @@
+{
+  "id": "q7_s2",
+  "display_name": "How often (if ever) have you had the feeling or awareness that you have been snoring?",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "freqneveroft",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

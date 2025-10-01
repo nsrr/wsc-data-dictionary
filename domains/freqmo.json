@@ -1,0 +1,27 @@
+[
+  {
+    "value": "1",
+    "display_name": "Never",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Rarely (1/mo)",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Sometimes (2-4/mo)",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Often (5-15/mo)",
+    "description": ""
+  },
+  {
+    "value": "5",
+    "display_name": "Almost Always (16-30/mo)",
+    "description": ""
+  }
+]

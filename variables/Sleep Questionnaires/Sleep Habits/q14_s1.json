@@ -1,0 +1,10 @@
+{
+  "id": "q14_s1",
+  "display_name": "Minutes to fall asleep",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric",
+  "units": "minutes (min)",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "q15a_s1",
+  "display_name": "Hours of Sleep: Work Night",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric",
+  "units": "hours per day",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "q25_s1",
+  "display_name": "Present Weight (lbs)",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric",
+  "units": "pounds (lb)",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "impairment2_text",
+  "display_name": "Impairment #2 ",
+  "description": "Any impairments noted that might after the participant's performance on the NTB.",
+  "type": "text"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "q19a_s2",
+  "display_name": "Last Blood Pressure Reading: Systolic (mmHg)",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "numeric",
+  "units": "millimeters of mercury (mmHg)",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

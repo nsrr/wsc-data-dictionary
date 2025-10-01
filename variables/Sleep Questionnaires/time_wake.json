@@ -1,0 +1,10 @@
+{
+  "id": "time_wake",
+  "display_name": "This Morning: When did you awake up?",
+  "description": "This Morning: When did you awake up?",
+  "type": "numeric",
+  "units": "hh:mm:ss or hh:mm",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

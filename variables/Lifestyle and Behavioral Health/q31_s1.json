@@ -1,0 +1,10 @@
+{
+  "id": "q31_s1",
+  "display_name": "Hours per week of Regular Planned Exercise (e.g. jogging, sports, classes, home workouts)",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric",
+  "units": "hours per week",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

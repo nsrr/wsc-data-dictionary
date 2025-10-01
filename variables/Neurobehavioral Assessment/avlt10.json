@@ -1,0 +1,7 @@
+{
+  "id": "avlt10",
+  "display_name": "AVLT: Trial 10: Paragraph Recognition Errors: # Errors ",
+  "description": "AVLT: Paragraph Recognition: # Errors (List 1, Delayed Paragraph Recall)",
+  "type": "numeric",
+  "units": "counts"
+}

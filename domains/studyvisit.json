@@ -23,5 +23,10 @@
     "value": "5",
     "display_name": "Visit 5",
     "description": ""
+  },
+  {
+    "value": "6",
+    "display_name": "Mailed Survey ",
+    "description": ""
   }
 ]

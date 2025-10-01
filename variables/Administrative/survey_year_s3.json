@@ -1,0 +1,7 @@
+{
+  "id": "survey_year_s3",
+  "display_name": "Survey 3 Mailing Year",
+  "description": "",
+  "type": "numeric",
+  "units": "Year"
+}

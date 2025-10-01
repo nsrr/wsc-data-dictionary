@@ -1,0 +1,13 @@
+{
+  "id": "q15f_s2",
+  "display_name": "Sleep Problem: How Often: Very difficult to get up in the morning<br><br>[Search for all questionaire questions from Sleep Problem category within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)<br><br>The original form was coded as 0-4, but has been recoded to 1- 5 to match all other occurrences of these variables (Survey 1, Survey 3).<br><br>[Search for all questionaire questions from Sleep Problem category within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "type": "choices",
+  "domain": "freqnight",
+  "labels": [
+    "sleep_problem"
+  ],
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

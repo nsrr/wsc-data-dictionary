@@ -1,0 +1,10 @@
+{
+  "id": "glaucoma_ynd",
+  "display_name": "Glaucoma (or high eye pressure): Self-reported by a physician diagnosis",
+  "description": "The next section asks about specific medical problems. Please indicate if you have been told by a doctor that you have or have had any of these conditions: Glaucoma (or high eye pressure)<br><br>Data collection for this question started in 2012.",
+  "type": "choices",
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

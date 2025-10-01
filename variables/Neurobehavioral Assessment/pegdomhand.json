@@ -1,0 +1,7 @@
+{
+  "id": "pegdomhand",
+  "display_name": "Grooved Pegboard: Dominant Hand",
+  "description": "",
+  "type": "choices",
+  "domain": "leftright"
+}

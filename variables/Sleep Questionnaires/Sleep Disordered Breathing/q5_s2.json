@@ -1,0 +1,10 @@
+{
+  "id": "q5_s2",
+  "display_name": "Has anyone who shared your bedroom ever moved to another bedroom due to your snoring?",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "yesno12",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

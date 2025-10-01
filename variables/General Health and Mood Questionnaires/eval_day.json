@@ -1,0 +1,10 @@
+{
+  "id": "eval_day",
+  "display_name": "How was your day today?",
+  "description": "How was your day today?",
+  "type": "choices",
+  "domain": "evalday",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

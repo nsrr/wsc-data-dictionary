@@ -1,0 +1,13 @@
+{
+  "id": "q10i_s3",
+  "display_name": "Sleep Problem: How Often: Wake up with headaches",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br>[Search for all questionaire questions from Sleep Problem category within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "type": "numeric",
+  "domain": "freqmo",
+  "labels": [
+    "sleep_problem"
+  ],
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "q6_s1",
+  "display_name": "Based on others, how many years do you think you have been snoring?",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)<br><br> 0 indicates less than 1 year",
+  "type": "numeric",
+  "units": "years",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

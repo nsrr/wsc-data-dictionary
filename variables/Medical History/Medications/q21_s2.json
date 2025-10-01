@@ -1,0 +1,10 @@
+{
+  "id": "q21_s2",
+  "display_name": "Were you taking blood pressure medication when your blood pressure was last taken?",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "yesno3",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "q13c_s3",
+  "display_name": "How Often Feelings in Legs: Periods of Several Leg Jerks or Jumps in a Row",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "domain": "freqlegs",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

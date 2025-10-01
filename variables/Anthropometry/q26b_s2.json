@@ -1,0 +1,10 @@
+{
+  "id": "q26b_s2",
+  "display_name": "Height: Inches",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "numeric",
+  "units": "inches (in)",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

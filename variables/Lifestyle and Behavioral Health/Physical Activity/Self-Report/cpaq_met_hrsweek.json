@@ -1,0 +1,8 @@
+{
+  "id": "cpaq_met_hrsweek",
+  "display_name": "Current Exercise: MET-hours per week",
+  "description": "Summation across each individual activity reported by hours and METs exersion on the Current Physical Activities Questionnire.  Estimate of METs comes from the 2011 Compendium fo Physical Activities: Ainsworth BE, Haskell WL, Herrmann SD, Meckes N, Bassett Jr DR, Tudor-Locke C, Greer JL, Vezina J, Whitt-Glover MC, Leon AS. 2011 Compendium of Physical Activities: a second update of codes and MET values. Medicine and Science in Sports and Exercise, 2011;43(8):1575-1581..<br><br>Data from this question was collected from 2009 onward.",
+  "type": "numeric",
+  "units": "MET-hours per week",
+  "calculation": "(Hours per Week of Walking (from #1)*METs) + (Hours per Week of Activities Reported in Regular Exercise (#4) *METs) + (Hours per Week of Activities Reported in Sports/Recreational Activities (#6)*METs). Since many participants reported the same walking activitiy in more than one section, walking was only included from the walking-specific section."
+}

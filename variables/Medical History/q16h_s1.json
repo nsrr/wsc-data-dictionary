@@ -1,0 +1,10 @@
+{
+  "id": "q16h_s1",
+  "display_name": "Physician Reported: Heart Attack",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "choices",
+  "domain": "yesno12",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

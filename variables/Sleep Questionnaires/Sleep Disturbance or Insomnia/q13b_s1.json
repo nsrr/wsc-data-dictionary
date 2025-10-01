@@ -1,0 +1,14 @@
+{
+  "id": "q13b_s1",
+  "display_name": "Sleep Problem: How Often: Wake up during night and have hard time getting back to sleep",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "choices",
+  "domain": "freqmo",
+  "labels": [
+    "sleep_problem",
+    " insomnia"
+  ],
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

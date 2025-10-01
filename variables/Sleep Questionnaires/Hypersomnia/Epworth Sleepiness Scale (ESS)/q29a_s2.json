@@ -1,0 +1,14 @@
+{
+  "id": "q29a_s2",
+  "display_name": "Epworth Sleepiness Scale (ESS): Chance of dozing while sitting and reading",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)<br><br>Item from the Epworth Sleepiness Scale [Johns MW 1991 (PubMed ID: 1798888)](https://www.ncbi.nlm.nih.gov/pubmed/1798888)<br><br> [Search for all ESS variables within this dataset](https://sleepdata.org/datasets/abc/variables?search=epworth)",
+  "type": "numeric",
+  "domain": "freqdoze",
+  "labels": [
+    "ess_1sitread",
+    "epworth"
+  ],
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

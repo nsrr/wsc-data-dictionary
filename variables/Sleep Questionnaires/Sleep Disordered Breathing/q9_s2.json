@@ -1,0 +1,10 @@
+{
+  "id": "q9_s2",
+  "display_name": "How often have you wakened suddenly with the feelings of gasping or choking?",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "freqneveroft",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

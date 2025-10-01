@@ -1,0 +1,8 @@
+{
+  "id": "avltretention",
+  "display_name": "AVLT: % Retention (Delayed Recall/Maximum prompted Recall)",
+  "description": "AVLT: % Retention (Trial 8 Delay/maximum of Trial 1-5)",
+  "type": "numeric",
+  "units": "percent (%)",
+  "calculation": "AVLT8/(max of AVLT1 - AVLT5) *100"
+}

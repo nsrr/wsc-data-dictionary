@@ -3,7 +3,7 @@
   "display_name": "MSLT: Start Time of Nap 1",
   "description": "Start time was entered into the database for Clinical MSLT only. <br><br>Variable from a Multiple Sleep Latency Test (MSLT), [Roehrs & Roth 1992 (PubMed ID: 1552009)](https://pubmed.ncbi.nlm.nih.gov/1552009/).<br><br>[Search for all Multiple Sleep Latency Test variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=mslt)",
   "type": "time",
-  "units": "HHmm",
+  "units": "minutes (min)",
   "labels": [
     "mslt"
   ]

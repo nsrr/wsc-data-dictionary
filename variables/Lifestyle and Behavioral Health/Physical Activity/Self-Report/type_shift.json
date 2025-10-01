@@ -1,0 +1,10 @@
+{
+  "id": "type_shift",
+  "display_name": "Type of Work Shift",
+  "description": "For your job, what type of shift do you work?",
+  "type": "choices",
+  "domain": "typeshift",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

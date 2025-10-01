@@ -1,0 +1,10 @@
+{
+  "id": "phys_probs",
+  "display_name": "Do you have any physical problems or discomforts today?",
+  "description": "Do you have any physical problems or discomforts today?",
+  "type": "choices",
+  "domain": "noyesny",
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

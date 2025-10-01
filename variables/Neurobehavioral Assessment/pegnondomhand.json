@@ -1,0 +1,7 @@
+{
+  "id": "pegnondomhand",
+  "display_name": "Grooved Pegboard: Non-Dominant Hand",
+  "description": "",
+  "type": "choices",
+  "domain": "leftright"
+}

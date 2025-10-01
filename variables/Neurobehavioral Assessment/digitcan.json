@@ -1,0 +1,7 @@
+{
+  "id": "digitcan",
+  "display_name": "Digit Cancellation",
+  "description": "",
+  "type": "numeric",
+  "units": "counts"
+}

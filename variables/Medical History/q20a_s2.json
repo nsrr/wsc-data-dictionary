@@ -1,0 +1,10 @@
+{
+  "id": "q20a_s2",
+  "display_name": "Last Blood Pressure Reading: Month",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "readingmonth",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

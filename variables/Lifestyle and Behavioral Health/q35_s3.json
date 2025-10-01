@@ -1,0 +1,10 @@
+{
+  "id": "q35_s3",
+  "display_name": "Hours per week of Regular Planned Exercise (e.g. jogging, sports, classes, home workouts)",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br>Survey 1 and Survey 3 responses were capped at 20 hrs/wk.",
+  "type": "numeric",
+  "units": "hours per week",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "q20c_s3",
+  "display_name": "Muscle Weakness in Legs or Buckling Knees: How Often: When you tell or hear a joke",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "domain": "freqsick5",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

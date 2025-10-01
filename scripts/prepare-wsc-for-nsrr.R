@@ -1,0 +1,173 @@
+library(dplyr)
+library(lubridate)
+library(haven)
+library(stringr)
+library(hms)
+library(readxl)
+library(purrr)
+
+wscs_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source"
+wscd_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_datasets"
+wsca_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_archive"
+
+version <- "0.8.0.pre"
+releasepath <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases"
+
+wsc_in <- read_sas(file.path(wscs_path, "nsrr_wsc_2024_0711.sas7bdat"))|>
+  mutate(across(where(is.character), ~ na_if(.x, "")))
+wsc_mslt <- read_sas(file.path(wscs_path, "nsrr_mslt.sas7bdat"))|>
+  mutate(across(where(is.character), ~ na_if(.x, "")))
+wsc_drug <- read_sas(file.path(wscs_path, "nsrr_alldrugs.sas7bdat"))|>
+  mutate(across(where(is.character), ~ na_if(.x, "")))
+
+
+####------------------ Creating WSC Dataset + add drug and updated variables ------------------ 
+
+wsc <- wsc_in |>
+  rename_with(tolower)|> 
+  mutate(
+    wsc_id = as.numeric(wsc_id),
+    wsc_vst = as.numeric(wsc_vst))|>
+  distinct(wsc_id, wsc_vst, .keep_all = TRUE)|>
+  arrange(wsc_id, wsc_vst)
+
+
+wsc_drug <- wsc_drug |>
+  rename_with(tolower)|>
+  distinct(wsc_id, wsc_vst, .keep_all = TRUE) |>
+  arrange(wsc_id, wsc_vst)
+
+# Merge wsc and wsc_drug by wsc_id and wsc_vst, keep only rows in wsc
+wsc_nsrr <- wsc |>
+  left_join(wsc_drug, by = c("wsc_id", "wsc_vst"))|>
+  mutate(apnea_treatment_year = as.numeric(apnea_treatment_year),
+         reproductive_surg_year = as.numeric(reproductive_surg_year),
+         apnea_year = as.numeric(apnea_year))|>
+  mutate(across(everything(), ~ {
+    attr(., "label") <- NULL
+    .
+  }))
+
+dat0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-dataset-0.7.0.csv")
+all.equal(dat0.7.0, wsc_nsrr, check.attributes = FALSE)
+
+
+##Add in the new variables from 2025_0702
+
+new_vars <- read_excel("~/wsc_new_vars.xlsx")|>
+  select(id)|>
+  keep(is.character) |>
+  map(~tolower(.x))
+
+my_vars <- unlist(new_vars)|>
+  unname()
+
+wsc_2025 <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/NSRR_WSC_data_2025_0702.xlsx", )|>
+  rename_with(tolower)|> 
+  select(c(wsc_id, wsc_vst, all_of(my_vars)))
+
+wsc_nsrr_2025 <- wsc_nsrr|>
+  left_join(wsc_2025, by = join_by(wsc_id, wsc_vst))
+
+
+write.csv(wsc_nsrr_2025, file.path(releasepath, paste0("0.8.0.pre/wsc-dataset-", version, ".csv")), na = "", row.names = F)
+
+
+####------------------ Creating MSLT Dataset with hh:mm times  ------------------ 
+
+wsc_mslt <- wsc_mslt |>
+  rename_with(tolower)|>
+  distinct(wsc_id, wsc_vst, .keep_all = TRUE) |>
+  arrange(wsc_id, wsc_vst)
+
+time_cols <- grep("time", names(wsc_mslt), value = TRUE)
+
+convert_HHmm <- function(x) {
+  # Treat blank "" as NA
+  x[x == ""] <- NA
+  
+  ifelse(
+    is.na(x),
+    NA_character_,
+    {
+      x_str <- str_pad(as.character(x), 4, pad = "0")
+      hrs <- substr(x_str, 1, 2)
+      mins <- substr(x_str, 3, 4)
+      paste0(hrs, ":", mins)
+    }
+  )
+}
+
+wsc_mslt_times <- wsc_mslt %>%
+  mutate(across(all_of(time_cols), ~parse_hm(convert_HHmm(.x))))
+
+wsc_mslt_merge <- wsc_mslt_times |>
+  left_join(wsc_nsrr |> select(sex, race, wsc_id, wsc_vst), by = c("wsc_id", "wsc_vst"))|>
+  mutate(across(everything(), ~ {
+    attr(., "label") <- NULL
+    .
+  }))
+
+# mslt0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-mslt-dataset-0.7.0.csv")
+# all.equal( mslt0.7.0, wsc_mslt_merge, check.attributes = FALSE)
+
+write.csv(wsc_mslt_merge, file.path(releasepath, paste0("0.8.0.pre/wsc-mslt-dataset", version, ".csv")), na = "", row.names = F)
+
+####------------------ Creating NSRR Harmonized Dataset ------------------
+
+wsc_harmonized <- wsc_nsrr|>
+  mutate(nsrr_age = ifelse(age > 89, 90, age),
+         nsrr_age_gt89 = case_when(
+           age > 89  ~ "yes",
+           age <= 89 ~ "no"),
+         nsrr_sex = case_match(sex, 
+           "M" ~ "male",
+           "F" ~ "female", 
+           "." ~ "not reported"),
+         nsrr_race = case_match(race,
+                                0 ~ "asian",
+                                1 ~ "black or african american",
+                                2 ~ "hispanic",
+                                3 ~ "american indian or alaska native",
+                                5 ~ "white"),
+         nsrr_bmi = bmi,
+         # Clinical vitals
+         nsrr_bp_systolic  = sbp_mean,
+         nsrr_bp_diastolic = dbp_mean,
+         nsrr_current_smoker = case_when(
+           smoke_curr == "N" | (!is.na(smoke) & smoke == "N") ~ "no",
+           smoke_curr == "Y" ~ "yes"),
+         nsrr_ever_smoker = case_when(
+           smoke == "N" ~ "no",
+           smoke == "Y" ~ "yes"),
+         nsrr_ahi_hp4u_aasm15 = ahi,
+         nsrr_ahi_hp3u = ahi3,
+         nsrr_ttldursp_f1 = tst,
+         nsrr_ttleffsp_f1 = se,
+         nsrr_ttllatsp_f1 = sleep_latency,
+         nsrr_ttlprdsp_s1sr = rem_latency,
+         nsrr_ttldurws_f1= waso,
+         nsrr_pctdursp_s1 = pcttststagen1,
+         nsrr_pctdursp_s2 = pcttststagen2,
+         nsrr_pctdursp_s3 = pcttststage34,
+         nsrr_pctdursp_sr = pcttstrem
+         )|>
+  select(
+    wsc_id, wsc_vst,
+    nsrr_age, nsrr_age_gt89, nsrr_sex, nsrr_race,
+    nsrr_bmi,
+    nsrr_bp_systolic, nsrr_bp_diastolic,
+    nsrr_current_smoker, nsrr_ever_smoker,
+    nsrr_ahi_hp4u_aasm15, nsrr_ahi_hp3u,
+    nsrr_ttldursp_f1, nsrr_ttleffsp_f1, nsrr_ttllatsp_f1,
+    nsrr_ttlprdsp_s1sr, nsrr_ttldurws_f1,
+    nsrr_pctdursp_s1, nsrr_pctdursp_s2, nsrr_pctdursp_s3, nsrr_pctdursp_sr)|>
+  mutate(across(everything(), ~ {
+    attr(., "label") <- NULL
+    .}))
+
+write.csv(wsc_harmonized, file.path(releasepath, paste0("0.8.0.pre/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
+#harm0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-harmonized-dataset-0.7.0.csv")
+#all.equal(wsc_harmonized, harm0.7.0, check.attributes = FALSE)
+
+

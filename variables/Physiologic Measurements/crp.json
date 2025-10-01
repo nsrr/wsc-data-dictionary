@@ -1,0 +1,7 @@
+{
+  "id": "crp",
+  "display_name": "C-Reactive Protein (CRP)",
+  "description": "Measure of CRP level in blood, obtained from fasting blood draw on the morning after the overnight PSG<br><br>Collection years: 2009-2012",
+  "type": "numeric",
+  "units": "milligrams per deciliter (mg/dL)"
+}

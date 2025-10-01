@@ -1,0 +1,10 @@
+{
+  "id": "q27_s3",
+  "display_name": "Ever experience any muscle weakness in hands that make it hard to grip/squeeze something? (not numbness or 'needles')",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "domain": "freqsick3",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

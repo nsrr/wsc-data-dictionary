@@ -3,7 +3,7 @@
   "display_name": "Apnea Treatment Compliance: Number of nights per week using CPAP or BiPAP",
   "description": "If the treatment was CPAP or BiPAP please answer the following questions: If you are using the recommended CPAP/BiPAP, please indicate: b. How many nights per week do you use it?",
   "type": "numeric",
-  "units":"nights per week",
+  "units": "nights per week",
   "labels": [
     "sdb"
   ],

@@ -1,0 +1,10 @@
+{
+  "id": "q3_s1",
+  "display_name": "According to others, how often do you snore?",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "choices",
+  "domain": "freqnight",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

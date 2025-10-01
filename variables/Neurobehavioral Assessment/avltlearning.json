@@ -1,0 +1,8 @@
+{
+  "id": "avltlearning",
+  "display_name": "AVLT: Learning Recall",
+  "description": "AVLT: Learning Recall = Learning Score (sum of Trials 1-5)",
+  "type": "numeric",
+  "units": "counts",
+  "calculation": "sum of AVLT1 - AVLT5"
+}

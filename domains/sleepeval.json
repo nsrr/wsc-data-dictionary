@@ -1,0 +1,17 @@
+[
+  {
+    "value": "1",
+    "display_name": "Better than usual",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "As well as usual",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Worse than usual",
+    "description": ""
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "id": "sdmt",
+  "display_name": "Symbol Digit Modalities Test",
+  "description": "",
+  "type": "numeric",
+  "units": "counts"
+}

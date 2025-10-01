@@ -1,0 +1,8 @@
+{
+  "id": "cpaq_hrsweek",
+  "display_name": "Current Exercise: Hours per Week",
+  "description": "Summation of all reported hours of exercise on the Current Physical Activities Questionnire.<br><br>Data from this question was collected from 2009 onward.",
+  "type": "numeric",
+  "units": "hours per week",
+  "calculation": "(Hours per Week of Walking (from #1)) + (Hours per Week of Activities Reported in Regular Exercise (#4)) + (Hours per Week of Activities Reported in Sports/Recreational Activities (#6)). Since many participants reported the same walking activitiy in more than one section, walking was only included from the walking-specific section."
+}

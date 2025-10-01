@@ -1,0 +1,27 @@
+[
+  {
+    "value": "1",
+    "display_name": "Never",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "<1/month",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "Monthly",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "Weekly",
+    "description": ""
+  },
+  {
+    "value": "5",
+    "display_name": "Nightly",
+    "description": ""
+  }
+]

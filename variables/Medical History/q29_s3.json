@@ -1,0 +1,10 @@
+{
+  "id": "q29_s3",
+  "display_name": "Do you have allergies (like hay fever) that cause nasal congestion, stuffiness, runny nose?",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "domain": "yesno12",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

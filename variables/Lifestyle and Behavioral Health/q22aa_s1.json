@@ -1,0 +1,9 @@
+{
+  "id": "q22aa_s1",
+  "display_name": "Usual Working Hours: Daytime Job: End Time (PM)",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

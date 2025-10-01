@@ -1,0 +1,7 @@
+{
+  "id": "pegdomscore",
+  "display_name": "Grooved Pegboard: Dominant Hand Score",
+  "description": "",
+  "type": "numeric",
+  "units": "seconds (s)"
+}

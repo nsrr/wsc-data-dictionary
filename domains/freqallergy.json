@@ -1,0 +1,17 @@
+[
+  {
+    "value": "0",
+    "display_name": "No only daytime",
+    "description": ""
+  },
+  {
+    "value": "1",
+    "display_name": "Some Nighs",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Most Nights",
+    "description": ""
+  }
+]

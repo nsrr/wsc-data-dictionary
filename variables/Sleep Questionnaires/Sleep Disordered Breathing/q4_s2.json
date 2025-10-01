@@ -1,0 +1,10 @@
+{
+  "id": "q4_s2",
+  "display_name": "How loud do others say your snoring is?",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "snoreloud",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

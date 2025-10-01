@@ -1,0 +1,10 @@
+{
+  "id": "q10_s2",
+  "display_name": "According to others, how often do you seem to stop breathing or breathe abnormally?",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "freqneveroft",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

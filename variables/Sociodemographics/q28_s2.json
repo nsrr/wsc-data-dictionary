@@ -1,0 +1,10 @@
+{
+  "id": "q28_s2",
+  "display_name": "Marital Status",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "numeric",
+  "domain": "marriage",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

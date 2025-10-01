@@ -1,0 +1,17 @@
+[
+  {
+    "value": "1",
+    "display_name": "Yes Allergies and Yes Med",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Yes Allergies and No Meds",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "No Allergies",
+    "description": ""
+  }
+]

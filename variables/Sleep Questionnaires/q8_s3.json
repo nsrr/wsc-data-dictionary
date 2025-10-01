@@ -1,0 +1,10 @@
+{
+  "id": "q8_s3",
+  "display_name": "According to others, how often do you kick or make disruptive movements during sleep?",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "domain": "freqneveroft",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

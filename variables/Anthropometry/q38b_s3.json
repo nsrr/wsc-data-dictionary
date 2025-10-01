@@ -1,0 +1,10 @@
+{
+  "id": "q38b_s3",
+  "display_name": "Height: Inches",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "numeric",
+  "units": "inches (in)",
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "q13o_s1",
+  "display_name": "Sleep Problem: How Often: Need for coffee or other stimulants to stay awake during day",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)<br><br>[Search for all questionaire questions from Sleep Problem category within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "type": "choices",
+  "domain": "freqmo",
+  "labels": [
+    "sleep_problem"
+  ],
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

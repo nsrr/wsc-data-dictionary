@@ -1,0 +1,10 @@
+{
+  "id": "q2b_s2",
+  "display_name": "Who told you that you snore: Someone sleeping in other room",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
+  "type": "choices",
+  "domain": "yesno12",
+  "forms": [
+    "wsc_mailed_survery2_form"
+  ]
+}

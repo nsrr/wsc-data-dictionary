@@ -1,0 +1,7 @@
+{
+  "id": "avlt1",
+  "display_name": "AVLT:Trial 1: # Words Recalled from List 1: Immedate Recall",
+  "description": "AVLT: # Words Recalled (Trial 1, List 1, prompted)",
+  "type": "numeric",
+  "units": "counts"
+}

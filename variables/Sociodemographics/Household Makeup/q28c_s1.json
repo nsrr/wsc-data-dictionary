@@ -1,0 +1,10 @@
+{
+  "id": "q28c_s1",
+  "display_name": "Age of Children: Child #3 (yrs)",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric",
+  "units": "years",
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}
