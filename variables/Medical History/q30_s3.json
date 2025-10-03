@@ -2,7 +2,7 @@
   "id": "q30_s3",
   "display_name": "Do allergy symptoms occur at night?",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
-  "type": "numeric",
+  "type": "choices",
   "domain": "freqallergy",
   "forms": [
     "wsc_mailed_survery3_form"

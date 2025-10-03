@@ -1,0 +1,14 @@
+{
+  "id": "nap_today",
+  "display_name": "DId you take any naps today?",
+  "description": "DId you take any naps today?",
+  "type": "choices",
+  "domain": "noyesny",
+  "labels": [
+    "sleep_hygiene",
+    "naps"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

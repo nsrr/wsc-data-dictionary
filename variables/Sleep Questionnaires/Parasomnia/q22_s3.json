@@ -1,0 +1,13 @@
+{
+  "id": "q22_s3",
+  "display_name": "Ever had times when driving when you suddenly felt like you 'went blank' with no memory of period?",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "choices",
+  "domain": "freqsick5",
+  "labels": [
+    "narcolepsy"
+  ],
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

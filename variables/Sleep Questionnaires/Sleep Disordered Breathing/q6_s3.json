@@ -2,8 +2,11 @@
   "id": "q6_s3",
   "display_name": "How often have you wakened suddenly with the feelings of gasping or choking?",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
-  "type": "numeric",
+  "type": "choices",
   "domain": "freqneveroft",
+  "labels": [
+    "sdb"
+  ],
   "forms": [
     "wsc_mailed_survery3_form"
   ]

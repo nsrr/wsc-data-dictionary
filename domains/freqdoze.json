@@ -18,5 +18,10 @@
     "value": "4",
     "display_name": "High",
     "description": ""
+  },
+  {
+    "value": "7",
+    "display_name": "Does not apply",
+    "description": ""
   }
 ]

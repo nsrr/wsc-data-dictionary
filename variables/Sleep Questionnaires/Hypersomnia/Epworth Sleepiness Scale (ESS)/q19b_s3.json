@@ -1,12 +1,13 @@
 {
   "id": "q19b_s3",
   "display_name": "Epworth Sleepiness Scale (ESS): Chance of dozing while watching TV",
-  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br>Item from the Epworth Sleepiness Scale [Johns MW 1991 (PubMed ID: 1798888)](https://www.ncbi.nlm.nih.gov/pubmed/1798888)<br><br> [Search for all ESS variables within this dataset](https://sleepdata.org/datasets/abc/variables?search=epworth)",
-  "type": "numeric",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br>Item from the Epworth Sleepiness Scale [Johns MW 1991 (PubMed ID: 1798888)](https://www.ncbi.nlm.nih.gov/pubmed/1798888)<br><br> [Search for all ESS variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=epworth)",
+  "type": "choices",
   "domain": "freqdoze",
   "labels": [
     "ess_2watchingtv",
-    "epworth"
+    "epworth",
+    "subjective_sleepiness"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

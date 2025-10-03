@@ -1,0 +1,12 @@
+{
+  "id": "q22cc_s1",
+  "display_name": "Usual Working Hours: Nighttime Job: End Time (PM)",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "type": "numeric",
+  "labels": [
+    "night_shift"
+  ],
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

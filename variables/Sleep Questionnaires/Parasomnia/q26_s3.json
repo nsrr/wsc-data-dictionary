@@ -1,0 +1,13 @@
+{
+  "id": "q26_s3",
+  "display_name": "Ever awakened during night's sleep and felt unable to move any part of body?",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
+  "type": "choices",
+  "domain": "freqsick5",
+  "labels": [
+    "sleep_paralysis"
+  ],
+  "forms": [
+    "wsc_mailed_survery3_form"
+  ]
+}

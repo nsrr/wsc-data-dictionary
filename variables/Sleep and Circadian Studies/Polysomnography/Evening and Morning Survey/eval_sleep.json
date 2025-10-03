@@ -1,0 +1,13 @@
+{
+  "id": "eval_sleep",
+  "display_name": "Last Night: How well did you sleep?",
+  "description": "Last Night: How well did you sleep?",
+  "type": "choices",
+  "domain": "sleepeval",
+  "labels": [
+    "sleep_timing"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

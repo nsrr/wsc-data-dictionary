@@ -1,0 +1,15 @@
+{
+  "id": "q13e_s1",
+  "display_name": "Sleep Problem: How Often: Not feel rested during day, no matter how many hours of sleep you get",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)<br><br>[Search for all questions from Sleep Problem questionare within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "type": "choices",
+  "domain": "freqmo",
+  "labels": [
+    "sleep_problem",
+    "sleep_quality",
+    "sleep_satisfaction"
+  ],
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

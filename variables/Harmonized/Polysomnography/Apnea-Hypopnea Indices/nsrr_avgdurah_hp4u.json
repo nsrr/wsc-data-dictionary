@@ -1,0 +1,11 @@
+{
+  "id": "nsrr_avgdurah_hp4u",
+  "display_name": "Average duration of apneas and hypopnea events:  Apneas with no oxygen desaturation threshold used and with or without arousal and hypopneas with discernible flow reduction and with >= 4% oxygen desaturation and with or without arousal from type I polysomnography.",
+  "description": "Harmonized by the NSRR team. Source: :mean_desat_dur:",
+  "type": "numeric",
+  "units": "minutes (min)",
+  "labels": [
+    "avgdurah_hp4u_f1t1"
+  ],
+  "commonly_used": true
+}

@@ -1,6 +1,6 @@
 ## 0.8.0 (September 30, 2025)
 - Add 49 new variables (from WSC team) and data dictionary entries
-- Add questionnaire dataset and data dictionary entries
+- Add new questionnaire dataset and data dictionary entries
 - The CSV datasets generated from a new R script is located here:
   - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.8.0.pre`
 

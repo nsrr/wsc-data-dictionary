@@ -1,0 +1,16 @@
+{
+  "id": "q13f_s1",
+  "display_name": "Sleep Problem: How Often: Very difficult to get up in the morning",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)<br><br>[Search for all questions from Sleep Problem questionare within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "type": "choices",
+  "domain": "freqmo",
+  "labels": [
+    "sleep_problem",
+    "sleep_quality",
+    "sleep_satisfaction",
+    "subjective_sleepiness"
+  ],
+  "forms": [
+    "wsc_mailed_survery1_form"
+  ]
+}

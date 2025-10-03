@@ -1,12 +1,13 @@
 {
   "id": "q29h_s2",
   "display_name": "Epworth Sleepiness Scale (ESS): Chance of dozing while in a car, while stopped for a few minutes in traffic",
-  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)<br><br>Item from the Epworth Sleepiness Scale [Johns MW 1991 (PubMed ID: 1798888)](https://www.ncbi.nlm.nih.gov/pubmed/1798888)<br><br> [Search for all ESS variables within this dataset](https://sleepdata.org/datasets/abc/variables?search=epworth)",
-  "type": "numeric",
+  "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)<br><br>Item from the Epworth Sleepiness Scale [Johns MW 1991 (PubMed ID: 1798888)](https://www.ncbi.nlm.nih.gov/pubmed/1798888)<br><br> [Search for all ESS variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=epworth)",
+  "type": "choices",
   "domain": "freqdoze",
   "labels": [
     "ess_8stoppedcar",
-    "epworth"
+    "epworth",
+    "subjective_sleepiness"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

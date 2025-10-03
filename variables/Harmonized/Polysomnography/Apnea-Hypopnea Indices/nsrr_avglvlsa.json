@@ -1,0 +1,11 @@
+{
+  "id": "nsrr_avglvlsa",
+  "display_name": "Average oxygen saturation in total sleep duration from type I polysomnography",
+  "description": "Harmonized by the NSRR team. Source: :avgo2sattstr:",
+  "type": "numeric",
+  "units": "minutes (min)",
+  "labels": [
+    "avglvlsa_f1t1"
+  ],
+  "commonly_used": true
+}

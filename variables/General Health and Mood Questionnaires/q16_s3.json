@@ -2,7 +2,7 @@
   "id": "q16_s3",
   "display_name": "In general, how is your health?",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
-  "type": "numeric",
+  "type": "choices",
   "domain": "healthrating",
   "forms": [
     "wsc_mailed_survery3_form"

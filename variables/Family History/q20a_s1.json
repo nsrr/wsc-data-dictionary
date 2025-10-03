@@ -4,6 +4,9 @@
   "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
   "type": "choices",
   "domain": "yesno3",
+  "labels": [
+    "narcolepsy"
+  ],
   "forms": [
     "wsc_mailed_survery1_form"
   ]

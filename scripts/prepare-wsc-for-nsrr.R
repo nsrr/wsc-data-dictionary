@@ -116,52 +116,60 @@ write.csv(wsc_mslt_merge, file.path(releasepath, paste0("0.8.0.pre/wsc-mslt-data
 ####------------------ Creating NSRR Harmonized Dataset ------------------
 
 wsc_harmonized <- wsc_nsrr|>
-  mutate(nsrr_age = ifelse(age > 89, 90, age),
-         nsrr_age_gt89 = case_when(
+  mutate(
+    nsrrid = wsc_id,
+    nsrr_visit = wsc_vst,
+    nsrr_age = ifelse(age > 89, 90, age),
+    nsrr_age_gt89 = case_when(
            age > 89  ~ "yes",
            age <= 89 ~ "no"),
-         nsrr_sex = case_match(sex, 
+    nsrr_sex = case_match(sex, 
            "M" ~ "male",
            "F" ~ "female", 
            "." ~ "not reported"),
-         nsrr_race = case_match(race,
+    nsrr_race = case_match(race,
                                 0 ~ "asian",
                                 1 ~ "black or african american",
                                 2 ~ "hispanic",
                                 3 ~ "american indian or alaska native",
                                 5 ~ "white"),
-         nsrr_bmi = bmi,
+    nsrr_bmi = bmi,
          # Clinical vitals
-         nsrr_bp_systolic  = sbp_mean,
-         nsrr_bp_diastolic = dbp_mean,
-         nsrr_current_smoker = case_when(
+    nsrr_bp_systolic  = sbp_mean,
+    nsrr_bp_diastolic = dbp_mean,
+    nsrr_current_smoker = case_when(
            smoke_curr == "N" | (!is.na(smoke) & smoke == "N") ~ "no",
            smoke_curr == "Y" ~ "yes"),
-         nsrr_ever_smoker = case_when(
+    nsrr_ever_smoker = case_when(
            smoke == "N" ~ "no",
            smoke == "Y" ~ "yes"),
-         nsrr_ahi_hp4u_aasm15 = ahi,
-         nsrr_ahi_hp3u = ahi3,
-         nsrr_ttldursp_f1 = tst,
-         nsrr_ttleffsp_f1 = se,
-         nsrr_ttllatsp_f1 = sleep_latency,
-         nsrr_ttlprdsp_s1sr = rem_latency,
-         nsrr_ttldurws_f1= waso,
-         nsrr_pctdursp_s1 = pcttststagen1,
-         nsrr_pctdursp_s2 = pcttststagen2,
-         nsrr_pctdursp_s3 = pcttststage34,
-         nsrr_pctdursp_sr = pcttstrem
-         )|>
+    nsrr_ahi_hp4u_aasm15 = ahi,
+    nsrr_ahi_hp3u = ahi3,
+    nsrr_tst_f1 = tst,
+    nsrr_ttleffsp_f1 = se,
+    nsrr_ttllatsp_f1 = sleep_latency,
+    nsrr_ttlprdsp_s1sr = rem_latency,
+    nsrr_waso_f1= waso,
+    nsrr_pctdursp_s1 = pcttststagen1,
+    nsrr_pctdursp_s2 = pcttststagen2,
+    nsrr_pctdursp_s3 = pcttststage34,
+    nsrr_pctdursp_sr = pcttstrem,
+    nsrr_avgdurah_hp4u = mean_desat_dur,
+    nsrr_pctdursp_salt90 = ptstl90,
+    nsrr_avglvlsa = avgo2sattst,
+    nsrr_minlvlsa = minsao2tst
+    )|>
   select(
-    wsc_id, wsc_vst,
+    nsrrid, nsrr_visit,
     nsrr_age, nsrr_age_gt89, nsrr_sex, nsrr_race,
     nsrr_bmi,
     nsrr_bp_systolic, nsrr_bp_diastolic,
     nsrr_current_smoker, nsrr_ever_smoker,
     nsrr_ahi_hp4u_aasm15, nsrr_ahi_hp3u,
-    nsrr_ttldursp_f1, nsrr_ttleffsp_f1, nsrr_ttllatsp_f1,
-    nsrr_ttlprdsp_s1sr, nsrr_ttldurws_f1,
-    nsrr_pctdursp_s1, nsrr_pctdursp_s2, nsrr_pctdursp_s3, nsrr_pctdursp_sr)|>
+    nsrr_tst_f1, nsrr_ttleffsp_f1, nsrr_ttllatsp_f1,
+    nsrr_ttlprdsp_s1sr, nsrr_waso_f1,
+    nsrr_pctdursp_s1, nsrr_pctdursp_s2, nsrr_pctdursp_s3, nsrr_pctdursp_sr,
+    nsrr_avgdurah_hp4u, nsrr_pctdursp_salt90, nsrr_avglvlsa, nsrr_minlvlsa)|>
   mutate(across(everything(), ~ {
     attr(., "label") <- NULL
     .}))

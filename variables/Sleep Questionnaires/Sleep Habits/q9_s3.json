@@ -2,7 +2,7 @@
   "id": "q9_s3",
   "display_name": "What best describes your work and sleep schedule?",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
-  "type": "numeric",
+  "type": "choices",
   "domain": "worksleep",
   "forms": [
     "wsc_mailed_survery3_form"

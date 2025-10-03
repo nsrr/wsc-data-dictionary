@@ -2,7 +2,7 @@
   "id": "q32_s3",
   "display_name": "Do you use an inhaler for your asthma?",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
-  "type": "numeric",
+  "type": "choices",
   "domain": "freqinhaler",
   "forms": [
     "wsc_mailed_survery3_form"

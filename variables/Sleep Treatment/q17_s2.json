@@ -4,6 +4,10 @@
   "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
   "type": "choices",
   "domain": "yesno12",
+  "units": "sdb",
+  "labels": [
+    "sdb"
+  ],
   "forms": [
     "wsc_mailed_survery2_form"
   ]

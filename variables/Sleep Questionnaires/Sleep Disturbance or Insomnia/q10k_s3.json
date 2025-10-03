@@ -1,11 +1,12 @@
 {
   "id": "q10k_s3",
   "display_name": "Sleep Problem: How Often: Need to take sedatives or sleeping pills",
-  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br>[Search for all questionaire questions from Sleep Problem category within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
-  "type": "numeric",
+  "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br>[Search for all questions from Sleep Problem questionare within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "type": "choices",
   "domain": "freqmo",
   "labels": [
-    "sleep_problem"
+    "sleep_problem",
+    " insomnia"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

@@ -1,0 +1,11 @@
+{
+  "id": "nsrr_minlvlsa",
+  "display_name": "Minimum level of oxygen saturation in total sleep duration from type I polysomnography",
+  "description": "Harmonized by the NSRR team. Source: :minsao2tst:",
+  "type": "numeric",
+  "units": "percent (%)",
+  "labels": [
+    "minvlsa_f1t1"
+  ],
+  "commonly_used": true
+}

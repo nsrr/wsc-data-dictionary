@@ -1,0 +1,14 @@
+{
+  "id": "nap_length",
+  "display_name": "How long was your nap today? (minutes)",
+  "description": "How long was your nap today? (minutes)",
+  "type": "numeric",
+  "units": "minutes",
+  "labels": [
+    "sleep_hygiene",
+    "naps"
+  ],
+  "forms": [
+    "wsc_health_interview_form"
+  ]
+}

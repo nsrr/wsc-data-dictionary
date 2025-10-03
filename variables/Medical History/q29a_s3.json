@@ -2,7 +2,7 @@
   "id": "q29a_s3",
   "display_name": "Nasal Allergy Symptems Season: Spring",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
-  "type": "numeric",
+  "type": "choices",
   "domain": "yesno12",
   "forms": [
     "wsc_mailed_survery3_form"
