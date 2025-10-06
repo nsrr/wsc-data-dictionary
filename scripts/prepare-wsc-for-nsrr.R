@@ -111,7 +111,7 @@ wsc_mslt_merge <- wsc_mslt_times |>
 # mslt0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-mslt-dataset-0.7.0.csv")
 # all.equal( mslt0.7.0, wsc_mslt_merge, check.attributes = FALSE)
 
-write.csv(wsc_mslt_merge, file.path(releasepath, paste0("0.8.0.pre/wsc-mslt-dataset", version, ".csv")), na = "", row.names = F)
+write.csv(wsc_mslt_merge, file.path(releasepath, paste0("0.8.0.pre/wsc-mslt-datase-t", version, ".csv")), na = "", row.names = F)
 
 ####------------------ Creating NSRR Harmonized Dataset ------------------
 
