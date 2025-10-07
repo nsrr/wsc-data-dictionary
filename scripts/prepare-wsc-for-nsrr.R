@@ -51,7 +51,6 @@ wsc_nsrr <- wsc |>
 dat0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-dataset-0.7.0.csv")
 all.equal(dat0.7.0, wsc_nsrr, check.attributes = FALSE)
 
-
 ##Add in the new variables from 2025_0702
 
 new_vars <- read_excel("~/wsc_new_vars.xlsx")|>
@@ -111,7 +110,7 @@ wsc_mslt_merge <- wsc_mslt_times |>
 # mslt0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-mslt-dataset-0.7.0.csv")
 # all.equal( mslt0.7.0, wsc_mslt_merge, check.attributes = FALSE)
 
-write.csv(wsc_mslt_merge, file.path(releasepath, paste0("0.8.0.pre/wsc-mslt-datase-t", version, ".csv")), na = "", row.names = F)
+write.csv(wsc_mslt_merge, file.path(releasepath, paste0("0.8.0.pre/wsc-mslt-dataset-", version, ".csv")), na = "", row.names = F)
 
 ####------------------ Creating NSRR Harmonized Dataset ------------------
 
@@ -160,7 +159,7 @@ wsc_harmonized <- wsc_nsrr|>
     nsrr_minlvlsa = minsao2tst
     )|>
   select(
-    nsrrid, nsrr_visit,
+    nsrrid, nsrr_visit, wsc_vst,
     nsrr_age, nsrr_age_gt89, nsrr_sex, nsrr_race,
     nsrr_bmi,
     nsrr_bp_systolic, nsrr_bp_diastolic,
@@ -175,7 +174,26 @@ wsc_harmonized <- wsc_nsrr|>
     .}))
 
 write.csv(wsc_harmonized, file.path(releasepath, paste0("0.8.0.pre/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
+
+##this is to check if the R script output is the same as SAS 
 #harm0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-harmonized-dataset-0.7.0.csv")
 #all.equal(wsc_harmonized, harm0.7.0, check.attributes = FALSE)
 
+
+###--- Prepare the survey
+surveydir <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/NSRR_MAILED_SURVEYS_data_2025_0702.xlsx"
+df_survey <- read_xlsx(surveydir)|>
+  rename_with(tolower)
+
+df_survey_clean <- df_survey|>
+  mutate(wsc_vst = 0,
+         vst_year = 
+         q17b_s1 = case_when(
+           q17b_s1 == 21 ~ 4,   # spring → April
+           q17b_s1 == 22 ~ 7,   # summer → July
+           q17b_s1 == 23 ~ 10,  # fall → October
+           TRUE ~ q17b_s1 ))|>
+  relocate(wsc_vst, .after = agency)
+
+write.csv(df_survey_clean, "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.8.0.pre/wsc-mailed-survey-dataset-0.8.0.pre.csv", row.names = F, na = "")
 
