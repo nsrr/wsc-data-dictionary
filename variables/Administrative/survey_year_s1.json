@@ -1,7 +1,7 @@
 {
   "id": "survey_year_s1",
   "display_name": "Survey 1 Mailing Year",
-  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)",
+  "description": "",
   "type": "numeric",
   "units": "year"
 }

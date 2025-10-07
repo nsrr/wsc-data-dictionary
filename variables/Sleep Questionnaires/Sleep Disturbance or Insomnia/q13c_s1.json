@@ -1,7 +1,7 @@
 {
   "id": "q13c_s1",
   "display_name": "Sleep Problem: How Often: Wake up repeatedly during night",
-  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)<br><br>[Search for all questions from Sleep Problem questionare within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
+  "description": "Survey1: From mailed survey 1 (mailing year: :survey_year_s1:)<br><br>Option #5 was not offered as a separate option for the Agency 1 participants.  For them, Option #4 included the wording for both the later Options #4 AND #5 combined.<br><br>[Search for all questions from Sleep Problem questionare within this dataset](https://sleepdata.org/datasets/wsc/variables?search=sleep_problem)",
   "type": "choices",
   "domain": "freqmo",
   "labels": [
