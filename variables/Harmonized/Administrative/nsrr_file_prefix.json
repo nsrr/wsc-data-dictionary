@@ -1,0 +1,7 @@
+{
+  "id": "nsrr_file_prefix",
+  "display_name": "NSRR file prefix",
+  "description": "Prefix of the associated file found in the [Polysomnography folder](https://sleepdata.org/datasets/wsc/files/polysomnography)",
+  "type": "text",
+  "commonly_used": true
+}

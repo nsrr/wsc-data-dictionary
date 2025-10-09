@@ -169,6 +169,7 @@ wsc_harmonized <- wsc_nsrr|>
     nsrr_ttlprdsp_s1sr, nsrr_waso_f1,
     nsrr_pctdursp_s1, nsrr_pctdursp_s2, nsrr_pctdursp_s3, nsrr_pctdursp_sr,
     nsrr_avgdurah_hp4u, nsrr_pctdursp_salt90, nsrr_avglvlsa, nsrr_minlvlsa)|>
+  mutate(nsrr_file_prefix = paste0("wsc-visit", nsrr_visit, "-", nsrrid))|>
   mutate(across(everything(), ~ {
     attr(., "label") <- NULL
     .}))
