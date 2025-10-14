@@ -5,7 +5,8 @@
   "type": "numeric",
   "units": "hours per day",
   "labels": [
-    "sleep_timing"
+    "sleep_timing",
+    "SleepHealth_timing"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

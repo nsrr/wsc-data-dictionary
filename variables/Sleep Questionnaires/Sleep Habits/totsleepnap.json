@@ -7,7 +7,8 @@
   "calculation": "(workday*5+weekend*2+naps)/7",
   "labels": [
     "sleep_duration",
-    "avgdursp_ib_f3"
+    "avgdursp_ib_f3",
+    "SleepHealth_duration"
   ],
   "forms": [
     "wsc_health_interview_form"

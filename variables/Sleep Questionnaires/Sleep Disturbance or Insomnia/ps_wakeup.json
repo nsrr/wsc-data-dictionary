@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "neverrarely",
   "labels": [
-    "insomnia"
+    "insomnia",
+    "SleepHealth_insomnia"
   ],
   "forms": [
     "wsc_health_interview_form"

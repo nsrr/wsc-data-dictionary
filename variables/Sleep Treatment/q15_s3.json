@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "yesno12",
   "labels": [
-    "sdb"
+    "sdb",
+    "sleep_trreatment"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

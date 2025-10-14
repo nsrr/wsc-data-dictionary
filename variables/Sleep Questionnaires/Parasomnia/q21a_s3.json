@@ -5,7 +5,7 @@
   "type": "choices",
   "domain": "freqsick5",
   "labels": [
-    "night_terror"
+    "hypnogogic_hallucinations"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

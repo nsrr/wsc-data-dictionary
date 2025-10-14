@@ -1,6 +1,6 @@
 {
   "id": "q19j_s3",
-  "display_name": " Chance of dozing while driving",
+  "display_name": "Chance of dozing while driving",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br> [Search for all ESS variables within this dataset](https://sleepdata.org/datasets/wsc/variables?search=epworth)",
   "type": "choices",
   "domain": "freqdoze",

@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "slpsatisfactionfreq",
   "labels": [
-    "sleep_satisfaction"
+    "sleep_satisfaction",
+    "SleepHealth_satisfaction"
   ],
   "forms": [
     "wsc_health_interview_form"

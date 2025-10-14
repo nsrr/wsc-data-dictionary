@@ -5,7 +5,8 @@
   "type": "numeric",
   "units": "hh:mm:ss or hh:mm",
   "labels": [
-    "sleep_timing"
+    "sleep_timing",
+    "SleepHealth_timing"
   ],
   "forms": [
     "wsc_health_interview_form"

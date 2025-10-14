@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "sleepeval",
   "labels": [
-    "sleep_timing"
+    "sleep_timing",
+    "SleepHealth_timing"
   ],
   "forms": [
     "wsc_health_interview_form"

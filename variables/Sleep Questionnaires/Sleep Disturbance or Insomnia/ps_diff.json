@@ -6,7 +6,8 @@
   "domain": "neverrarely",
   "labels": [
     "insomnia",
-    "nhanes_01fallaslp"
+    "nhanes_01fallaslp",
+    "SleepHealth_insomnia"
   ],
   "forms": [
     "wsc_health_interview_form"

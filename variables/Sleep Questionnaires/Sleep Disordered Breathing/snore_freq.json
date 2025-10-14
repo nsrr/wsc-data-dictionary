@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "neverorrarely5",
   "labels": [
-    "sdb"
+    "snore",
+    "SleepHealth_sleep_apnea"
   ],
   "forms": [
     "wsc_health_interview_form"

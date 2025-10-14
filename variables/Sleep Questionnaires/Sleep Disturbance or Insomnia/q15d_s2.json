@@ -6,7 +6,8 @@
   "domain": "freqnight",
   "labels": [
     "sleep_problem",
-    " insomnia"
+    " insomnia",
+    "SleepHealth_insomnia"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

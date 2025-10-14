@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "noyesny",
   "labels": [
-    "sdb"
+    "sdb",
+    "SleepHealth_sleep_apnea"
   ],
   "commonly_used": true,
   "forms": [

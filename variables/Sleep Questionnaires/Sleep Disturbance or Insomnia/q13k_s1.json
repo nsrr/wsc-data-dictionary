@@ -6,7 +6,9 @@
   "domain": "freqmo",
   "labels": [
     "sleep_problem",
-    "insomnia"
+    "insomnia",
+    "SleepHealth_insomnia",
+    "SleepHealth_medication"
   ],
   "forms": [
     "wsc_mailed_survery1_form"
