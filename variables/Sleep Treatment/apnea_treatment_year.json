@@ -2,6 +2,5 @@
   "id": "apnea_treatment_year",
   "display_name": "Year of apnea treatment",
   "description": "",
-  "type": "integer",
-  "units": "years"
+  "type": "integer"
 }

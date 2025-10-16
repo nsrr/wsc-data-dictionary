@@ -3,7 +3,6 @@
   "display_name": "Sleep Apnea: Self-reported year of diagnosis",
   "description": "If yes, when was this? ______ Year",
   "type": "integer",
-  "units": "year",
   "labels": [
     "sdb"
   ],
