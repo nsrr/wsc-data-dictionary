@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqlegs",
   "labels": [
-    "rls_plms"
+    "rls_plms",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

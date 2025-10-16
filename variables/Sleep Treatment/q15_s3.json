@@ -6,7 +6,8 @@
   "domain": "yesno12",
   "labels": [
     "sdb",
-    "sleep_trreatment"
+    "sleep_trreatment",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

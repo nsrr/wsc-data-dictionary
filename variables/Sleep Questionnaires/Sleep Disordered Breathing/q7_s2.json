@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqneveroft",
   "labels": [
-    "snore"
+    "snore",
+    "wsc_mailed_survery2_form"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

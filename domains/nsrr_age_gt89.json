@@ -8,5 +8,10 @@
     "value": "yes",
     "display_name": "yes",
     "description": ""
+  },
+  {
+    "value": "not reported",
+    "display_name": "not reported",
+    "description": ""
   }
 ]

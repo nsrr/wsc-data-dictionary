@@ -7,7 +7,9 @@
   "labels": [
     "sleep_problem",
     "sleep_quality",
-    "sleep_satisfaction"
+    "sleep_satisfaction",
+    "subjective_sleepiness",
+    "wsc_mailed_survery2_form"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

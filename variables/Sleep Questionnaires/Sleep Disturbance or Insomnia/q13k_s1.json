@@ -8,7 +8,8 @@
     "sleep_problem",
     "insomnia",
     "SleepHealth_insomnia",
-    "SleepHealth_medication"
+    "SleepHealth_medication",
+    "wsc_mailed_survery1_form"
   ],
   "forms": [
     "wsc_mailed_survery1_form"

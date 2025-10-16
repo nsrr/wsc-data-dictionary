@@ -5,7 +5,8 @@
   "type": "numeric",
   "units": "years",
   "labels": [
-    "snore"
+    "snore",
+    "wsc_mailed_survery1_form"
   ],
   "forms": [
     "wsc_mailed_survery1_form"

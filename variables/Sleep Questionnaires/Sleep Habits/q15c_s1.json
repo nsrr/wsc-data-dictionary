@@ -6,7 +6,8 @@
   "units": "hours per week",
   "labels": [
     "sleep_hygiene",
-    "naps"
+    "naps",
+    "wsc_mailed_survery1_form"
   ],
   "forms": [
     "wsc_mailed_survery1_form"

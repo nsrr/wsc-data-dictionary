@@ -3,9 +3,10 @@
   "display_name": "Minutes to fall asleep",
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
   "type": "numeric",
-  "units": "minutes",
+  "units": "minutes (min)",
   "labels": [
-    "sleep_latency"
+    "sleep_latency",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

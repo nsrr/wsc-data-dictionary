@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqmo",
   "labels": [
-    "sleep_problem"
+    "sleep_problem",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

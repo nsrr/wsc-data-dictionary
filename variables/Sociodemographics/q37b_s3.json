@@ -4,6 +4,9 @@
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)",
   "type": "choices",
   "domain": "gender12",
+  "labels": [
+    "wsc_mailed_survery3_form"
+  ],
   "forms": [
     "wsc_mailed_survery3_form"
   ]

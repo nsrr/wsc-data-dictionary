@@ -23,5 +23,20 @@
     "value": "5",
     "display_name": "Visit 5",
     "description": ""
+  },
+  {
+    "value": "S1",
+    "display_name": "Pre-Visit 1 Mailed Survey 1",
+    "description": ""
+  },
+  {
+    "value": "S2",
+    "display_name": "Pre-Visit 1 Mailed Survey 2",
+    "description": ""
+  },
+  {
+    "value": "S3",
+    "display_name": "Pre-Visit 1 Mailed Survey 3",
+    "description": ""
   }
 ]

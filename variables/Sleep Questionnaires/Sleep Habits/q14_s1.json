@@ -5,7 +5,8 @@
   "type": "numeric",
   "units": "minutes (min)",
   "labels": [
-    "sleep_latency"
+    "sleep_latency",
+    "wsc_mailed_survery1_form"
   ],
   "forms": [
     "wsc_mailed_survery1_form"

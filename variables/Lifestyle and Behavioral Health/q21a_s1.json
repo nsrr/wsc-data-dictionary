@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "yesno12",
   "labels": [
-    "smoking"
+    "smoking",
+    "wsc_mailed_survery1_form"
   ],
   "forms": [
     "wsc_mailed_survery1_form"

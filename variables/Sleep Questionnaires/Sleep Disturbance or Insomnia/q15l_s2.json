@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqnight",
   "labels": [
-    "sleep_problem"
+    "sleep_problem",
+    "wsc_mailed_survery2_form"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

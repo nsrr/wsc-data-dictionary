@@ -4,6 +4,9 @@
   "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
   "type": "numeric",
   "units": "inches (in)",
+  "labels": [
+    "wsc_mailed_survery2_form"
+  ],
   "forms": [
     "wsc_mailed_survery2_form"
   ]

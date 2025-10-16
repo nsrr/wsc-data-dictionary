@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqneveroft",
   "labels": [
-    "rls_plms"
+    "rls_plms",
+    "wsc_mailed_survery1_form"
   ],
   "forms": [
     "wsc_mailed_survery1_form"

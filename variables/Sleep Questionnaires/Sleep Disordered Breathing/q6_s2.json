@@ -3,9 +3,10 @@
   "display_name": "Based on others, how many years do you think you have been snoring?",
   "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)<br><br> 0 indicates less than 1 year",
   "type": "numeric",
-  "units": "years (0 = less than 1 year) ",
+  "units": "years",
   "labels": [
-    "snore"
+    "snore",
+    "wsc_mailed_survery2_form"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

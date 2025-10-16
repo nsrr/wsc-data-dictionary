@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqsick5",
   "labels": [
-    "hypnogogic_hallucinations"
+    "hypnogogic_hallucinations",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

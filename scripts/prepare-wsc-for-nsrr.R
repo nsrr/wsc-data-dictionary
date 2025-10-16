@@ -188,13 +188,77 @@ df_survey <- read_xlsx(surveydir)|>
 
 df_survey_clean <- df_survey|>
   mutate(wsc_vst = 0,
-         vst_year = 
          q17b_s1 = case_when(
            q17b_s1 == 21 ~ 4,   # spring → April
            q17b_s1 == 22 ~ 7,   # summer → July
            q17b_s1 == 23 ~ 10,  # fall → October
            TRUE ~ q17b_s1 ))|>
-  relocate(wsc_vst, .after = agency)
+  relocate(wsc_vst, .after = agency)|>
+  arrange(wsc_id)
 
 write.csv(df_survey_clean, "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.8.0.pre/wsc-mailed-survey-dataset-0.8.0.pre.csv", row.names = F, na = "")
 
+
+###--- Transform survey into long format add add variables to harmonized dataset
+
+df_survey_harmonized <- df_survey_clean |>
+  #age, sex, current smoker, feet, inches, lbs
+  select(wsc_id,
+         q21_s1, q23_s1, q23a_s1, q24a_s1, q24b_s1, q25_s1,
+         q22_s2, q25_s2, q25a_s2, q26a_s2, q26b_s2, q27_s2,
+         q18_s3, q37a_s3, q37b_s3, q38a_s3, q38b_s3, q39_s3
+         )
+
+long_mapped <- df_survey_harmonized |>
+  pivot_longer(-wsc_id,
+               names_to = c("question"),
+               values_to = "response")|>
+  mutate(
+    visit_num = str_extract(question, "(?<=_s)\\d+"),
+    nsrr_visit = paste0("S", visit_num),
+    measure = case_when(
+      question %in% c("q23_s1", "q25_s2", "q37a_s3") ~ "nsrr_age",
+      question %in% c("q23a_s1", "q25a_s2", "q37b_s3") ~ "nsrr_sex",
+      question %in% c("q21_s1", "q22_s2", "q18_s3") ~ "nsrr_current_smoker",
+      question %in% c("q24a_s1", "q26a_s2", "q38a_s3") ~ "height_feet",
+      question %in% c("q24b_s1", "q26b_s2", "q38b_s3") ~ "height_inches",
+      question %in% c("q25_s1", "q27_s2", "q39_s3") ~ "weight_lbs",
+      TRUE ~ NA_character_
+    )
+  ) 
+
+
+wide_mapped <- long_mapped |>
+  select(wsc_id, nsrr_visit, measure, response) |>
+  pivot_wider(names_from = measure, values_from = response) |> 
+  mutate(wsc_vst = 0) |>
+  rename(nsrrid = wsc_id) |>
+  relocate(wsc_vst, .after = nsrr_visit)
+
+nsrr_harmonized_survey <- wide_mapped |>
+  mutate(nsrr_age_gt89 = case_when(nsrr_age > 89  ~ "yes",
+                                   nsrr_age <= 89 ~ "no",
+                                   is.na(nsrr_age) ~ "not reported"),
+         nsrr_sex = case_match(nsrr_sex, 
+                                1 ~ "male",
+                                2 ~ "female",
+                                NA ~ "not reported"
+                                ),
+         nsrr_current_smoker = case_match(nsrr_current_smoker,
+                                          1 ~ "yes",
+                                          2 ~ "no",
+                                          NA ~ "not reported"),
+         nsrr_race = "not reported")|>
+  mutate(height = height_feet*12 + height_inches,
+         nsrr_bmi = 703 * weight_lbs / (height)^2 ) |>
+  select(-c(height_feet, height_inches, height, weight_lbs))
+
+
+wsc_harmonized.new <- wsc_harmonized |>
+  mutate(nsrr_visit = as.character(nsrr_visit)) |>
+  bind_rows(nsrr_harmonized_survey)|>
+  arrange(nsrrid)
+
+
+#harmonized dataset with added survey variables
+write.csv(wsc_harmonized.new, file.path(releasepath, paste0("0.8.0.pre/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)

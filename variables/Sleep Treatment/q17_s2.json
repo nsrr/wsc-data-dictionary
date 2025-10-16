@@ -4,10 +4,10 @@
   "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
   "type": "choices",
   "domain": "yesno12",
-  "units": "sdb",
   "labels": [
     "sdb",
-    "sleep_trreatment"
+    "sleep_trreatment",
+    "wsc_mailed_survery2_form"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

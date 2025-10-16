@@ -6,7 +6,8 @@
   "domain": "freqnight",
   "labels": [
     "sleep_problem",
-    "rls_plms"
+    "rls_plms",
+    "wsc_mailed_survery2_form"
   ],
   "forms": [
     "wsc_mailed_survery2_form"

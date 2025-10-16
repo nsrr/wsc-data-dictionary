@@ -3,7 +3,7 @@
   "display_name": "How long was your nap today? (minutes)",
   "description": "How long was your nap today? (minutes)",
   "type": "numeric",
-  "units": "minutes",
+  "units": "minutes (min)",
   "labels": [
     "sleep_hygiene",
     "naps"

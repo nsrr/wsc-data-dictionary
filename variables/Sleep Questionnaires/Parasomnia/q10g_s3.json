@@ -6,7 +6,8 @@
   "domain": "freqmo",
   "labels": [
     "sleep_problem",
-    " nightmare"
+    " nightmare",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

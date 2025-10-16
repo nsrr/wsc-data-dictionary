@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqasthma",
   "labels": [
-    "sleep_disturbance"
+    "sleep_disturbance",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

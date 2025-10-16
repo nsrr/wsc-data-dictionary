@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "yesno3",
   "labels": [
-    "narcolepsy"
+    "narcolepsy",
+    "wsc_mailed_survery1_form"
   ],
   "forms": [
     "wsc_mailed_survery1_form"

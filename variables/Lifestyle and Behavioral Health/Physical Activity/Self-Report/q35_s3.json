@@ -4,6 +4,9 @@
   "description": "Survey3: From mailed survey 3 (mailing year: :survey_year_s3:)<br><br>Survey 1 and Survey 3 responses were capped at 20 hrs/wk.",
   "type": "numeric",
   "units": "hours per week",
+  "labels": [
+    "wsc_mailed_survery3_form"
+  ],
   "forms": [
     "wsc_mailed_survery3_form"
   ]

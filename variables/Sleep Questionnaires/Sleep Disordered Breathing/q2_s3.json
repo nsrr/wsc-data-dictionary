@@ -6,7 +6,8 @@
   "domain": "freqnight",
   "labels": [
     "snore",
-    "SleepHealth_sleep_apnea"
+    "SleepHealth_sleep_apnea",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

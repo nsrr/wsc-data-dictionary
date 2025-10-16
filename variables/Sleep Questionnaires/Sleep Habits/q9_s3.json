@@ -6,7 +6,8 @@
   "domain": "worksleep",
   "labels": [
     "shift_work",
-    "sleep_timing"
+    "sleep_timing",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"

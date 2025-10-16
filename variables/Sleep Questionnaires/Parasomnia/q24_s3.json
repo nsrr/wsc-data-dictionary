@@ -5,7 +5,8 @@
   "type": "choices",
   "domain": "freqsick5",
   "labels": [
-    "sleep_paralysis"
+    "sleep_paralysis",
+    "wsc_mailed_survery3_form"
   ],
   "forms": [
     "wsc_mailed_survery3_form"
