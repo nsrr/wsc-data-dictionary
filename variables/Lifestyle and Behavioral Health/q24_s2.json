@@ -3,7 +3,7 @@
   "display_name": "How much do you/did you smoke? # Packs of cigarettes per week",
   "description": "Survey2: From mailed survey 2 (mailing year: :survey_year_s2:)",
   "type": "numeric",
-  "units": "packs per week",
+  "units": "number of servings per week",
   "labels": [
     "smoking",
     "wsc_mailed_survery2_form"
