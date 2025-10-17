@@ -235,7 +235,11 @@ wide_mapped <- long_mapped |>
   rename(nsrrid = wsc_id) |>
   relocate(wsc_vst, .after = nsrr_visit)
 
+no_responses <- wide_mapped|>
+  filter(is.na(nsrr_age) & is.na(nsrr_sex) & is.na(height_feet) & is.na(height_inches) & is.na(weight_lbs) & is.na(nsrr_current_smoker))
+
 nsrr_harmonized_survey <- wide_mapped |>
+  anti_join(no_responses) |> 
   mutate(nsrr_age_gt89 = case_when(nsrr_age > 89  ~ "yes",
                                    nsrr_age <= 89 ~ "no",
                                    is.na(nsrr_age) ~ "not reported"),
