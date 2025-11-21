@@ -1,5 +1,10 @@
 [
   {
+    "value": "0",
+    "display_name": "Mailed Survey ",
+    "description": ""
+  } ,
+  {
     "value": "1",
     "display_name": "Visit 1",
     "description": ""
@@ -22,11 +27,6 @@
   {
     "value": "5",
     "display_name": "Visit 5",
-    "description": ""
-  },
-  {
-    "value": "0",
-    "display_name": "Mailed Survey ",
     "description": ""
   }
 ]
