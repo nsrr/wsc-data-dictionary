@@ -10,7 +10,7 @@ wscs_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/
 wscd_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_datasets"
 wsca_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_archive"
 
-version <- "0.8.0.pre"
+version <- "0.8.0"
 releasepath <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases"
 
 wsc_in <- read_sas(file.path(wscs_path, "nsrr_wsc_2024_0711.sas7bdat"))|>
@@ -48,12 +48,12 @@ wsc_nsrr <- wsc |>
     .
   }))
 
-dat0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-dataset-0.7.0.csv")
-all.equal(dat0.7.0, wsc_nsrr, check.attributes = FALSE)
+# dat0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-dataset-0.7.0.csv")
+# all.equal(dat0.7.0, wsc_nsrr, check.attributes = FALSE)
 
 ##Add in the new variables from 2025_0702
 
-new_vars <- read_excel("~/wsc_new_vars.xlsx")|>
+new_vars <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/wsc_new_vars.xlsx")|>
   select(id)|>
   keep(is.character) |>
   map(~tolower(.x))
@@ -69,7 +69,7 @@ wsc_nsrr_2025 <- wsc_nsrr|>
   left_join(wsc_2025, by = join_by(wsc_id, wsc_vst))
 
 
-write.csv(wsc_nsrr_2025, file.path(releasepath, paste0("0.8.0.pre/wsc-dataset-", version, ".csv")), na = "", row.names = F)
+write.csv(wsc_nsrr_2025, file.path(releasepath, paste0(version, "/wsc-dataset-", version, ".csv")), na = "", row.names = F)
 
 
 ####------------------ Creating MSLT Dataset with hh:mm times  ------------------ 
@@ -110,7 +110,7 @@ wsc_mslt_merge <- wsc_mslt_times |>
 # mslt0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-mslt-dataset-0.7.0.csv")
 # all.equal( mslt0.7.0, wsc_mslt_merge, check.attributes = FALSE)
 
-write.csv(wsc_mslt_merge, file.path(releasepath, paste0("0.8.0.pre/wsc-mslt-dataset-", version, ".csv")), na = "", row.names = F)
+write.csv(wsc_mslt_merge, file.path(releasepath, paste0(version, "/wsc-mslt-dataset-", version, ".csv")), na = "", row.names = F)
 
 ####------------------ Creating NSRR Harmonized Dataset ------------------
 
@@ -174,7 +174,7 @@ wsc_harmonized <- wsc_nsrr|>
     attr(., "label") <- NULL
     .}))
 
-write.csv(wsc_harmonized, file.path(releasepath, paste0("0.8.0.pre/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
+#write.csv(wsc_harmonized, file.path(releasepath, paste0(version, "/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
 
 ##this is to check if the R script output is the same as SAS 
 #harm0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-harmonized-dataset-0.7.0.csv")
@@ -196,7 +196,8 @@ df_survey_clean <- df_survey|>
   relocate(wsc_vst, .after = agency)|>
   arrange(wsc_id)
 
-write.csv(df_survey_clean, "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.8.0.pre/wsc-mailed-survey-dataset-0.8.0.pre.csv", row.names = F, na = "")
+
+write.csv(df_survey_clean, file.path(releasepath, paste0(version, "/wsc-mailed-survey-dataset-", version, ".csv")), row.names = F, na = "")
 
 
 ###--- Transform survey into long format add add variables to harmonized dataset
@@ -265,4 +266,4 @@ wsc_harmonized.new <- wsc_harmonized |>
 
 
 #harmonized dataset with added survey variables
-write.csv(wsc_harmonized.new, file.path(releasepath, paste0("0.8.0.pre/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
+write.csv(wsc_harmonized.new, file.path(releasepath, paste0(version, "/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
