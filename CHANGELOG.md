@@ -1,11 +1,11 @@
-## 0.8.0 (September 30, 2025)
+## 0.8.0 (December 23, 2025)
 - Add 49 new variables (from WSC team) and data dictionary entries
 - Add new Mailed Survey dataset and data dictionary entries
 - Update variable folder paths to match current folder structure
 - Add 4 new harmonized PSG variables (nsrr_avgdurah_hp4u; nsrr_pctdursp_salt90; nsrr_avglvlsa; nsrr_minlvlsa)
 - Create new `nsrr_file_prefix` variable 
 - The CSV datasets generated from a new R script is located here:
-  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.8.0.pre`
+  - `\\rfawin\BWH-SLEEPEPI-NSRR-STAGING\20200115-peppard-wsc\nsrr-prep\_releases\0.8.0`
 
 
 ## 0.7.0 (July 17, 2024)

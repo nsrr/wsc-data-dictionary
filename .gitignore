@@ -1,5 +1,7 @@
 # OS generated files #
 .DS_Store
+/scripts/.Rhistory
+/scripts/.RData
 
 # Project Files
 /gems.locked
