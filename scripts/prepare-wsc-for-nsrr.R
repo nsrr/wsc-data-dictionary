@@ -1,4 +1,5 @@
 library(dplyr)
+library(tidyr)
 library(lubridate)
 library(haven)
 library(stringr)
@@ -10,19 +11,43 @@ wscs_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/
 wscd_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_datasets"
 wsca_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_archive"
 
-version <- "0.8.0"
+version <- "0.9.0.pre"
+
 releasepath <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases"
 
-wsc_in <- read_sas(file.path(wscs_path, "nsrr_wsc_2024_0711.sas7bdat"))|>
-  mutate(across(where(is.character), ~ na_if(.x, "")))
-wsc_mslt <- read_sas(file.path(wscs_path, "nsrr_mslt.sas7bdat"))|>
-  mutate(across(where(is.character), ~ na_if(.x, "")))
-wsc_drug <- read_sas(file.path(wscs_path, "nsrr_alldrugs.sas7bdat"))|>
-  mutate(across(where(is.character), ~ na_if(.x, "")))
-
+## Read in most recent version of "source" datasets from Sept2026 for 0.9.0 release:
+wsc_df <- read_excel(file.path(wscs_path, "2026-09-covariates", "NSRR_WSC_data_2026_0916.xlsx"))
+wsc_surv <- read_excel(file.path(wscs_path, "2026-09-covariates", "NSRR_MAILED_SURVEYS_data_2026_0916.xlsx"))
+wsc_drug <- read_excel(file.path(wscs_path, "2026-09-covariates", "NSRR_WSC_ALLDRUGS_2026_0916.xlsx"))
+wsc_mslt <- read_excel(file.path(wscs_path, "2026-09-covariates", "NSRR_WSC_MSLT_data_2026_0916.xlsx"))
 
 ####------------------ Creating WSC Dataset + add drug and updated variables ------------------ 
+wsc_df <- wsc_df |>
+  rename_with(tolower)|> 
+  mutate(
+    wsc_id = as.numeric(wsc_id),
+    wsc_vst = as.numeric(wsc_vst))|>
+  distinct(wsc_id, wsc_vst, .keep_all = TRUE)|>
+  arrange(wsc_id, wsc_vst)
 
+wsc_drug <- wsc_drug |>
+  rename_with(tolower)|>
+  distinct(wsc_id, wsc_vst, .keep_all = TRUE) |>
+  arrange(wsc_id, wsc_vst) |>
+  select(where(~ !all(. == 0 | is.na(.) ))) # removed the 89 drug columns where all values were 0 or na (these drugs were not defined in DD)
+
+# Merge wsc and wsc_drug by wsc_id and wsc_vst, keep only rows in wsc
+wsc_nsrr <- wsc_df |>
+  left_join(wsc_drug, by = c("wsc_id", "wsc_vst"))|>
+  mutate(apnea_treatment_year = as.numeric(apnea_treatment_year),
+         reproductive_surg_year = as.numeric(reproductive_surg_year),
+         apnea_year = as.numeric(apnea_year))|>
+  mutate(across(everything(), ~ {
+    attr(., "label") <- NULL
+    .
+  }))
+
+####------------------ Creating WSC Dataset + add drug and updated variables ------------------ 
 wsc <- wsc_in |>
   rename_with(tolower)|> 
   mutate(
@@ -48,29 +73,8 @@ wsc_nsrr <- wsc |>
     .
   }))
 
-# dat0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-dataset-0.7.0.csv")
-# all.equal(dat0.7.0, wsc_nsrr, check.attributes = FALSE)
-
-##Add in the new variables from 2025_0702
-
-new_vars <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/wsc_new_vars.xlsx")|>
-  select(id)|>
-  keep(is.character) |>
-  map(~tolower(.x))
-
-my_vars <- unlist(new_vars)|>
-  unname()
-
-wsc_2025 <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/NSRR_WSC_data_2025_0702.xlsx", )|>
-  rename_with(tolower)|> 
-  select(c(wsc_id, wsc_vst, all_of(my_vars)))
-
-wsc_nsrr_2025 <- wsc_nsrr|>
-  left_join(wsc_2025, by = join_by(wsc_id, wsc_vst))
-
-
-write.csv(wsc_nsrr_2025, file.path(releasepath, paste0(version, "/wsc-dataset-", version, ".csv")), na = "", row.names = F)
-
+##compared to 0.8.0 version, 0.9.0 should removed data for 1 ID (3 rows)
+write.csv(wsc_nsrr, file.path(releasepath, paste0(version, "/wsc-dataset-", version, ".csv")), na = "", row.names = F)
 
 ####------------------ Creating MSLT Dataset with hh:mm times  ------------------ 
 
@@ -97,23 +101,21 @@ convert_HHmm <- function(x) {
   )
 }
 
-wsc_mslt_times <- wsc_mslt %>%
+wsc_mslt_times <- wsc_mslt|>
   mutate(across(all_of(time_cols), ~parse_hm(convert_HHmm(.x))))
 
-wsc_mslt_merge <- wsc_mslt_times |>
-  left_join(wsc_nsrr |> select(sex, race, wsc_id, wsc_vst), by = c("wsc_id", "wsc_vst"))|>
+wsc_mslt_nsrr <- wsc_mslt_times |>
+  left_join(wsc_nsrr |> select(wsc_id, wsc_vst, sex, race), by = c("wsc_id", "wsc_vst"))|>
   mutate(across(everything(), ~ {
     attr(., "label") <- NULL
-    .
-  }))
+    . })) |>
+  relocate(c(sex, race), .after = wsc_vst)
 
-# mslt0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-mslt-dataset-0.7.0.csv")
-# all.equal( mslt0.7.0, wsc_mslt_merge, check.attributes = FALSE)
+##compared to 0.8.0 version, 0.9.0 should removed data for 1 ID (2 rows)
+write.csv(wsc_mslt_nsrr, file.path(releasepath, paste0(version, "/wsc-mslt-dataset-", version, ".csv")), na = "", row.names = F)
 
-write.csv(wsc_mslt_merge, file.path(releasepath, paste0(version, "/wsc-mslt-dataset-", version, ".csv")), na = "", row.names = F)
 
 ####------------------ Creating NSRR Harmonized Dataset ------------------
-
 wsc_harmonized <- wsc_nsrr|>
   mutate(
     nsrrid = wsc_id,
@@ -176,17 +178,12 @@ wsc_harmonized <- wsc_nsrr|>
 
 #write.csv(wsc_harmonized, file.path(releasepath, paste0(version, "/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
 
-##this is to check if the R script output is the same as SAS 
-#harm0.7.0 <- read.csv("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases/0.7.0/wsc-harmonized-dataset-0.7.0.csv")
-#all.equal(wsc_harmonized, harm0.7.0, check.attributes = FALSE)
 
+####------------------ Prepare the Mailed Survey Dataset ------------------
 
-###--- Prepare the survey
-surveydir <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/NSRR_MAILED_SURVEYS_data_2025_0702.xlsx"
-df_survey <- read_xlsx(surveydir)|>
-  rename_with(tolower)
-
-df_survey_clean <- df_survey|>
+##cleaned original survey
+wsc_surv_clean <- wsc_surv|>
+  rename_with(tolower) |>
   mutate(wsc_vst = 0,
          q17b_s1 = case_when(
            q17b_s1 == 21 ~ 4,   # spring → April
@@ -196,13 +193,11 @@ df_survey_clean <- df_survey|>
   relocate(wsc_vst, .after = agency)|>
   arrange(wsc_id)
 
-
-write.csv(df_survey_clean, file.path(releasepath, paste0(version, "/wsc-mailed-survey-dataset-", version, ".csv")), row.names = F, na = "")
-
+write.csv(wsc_surv_clean, file.path(releasepath, paste0(version, "/wsc-mailed-survey-dataset-", version, ".csv")), row.names = F, na = "")
 
 ###--- Transform survey into long format add add variables to harmonized dataset
 
-df_survey_harmonized <- df_survey_clean |>
+wsc_surv_harm <- wsc_surv_clean |>
   #age, sex, current smoker, feet, inches, lbs
   select(wsc_id,
          q21_s1, q23_s1, q23a_s1, q24a_s1, q24b_s1, q25_s1,
@@ -210,7 +205,7 @@ df_survey_harmonized <- df_survey_clean |>
          q18_s3, q37a_s3, q37b_s3, q38a_s3, q38b_s3, q39_s3
          )
 
-long_mapped <- df_survey_harmonized |>
+long_mapped <- wsc_surv_harm |>
   pivot_longer(-wsc_id,
                names_to = c("question"),
                values_to = "response")|>
@@ -255,15 +250,14 @@ nsrr_harmonized_survey <- wide_mapped |>
                                           NA ~ "not reported"),
          nsrr_race = "not reported")|>
   mutate(height = height_feet*12 + height_inches,
-         nsrr_bmi = 703 * weight_lbs / (height)^2 ) |>
+         nsrr_bmi = 703 * weight_lbs / (height)^2 ) |> # comvert bmi from imperical measurements
   select(-c(height_feet, height_inches, height, weight_lbs))
 
-
+#harmonized with added repeated survey responses 
 wsc_harmonized.new <- wsc_harmonized |>
   mutate(nsrr_visit = as.character(nsrr_visit)) |>
   bind_rows(nsrr_harmonized_survey)|>
   arrange(nsrrid)
-
 
 #harmonized dataset with added survey variables
 write.csv(wsc_harmonized.new, file.path(releasepath, paste0(version, "/wsc-harmonized-dataset-", version, ".csv")), na = "", row.names = F)
