@@ -73,8 +73,24 @@ wsc_nsrr <- wsc |>
     .
   }))
 
+
+new_vars <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/wsc_new_vars.xlsx")|>
+  select(id)|>
+  keep(is.character) |>
+  map(~tolower(.x))
+
+my_vars <- unlist(new_vars)|>
+  unname()
+
+wsc_2025 <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/NSRR_WSC_data_2025_0702.xlsx", )|>
+  rename_with(tolower)|> 
+  select(c(wsc_id, wsc_vst, all_of(my_vars)))
+
+wsc_nsrr_rel <- wsc_nsrr|>
+  left_join(wsc_2025, by = join_by(wsc_id, wsc_vst))
+
 ##compared to 0.8.0 version, 0.9.0 should removed data for 1 ID (3 rows)
-write.csv(wsc_nsrr, file.path(releasepath, paste0(version, "/wsc-dataset-", version, ".csv")), na = "", row.names = F)
+write.csv(wsc_nsrr_rel, file.path(releasepath, paste0(version, "/wsc-dataset-", version, ".csv")), na = "", row.names = F)
 
 ####------------------ Creating MSLT Dataset with hh:mm times  ------------------ 
 
