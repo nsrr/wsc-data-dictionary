@@ -11,7 +11,7 @@ wscs_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/
 wscd_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_datasets"
 wsca_path <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_archive"
 
-version <- "0.9.0.pre"
+version <- "0.9.0"
 
 releasepath <- "/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_releases"
 
