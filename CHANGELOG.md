@@ -1,3 +1,8 @@
+## 0.9.0 (October 7, 2026)
+
+- Update with new source datasets from contributor
+- Add MSLT variable (mslt5)
+
 ## 0.8.0 (December 23, 2025)
 - Add 49 new variables (from WSC team) and data dictionary entries
 - Add new Mailed Survey dataset and data dictionary entries
