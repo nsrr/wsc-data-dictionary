@@ -47,53 +47,10 @@ wsc_nsrr <- wsc_df |>
     .
   }))
 
-####------------------ Creating WSC Dataset + add drug and updated variables ------------------ 
-wsc <- wsc_in |>
-  rename_with(tolower)|> 
-  mutate(
-    wsc_id = as.numeric(wsc_id),
-    wsc_vst = as.numeric(wsc_vst))|>
-  distinct(wsc_id, wsc_vst, .keep_all = TRUE)|>
-  arrange(wsc_id, wsc_vst)
-
-
-wsc_drug <- wsc_drug |>
-  rename_with(tolower)|>
-  distinct(wsc_id, wsc_vst, .keep_all = TRUE) |>
-  arrange(wsc_id, wsc_vst)
-
-# Merge wsc and wsc_drug by wsc_id and wsc_vst, keep only rows in wsc
-wsc_nsrr <- wsc |>
-  left_join(wsc_drug, by = c("wsc_id", "wsc_vst"))|>
-  mutate(apnea_treatment_year = as.numeric(apnea_treatment_year),
-         reproductive_surg_year = as.numeric(reproductive_surg_year),
-         apnea_year = as.numeric(apnea_year))|>
-  mutate(across(everything(), ~ {
-    attr(., "label") <- NULL
-    .
-  }))
-
-
-new_vars <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/wsc_new_vars.xlsx")|>
-  select(id)|>
-  keep(is.character) |>
-  map(~tolower(.x))
-
-my_vars <- unlist(new_vars)|>
-  unname()
-
-wsc_2025 <- read_excel("/Volumes/bwh-sleepepi-nsrr-staging/20200115-peppard-wsc/nsrr-prep/_source/2025_covariates/NSRR_WSC_data_2025_0702.xlsx", )|>
-  rename_with(tolower)|> 
-  select(c(wsc_id, wsc_vst, all_of(my_vars)))
-
-wsc_nsrr_rel <- wsc_nsrr|>
-  left_join(wsc_2025, by = join_by(wsc_id, wsc_vst))
-
 ##compared to 0.8.0 version, 0.9.0 should removed data for 1 ID (3 rows)
-write.csv(wsc_nsrr_rel, file.path(releasepath, paste0(version, "/wsc-dataset-", version, ".csv")), na = "", row.names = F)
+write.csv(wsc_nsrr, file.path(releasepath, paste0(version, "/wsc-dataset-", version, ".csv")), na = "", row.names = F)
 
 ####------------------ Creating MSLT Dataset with hh:mm times  ------------------ 
-
 wsc_mslt <- wsc_mslt |>
   rename_with(tolower)|>
   distinct(wsc_id, wsc_vst, .keep_all = TRUE) |>
